@@ -1,0 +1,10 @@
+post_id: /2008/04/23/caching-is-easy-expiration-is-hard
+name: Håkan W
+date: '2008-04-23 15:37:40 -0700'
+comment: "One idea is the construct the key for the data you're caching in a way
+  that it is the same, regardless on where you get the data from (which is often
+  irrelevant as you point out). For example, an addon's uuid+\"title\" to get its
+  title?\r\n\r\nAlso, instant invalidation is not necessary if you do the above,
+  and make sure to overwrite the previous entry as soon as it is updated with the
+  new value."
+

@@ -1,0 +1,13 @@
+---
+layout: post
+title: Welcome to the Landfill
+tags:
+- Mozilla
+---
+<p>Anyone who has tried to set up <abbr title="addons.mozilla.org">AMO</abbr> knows it's no walk in the park even with the <a href="http://jbalogh.github.com/zamboni/topics/installation/">respectable amount of documentation</a>.  There are two big stumbling blocks:  the database is large and complex, and a portion of the site functionality is still in PHP.  Django's <em>syncdb</em> can make a database, but the relationships in the data is what's hard and trying to load fixtures from the test cases is an exercise in frustration since they may or may not all combine into a useful set of data.</p>
+<p>With the launch of <a href="https://landfill.addons.allizom.org/">landfill.amo</a>[1] we bypass the entire headache.  The site started with a clean database and I uploaded an add-on to show it worked, but otherwise it's empty.  It's compact, fast, and simple to use.  The beauty of the site for volunteers and casual developers is that the database and the filesystem are <a href="https://landfill.addons.allizom.org/db/">available in their entirety to download</a>.  This means you can check out the code, fill in the configuration, import the landfill database and have the site 90% running.[2]</p>
+<p>Perhaps a testament to the obscene number of open bugs for AMO right now, but this also solves a second <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=510430">long standing problem</a> where localizers couldn't see the entire site.  On landfill, anyone can be an administrator, an editor, or any other permission level they'd like; and they'll be able to see the entire site.</p>
+<p>If you've been overwhelmed or frustrated trying to set up AMO in the past, now is a good time to give it another shot.  The landfill should just get better with age and use - if a few people register and add some data the available database dumps will get richer.</p>
+<p>If there is a part of the site that isn't working and you need it to be, let me know.  Keep in mind this is only the new Python code, so the few parts that are still on PHP (like the admin panel) won't be available until they are ported.  Code is updated near-instantly on commit, localization changes are updated every 5 minutes.</p>
+<p>[1] Forgive the fake certificate.  This is a sandbox for developers, y'all know what you're doing. :)</p>
+<p>[2] Honestly, 90% is really all you need.  We do a lot of stuff for scalability, statistics, etc. and unless you're actually working on that part of the site, you don't need those elements running.  Of course, you're more than welcome to turn them on, I'm just trying to make it easy.</p>

@@ -1,0 +1,7 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Greg
+date: '2009-11-17 19:37:02 -0800'
+comment: It's a bit weird to see the move to Django+Git when other Mozilla projects
+  use Mercurial.  Surely using Mercurial alongside Django would be way better than
+  Django+Git?
+

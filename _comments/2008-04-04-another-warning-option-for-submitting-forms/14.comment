@@ -1,0 +1,10 @@
+post_id: /2008/04/04/another-warning-option-for-submitting-forms
+name: Fred Wenzel
+date: '2008-04-06 07:21:30 -0700'
+comment: '@13: Pre-hashing a password and sending it in plain text then is horrible
+  -- it suffers from an easy MITM-attack, because it can trivially be replayed when
+  somebody gets their hands on the sent hash. If they want to do something AJAXy
+  they could at least do some challenge-response protocol, which wouldn''t protect
+  against dictionary attacks for example, but at least nobody could easily replay
+  the login session. But then again they could just "do it right" and do SSL instead.'
+

@@ -1,0 +1,10 @@
+post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
+name: Adam
+date: '2012-01-16 01:30:23 -0800'
+comment: "Thanks, Wil.  I added the license to mine.\r\n\r\nI'm not sure if my hard
+  drive is recently losing sectors or if upgrading my OS recently just caused sectors
+  to be accessed and written which hadn't been in a long time--perhaps they were
+  going bad for a long time.  Anyway, smartmontools + this script will help me keep
+  an eye on it.  :)\r\n\r\nBTW, I wonder if using a SQLite db would be better than
+  dumping hashfiles all over the place.  What do you think?"
+

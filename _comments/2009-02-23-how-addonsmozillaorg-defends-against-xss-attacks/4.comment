@@ -1,0 +1,8 @@
+post_id: /2009/02/23/how-addonsmozillaorg-defends-against-xss-attacks
+name: Garibaldo Persisto
+date: '2009-03-10 07:59:27 -0700'
+comment: "would you like to speak out a little bit about what you are expectin the
+  combination of the first two regexes to do? and how did you test, if your expectations
+  are met? Thanks!\r\nOtherwise still very confusing, that a framework like cakephp
+  does still not give you xss protection right out of tthe box."
+

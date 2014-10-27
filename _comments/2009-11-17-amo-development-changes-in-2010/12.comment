@@ -1,0 +1,6 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Pavel Cvrček
+date: '2009-11-18 11:22:16 -0800'
+comment: Does it mean that AMO is going to be rewritten to Python? Mozilla uses
+  Mercurial. Why do you want to use different repository?
+

@@ -1,0 +1,9 @@
+post_id: /2009/03/02/differentiate-bugzilla-emails
+name: Robert Kaiser
+date: '2009-03-04 06:27'
+comment: Actually, KDE's Bugzilla is somewhat evil by showing the person who made
+  the change in the From line of the bugmail instead of a generic bugzilla address,
+  so it even confuses me in SeaMonkey/Thunderbird mail that works well enough for
+  the others by showing the part after the @ as well (and I really wonder why any
+  email client would be dump enough not to do that - sorry gmail).
+

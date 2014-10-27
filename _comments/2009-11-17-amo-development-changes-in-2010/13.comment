@@ -1,0 +1,7 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Ben B
+date: '2009-11-18 11:53:06 -0800'
+comment: Sounds like good changes - I'm curious about the decision to go with Hudson
+  over buildbot though. Can you explain why you chose Hudson, rather then any of
+  the other integration options out there?
+

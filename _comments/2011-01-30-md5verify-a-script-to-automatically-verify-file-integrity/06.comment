@@ -1,0 +1,15 @@
+post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
+name: Adam
+date: '2012-01-15 02:35:55 -0800'
+comment: "Hey, this script was a lifesaver.  I'm concerned that my hard disk may
+  be in the early stages of failure, and I want to monitor files to see if their
+  readable data changes.  It took a lot of googling to find your script--it might
+  help to mention some more key search terms, like \"file integrity checker\", \"file
+  alteration monitor\" (not FAM, haha), \"file checksum\", \"file modification detection\",
+  etc.  Maybe those will help someone else.\r\n\r\nAnyway, I needed to make some
+  changes to suit my needs, so I did:\r\n\r\nhttps://code.launchpad.net/~alphapapa/+junk/chafifi\r\n\r\nI
+  also upgraded it to argparse.\r\n\r\nI already had a bzr repo for it when I decided
+  to fork it on github...and I don't really want to use both for the same thing.
+  \ So feel free to pull it out of there if you are interested in my version.\r\n\r\nBTW,
+  can we officially GPL it?\r\n\r\nThanks again."
+

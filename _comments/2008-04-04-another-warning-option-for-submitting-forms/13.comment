@@ -1,0 +1,9 @@
+post_id: /2008/04/04/another-warning-option-for-submitting-forms
+name: Scott
+date: '2008-04-05 19:12:53 -0700'
+comment: "How about a plugin with a big \"paranoia mode\" button. Once toggled on,
+  a warning (and chance to cancel) is displayed for pretty much any non-https request
+  and for any request to a domain not yet approved since entering paranoia mode.\r\n\r\nSuch
+  a plugin would be annoying, but very tolerable for the 1 or 2 hours a month that
+  I do banking and such."
+

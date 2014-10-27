@@ -1,0 +1,20 @@
+---
+layout: post
+title: 'Improving our process; Part 1:  Identifying Priorities'
+tags:
+- Mozilla
+---
+<p>One of our stress points is juggling too many projects.  It's easy to hear ideas pitched from excited people and agree that we should do them, but it's hard to balance that with all the other commitments we've already made.  At some point we have too many "top priority" projects and people are scrambling to keep up with just the bare minimum - forgoing any hope of actually getting the enhancements done.</p>
+<p>With a large number of projects, developers begin working independently to finish them which increases feelings of isolation, contributes to poor communication ("I don't want to interrupt you"), and delays code review until someone can context switch over to look at it.  Basically we've hit a point where - on large enough projects - working separately is slowing down our delivery and lowering our team morale.</p>
+<p>In addition to being spread too thinly, there is also the question of <em>why</em> are we working on the projects we're working on.  In theory, it's because they support our company goals, but that can often get muddled in the heat of the moment and interpretations and definitions (and even memory) can affect what we actually work on.</p>
+<p>The work week helped highlight these two concerns and after several discussions (thanks to everyone who participated) we came up with some solutions.  I'll address them in reverse order - firstly, to determine priorities (the <em>why</em>), we wanted a more objective and public way of ranking the importance of projects.  A public list of projects not only lines up with our open philosophy, but helps developers and the community know who is working on what, and also helps anyone requesting features get a feeling for a delivery timeline.  Our solution was to build a grid with 16 relevant fields which we rank from 0-5 and then sum to get a final score.  The fields are categorized and are broken down as follows:</p>
+<ul>
+<li>Who finds value from the request?  Separate points for consumers, developers, operators, OEMs, and Mozilla employees.</li>
+<li>How does the request align with <a href="https://wiki.mozilla.org/2014">the company goals</a>?  Separate points for each goal.</li>
+<li>How does the request align with the <a href="https://wiki.mozilla.org/Marketplace/2014_Goals">2014 Marketplace goals</a>?  Separate points for the three goals.</li>
+<li>Lastly, is there internal necessity?  Separate points for Technological Advancement, Legal Compliance, and Urgency.</li>
+</ul>
+<p>Once we have a request, a champion for the request meets with representatives from the product, UX, and developer teams, as well as any other relevant folks.  We discuss the request and the value in the specific areas and then add up the score to get a number <strong>representative</strong> of priority.  Clearly this isn't a hard and fast science, but it's a lot more objective than a gut feeling.  It lets us justify decisions with reasoning, helps us think of all affected groups, and makes sure we're working on what is important.  If something has a high score we'll start talking about timelines and moving things around, keeping in mind commitments we've made, planning and research that needs done, and any synchronizing we need to do with other dependent teams.</p>
+<p>The other issue - people trying to do too much - is easily solved in a conversation but will likely be a challenge in practice.  The plan is to cap our active tasks to 3 or 4 at any one time.  Anything else will queue up behind them or displace them as appropriate.  The exact number may change based on size of the team and size of the project, but my goal is to get 2 to 4 people working on a project together and with our current numbers that's about what we can do.</p>
+<p>I'm working on a real-time public view of our tasks but I'm traveling this week and haven't had a chance to finish it.  I'll post again with a link once it is finished.</p>
+<p>Update Feb 13: Added links to goals.</p>

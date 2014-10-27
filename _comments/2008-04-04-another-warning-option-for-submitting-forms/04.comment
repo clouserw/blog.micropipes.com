@@ -1,0 +1,11 @@
+post_id: /2008/04/04/another-warning-option-for-submitting-forms
+name: Smokey Ardisson
+date: '2008-04-04 23:23:37 -0700'
+comment: "Warning is no good if you can’t cancel the submission (well, maybe it’s
+  half-good; you know you’ve let your password or credit card number out insecurely).
+  \ There’s an open bug somewhere about making http-&gt;https navigation/submission
+  cancelable, but I suspect the fix is pretty difficult.\r\n\r\nAs Jeff notes about,
+  “credentials” are problematic; for instance, I’d want to be able to cancel a http-&gt;https
+  (or otherwise insecure) submission of not only a login/password, but also my credit
+  card number, birthdate, SSN, etc."
+

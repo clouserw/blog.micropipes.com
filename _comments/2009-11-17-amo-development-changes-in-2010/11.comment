@@ -1,0 +1,14 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Matt
+date: '2009-11-18 07:10:22 -0800'
+comment: "Sorry guys to be the one to say this but, the reasons given in this post
+  show the ineffectiveness of the AMO development team. \r\n\r\nI worked at Yahoo
+  and I've used different Java and PHP frameworks in the past, some good, some bad,
+  but that never stopped us from having a continuous build running locally and an
+  integration build running on our server. It never stopped us from unit testing
+  our code, even though we had to extend some components to make it work. The same
+  with debugging, it never stopped us from creating awesome tools to debug our code
+  and monitor the performance of our applications.\r\n\r\nA framework doesn't make
+  you a better programmer. You guys should know this. BTW, I use Django as well,
+  and guess what, I'm still working the same way I was working 10 years ago."
+

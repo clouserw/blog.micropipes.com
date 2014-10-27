@@ -1,0 +1,20 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            all night diner
+description:      'at 3am anything sounds good'
+url:              http://micropipes.com/blog/
+baseurl:          /blog/
+
+author:
+  name:           'Wil Clouser'
+  url:            https://micropipes.com/
+  email:          clouserw@micropipes.com
+
+paginate:         5

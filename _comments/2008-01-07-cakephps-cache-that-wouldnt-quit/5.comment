@@ -1,0 +1,6 @@
+post_id: /2008/01/07/cakephps-cache-that-wouldnt-quit
+name: tsc
+date: '2012-03-15 08:22:17 -0700'
+comment: "Still the same in Cake 2.0\r\n$this-&gt;ModelName-&gt;query($sql,false);
+  solves the problem. Thanks."
+

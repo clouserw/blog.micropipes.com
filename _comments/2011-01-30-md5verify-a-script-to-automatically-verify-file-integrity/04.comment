@@ -1,0 +1,7 @@
+post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
+name: db48x
+date: '2011-02-01 16:04:07 -0800'
+comment: Ah. I guess I'm not clear on why you would need the checksum files if you
+  know that the filesystem is managing that for you. Perhaps your backup media doesn't
+  use a ZFS filesystem.
+

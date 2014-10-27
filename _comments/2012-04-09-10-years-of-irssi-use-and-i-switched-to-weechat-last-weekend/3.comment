@@ -1,0 +1,6 @@
+post_id: /2012/04/09/10-years-of-irssi-use-and-i-switched-to-weechat-last-weekend
+name: 00Davo
+date: '2012-04-20 03:22:37 -0700'
+comment: For the record, irssi actually has support for per-buffer (well, per-window)
+  message history. It's enabled with the <code>/set window_history on</code> option.
+

@@ -1,0 +1,8 @@
+post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
+name: Thomas
+date: '2013-10-14 07:38:35 -0700'
+comment: "I just tested this on both Debian squeeze and the newest Wheezy. It does
+  not work on either of those.\r\nThis is the error:\r\nERROR - Error writing checksums
+  file ./tmp/.checksums: [Errno 2] No such file or directory: './tmp/.checksums'\r\nERROR
+  - [Errno 2] No such file or directory: './foo'"
+

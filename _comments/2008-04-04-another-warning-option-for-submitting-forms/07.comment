@@ -1,0 +1,19 @@
+post_id: /2008/04/04/another-warning-option-for-submitting-forms
+name: Justin Dolske
+date: '2008-04-05 00:18:01 -0700'
+comment: "I think a \"warn me when I submit a password insecurely\" warning would
+  be a nice option to have (there's a bug about making the HTTP auth dialog clearer
+  about this too)... I'm not sure how usable it would be though, because so many
+  sites don't do SSL at all (eg, most forums). You wouldn't see it as often as the
+  old warning, but it would still be annoying.\r\n\r\nCombining it with some other
+  factor might help make it more useful. Ideas off the top of my head:\r\n* A blacklist/whitelist,
+  so users can configure (ugh) when they see it\r\n* Comparison to existing stored
+  logins / history (eg, if you stored a password for https://site.com, warn if you
+  try and log in via http://site.com)\r\n* \"Never ask me for this network connection\".
+  Maybe I trust my home/work WiFi connection to not be sniffed, but want the extra
+  paranoia when I'm browsing from Starbucks. Variation: something akin to private
+  browsing mode where we become hyper paranoid.\r\n\r\nAlso, I hesitate to call
+  sites that do SSL logins from non-SSL pages secure. It's better than nothing,
+  and prevents passive sniffing, but if someone is actively able to modify the non-SSL
+  page they can steal your password before you ever submit it."
+

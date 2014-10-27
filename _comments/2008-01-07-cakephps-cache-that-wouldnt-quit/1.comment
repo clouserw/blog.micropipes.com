@@ -1,0 +1,12 @@
+post_id: /2008/01/07/cakephps-cache-that-wouldnt-quit
+name: ChR1ZmO
+date: '2008-10-23 07:19:16 -0700'
+comment: "I had the same problem and it drove me nuts too.\r\n\r\nHere's a working
+  solution WITHOUT touching the cake-source-code...\r\n\r\n- In your /config/database.php
+  just change the database-driver-name to (i.e.) \"mysql_fixed\"\r\n- Create a folder
+  named \"dbo\" under your /models-directory and create the file \"dbo_mysql_fixed.php\"\r\n-
+  In this file, place the following code:\r\n\r\n\r\n\r\nNote, that the classname
+  is automatically translated with cake's Inflector-class - and be sure to include
+  the right base-driver-class (in this example, it's mysql).\r\n\r\nNow the default
+  value of the parameter $cache is set to false...\r\n\r\nPwned! :-)"
+

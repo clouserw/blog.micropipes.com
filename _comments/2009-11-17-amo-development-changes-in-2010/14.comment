@@ -1,0 +1,11 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Axel Hecht
+date: '2009-11-18 16:52:30 -0800'
+comment: "Hey, more django python shop :-)\r\n\r\nPitfalls we're seeing with django
+  on the l10n dashboard:\r\n\r\n- insertmany is sloooow. Not sure how much of a
+  problem that would be for AMO\r\n- ManyToManyField relations don't always query
+  the way you want. We're currently having hard-coded SQL in there at some places,
+  I still want to try to hack around that with faking a through-model by creating
+  a non-managed model that works on the intermediate table.\r\n- I'd love to hear
+  what you guys hack around.\r\n\r\nPS: we're using 1.1 now, fwiw."
+

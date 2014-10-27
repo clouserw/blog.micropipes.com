@@ -1,0 +1,9 @@
+post_id: /2009/01/22/add-on-statistics-status
+name: Wladimir Palant
+date: '2009-02-06 00:05:59 -0800'
+comment: Well, at least the new script will keep the trash out of the stats - for
+  Adblock Plus I see version numbers like "{{VERSION}}", "0.0", "0.7.5.3.beta2-compatible",
+  "true", "3.0.3" etc. Those versions have never been released, that's people who
+  created their own builds. On the other hand, having the usage data for development
+  builds (which are not available on AMO) is useful.
+

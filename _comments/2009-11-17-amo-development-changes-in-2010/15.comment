@@ -1,0 +1,11 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Richard Lopes
+date: '2009-11-20 02:29:56 -0800'
+comment: "Hi,\r\n\r\nConcerning Mercurial, think again.\r\nThere are enormous benefits
+  for developers working on Python and used to Subversion. The learning curve is
+  inexistent. You known subversion, you mostly known Mercurial.\r\nPerformance and
+  features are on par with Git, and better Mercurial is 100% Python and not a complicated
+  mixture of languages like Git. Also setting up Mercurial is fast and easy.\r\nAlso
+  if you are used to both Git and Subversion, then Mercurial is a no brainer. You
+  will pick up with ease.\r\n\r\nFor the rest, Django is a good choice. Good luck.\r\n\r\nRegards,\r\n\r\nRichard"
+

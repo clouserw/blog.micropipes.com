@@ -1,0 +1,10 @@
+post_id: /2009/09/01/using-substitution-strings-in-po-files
+name: Dwayne Bailey
+date: '2009-09-07 05:36:22 -0700'
+comment: "Glad to see them go!  In retrospect its taken quite a while for msgctxt
+  first to be added to gettext and then to get used.\r\n\r\n@Robert: its just space,
+  it's not as if we suffer from a lack of it at the moment.  Unfortunately the alternatives
+  mean continually aligning 2 files and English and the translation which can in
+  some instance be impossible to align. I'd rather suffer the redundency knowing
+  that things can't go out of sync and meaning I can work easily offline."
+

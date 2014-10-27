@@ -1,0 +1,14 @@
+post_id: /2008/03/06/frameworks-that-start-sessions-for-every-visitor-make-me-sad
+name: Fred Wenzel
+date: '2008-04-21 02:14:32 -0700'
+comment: "I remember myself filing a bug with Cake a long time ago that complained
+  about the inability to start a session manually when you disable automatic session
+  starting. Many months later, it was closed fixed without any further comment (so
+  I am still unsure how this was indeed fixed).\r\n\r\nIn any case it's sad to open
+  a session for everyone, as it adds a bunch of unnecessary overhead (I am inclined
+  to say that most pages that are divided into public/private, or are even completely
+  public don't need a session for anonymous users).\r\n\r\nThus, dear framework
+  developers: Please default to manual (well, \"assisted\") session handling instead
+  of forcing AUTO_SESSION on and then not providing a way to really, really disable
+  this \"feature\"."
+

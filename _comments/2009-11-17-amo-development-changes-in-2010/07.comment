@@ -1,0 +1,10 @@
+post_id: /2009/11/17/amo-development-changes-in-2010
+name: Jeff Balogh
+date: '2009-11-17 21:54:06 -0800'
+comment: "@Greg\r\n\r\nWhat do you think we would gain by using Mercurial instead
+  of Git?  We don't have to worry about cross-platform issues, which was (IIRC)
+  the killer for git in the Great Mozilla Rebase.\r\n\r\nSince a lot of us were
+  using git-svn already, switching to git made more sense than jumping over to hg
+  (and feels much better than fighting with svn).  I don't think git vs. hg is going
+  to be a big hurdle in keeping people from contributing code."
+

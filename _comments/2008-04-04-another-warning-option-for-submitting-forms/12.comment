@@ -1,0 +1,28 @@
+post_id: /2008/04/04/another-warning-option-for-submitting-forms
+name: John Silvestri
+date: '2008-04-05 11:03:25 -0700'
+comment: "Sounds like a nice idea, but the real fix is for the banks or other organizations
+  to fix their sites.  I suppose a prominent dialog box like this might embarrass
+  them into fixing it, but this won't protect against hijacked connections, as mentioned
+  by Jeff Walden (above).  How could this dialog be avoided in an attack?  Easy:
+  make the form POST to an evil HTTPS server.  SSL certs can be had for very little
+  $$, and it would avoid this dialog.  You could then add more code to make sure
+  domains match...but it's an ever-escalating war between good and evil.  I fear
+  this sort of solution would give people a false sense of security.\r\n\r\nI've
+  also seen that some sites use JS/Ajax to do very strange forms of authentication,
+  which might not be doing a real \"action\" and never trigger this warning dialog.
+  \ Some of these AJAX gizmos submit their contents as plaintext, via HTTP, some
+  via HTTPS, and some are quite clever and compute the MD5 locally and send it via
+  HTTP (Yahoo Mail used to do this).  As such, there's a /lot/ to consider.\r\n\r\nArguably
+  the best thing to do would be to put a warning bar at the top (like the Add-ons
+  warning) that notices password fields on HTTP sites and disables the password
+  field unless it's accepted.  This would be very annoying and I can't honestly
+  say that users wouldn't lynch Mozilla for making such a move...but it would probably
+  force major sites to go to SSL.  However, a lot of small sites that can't make
+  such moves would be at a supreme disadvantage, and it would be a disaster.  Is
+  this a security issue people should worry about?  Yes.  Can users be protected
+  against every possible attack against their credentials?  Sadly, no.  I tend to
+  think these approaches should be done via extension, and highly recommended, but
+  not enabled by default.\r\n\r\nP.S.  This has also been mentioned by ISC SANS
+  a few times, including here:\r\nhttp://isc.sans.org/diary.html?storyid=1277"
+

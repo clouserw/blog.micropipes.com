@@ -1,0 +1,5 @@
+post_id: /2012/05/31/adding-a-debug-language-to-addons-mozilla-org
+name: F Wolff
+date: '2012-05-31 14:13:44 -0700'
+comment: Great stuff! If you want you can also put in an RTL test version with the
+  "flipped" rewrite mode of podebug. This is a reasonably readable fake RTL version.

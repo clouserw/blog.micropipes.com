@@ -1,0 +1,25 @@
+post_id: /2007/07/26/ten-tips-for-website-localization
+name: Ville Pohjanheimo
+date: '2007-07-31 08:31:42 -0700'
+comment: "In section \"Don't concatenate strings\" you make a good point, but you
+  should know that the given better option is hugely flawed too. Plenty of languages
+  have trouble with this scheme. The problems come about as %s is (re)used in other
+  strings. This is a problem in several languages when different %s require different
+  (e.g.) endings or prepositions.\r\n\r\nIn Finnish (my language) this results in
+  being forced to add strange sounding modifiers to the sentence. In the given example
+  the English equivalent would be something like \"Sometimes I eat the food product
+  %s and sometimes I don't.\" The point of adding \"the food product\" is that in
+  Finnish I could now use the basic form of %s i.e. no ending would be necessary.
+  \r\n\r\nAn authentic example of the same can be seen on AMO, where the Finnish
+  version replaces the composite string \"Browse Extensions by Category\" with the
+  English equivalent of \"Browse by Category the Add-on type Extensions\" where
+  Extensions is of course replaced by Themes etc. when appropriate. The Finnish
+  translation could translate \"Themes\" and \"Extensions\" to their correct forms,
+  but it's hard to find out all the places where a given \"%s\" string is used and
+  there's really no way to know where it's going to be used in the future. Thus
+  an ugly fix like the one above is a necessary eye-sore. BTW. I don't mean to belittle
+  the quality of AMO here in any way.... the same applies for Firefox et al. too!\r\n\r\nThe
+  fix would be to use only full sentences when ever possible. That would also fix
+  the annoyance of capital letters mid sentence .... trying to guess where a \"%s\"
+  string will be placed in sentence (and thus whether it should grammatically be
+  with a capital letter or not) is a terrible pain and error prone."

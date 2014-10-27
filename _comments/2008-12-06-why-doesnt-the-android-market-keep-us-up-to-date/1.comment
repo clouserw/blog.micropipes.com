@@ -1,0 +1,16 @@
+post_id: /2008/12/06/why-doesnt-the-android-market-keep-us-up-to-date
+name: Daniel Einspanjer
+date: '2008-12-08 11:01:04 -0800'
+comment: "Quite annoying.  Here is the way I deal with it:\r\n\r\n1. There is an
+  app that tries to help, OI Update.  It only works with a small subset of apps
+  at the moment.. but it helps a bit.\r\n2. Scan through your My Downloads list
+  looking for apps that you still have installed that show the status as \"FREE\"
+  instead of \"Installed\".  This doesn't work all the time.  I'm guessing that
+  there is some way the developer can change the application such that this status
+  flag doesn't see the new version, but when you try to install the new version,
+  it still \"updates\" the old app.\r\n3. Scan through the All applications and
+  All games views sorted by date looking for apps you know you have installed that
+  show \"FREE\" instead of \"Installed\".  If you check every couple of days, and
+  you can remember the apps you currently have installed, this is the best way I've
+  found so far to keep them up to date."
+

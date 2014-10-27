@@ -1,0 +1,12 @@
+post_id: /2009/03/02/some-considerations-when-adding-tags-to-amo
+name: Daniel Einspanjer
+date: '2009-03-02 18:46:35 -0800'
+comment: "Regarding unicode character canonical equivalence and normalization, some
+  useful links:\r\n\r\n<a href=\"http://unicode.org/reports/tr15/tr15-23.html\"
+  rel=\"nofollow\">Unicode Standard Annex 15</a>\r\n<a href=\"http://www.unicode.org/faq/normalization.html\"
+  rel=\"nofollow\">Unicode normalization FAQ</a>\r\n<a href=\"http://www.w3.org/International/charlint/\"
+  rel=\"nofollow\">W3C Charlint - A Character Normalization Tool</a>\r\n<a href=\"http://www.unicode.org/reports/tr15/Normalizer.html\"
+  rel=\"nofollow\">Unicode normalization demo</a>\r\n<a href=\"http://site.icu-project.org/\"
+  rel=\"nofollow\">International Components for Unicode (OSS library for Unicode
+  support)</a>\r\n"
+

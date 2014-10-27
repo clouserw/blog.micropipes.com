@@ -1,0 +1,9 @@
+post_id: /2009/03/02/some-considerations-when-adding-tags-to-amo
+name: Robert Kaiser
+date: '2009-03-04 07:33:24 -0800'
+comment: Why make the separator a space and not a comma? In doing the tagging system
+  for my personal PHP-based community system, I found it's easiest to use comma
+  as a separator as it feel natural to most people (it's even the separator of lists
+  of attributes in normal written language) and it easily allows for spaces withing
+  tags without the workaround of quoting.
+

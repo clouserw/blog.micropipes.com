@@ -1,0 +1,7 @@
+post_id: /2008/03/07/when-is-a-tinyint1-not-a-tinyint1
+name: George
+date: '2008-03-07 19:30:37 -0800'
+comment: "You gotta love that \"Automagic\". I never knew about this, so thanks
+  for sharing.\r\n\r\nPersonally, I'm beginning to hate cake's model/ORM. Whatever
+  happened to good old SQL? It's more of standard then ORM will ever be. The amount
+  of code you write binding and unbinding, you could have written with one SQL statement"

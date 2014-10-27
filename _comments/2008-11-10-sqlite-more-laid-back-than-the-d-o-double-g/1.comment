@@ -1,0 +1,12 @@
+post_id: /2008/11/10/sqlite-more-laid-back-than-the-d-o-double-g
+name: Wil Clouser
+date: '2008-11-11 11:12:13 -0800'
+comment: "It's confusing, I agree.  The document I linked to says <blockquote>The
+  type affinity of a column is the recommended type for data stored in that column.
+  The key here is that the type is recommended, not required. Any column can still
+  store any type of data, in theory.</blockquote>\r\n\r\nThere is mention of a \"Strict
+  Affinity Mode\" which I assume makes it act like every other database out there,
+  but I didn't see a way to enable it or any other notes about it.  My guess is
+  it isn't implemented yet.\r\n\r\nSQLite definitely has it's quirks but it's also
+  filling a different niche than most other databases engines."
+

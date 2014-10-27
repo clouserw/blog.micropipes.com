@@ -1,0 +1,7 @@
+post_id: /2009/09/01/using-substitution-strings-in-po-files
+name: Wil Clouser
+date: '2009-09-02 15:32:10 -0700'
+comment: "<blockquote>So I guess there is no standard way to do substitutions at
+  the moment without dirty hacking?</blockquote>\r\nSubstitutions, no. But they
+  shouldn't be necessary with msgctxt."
+

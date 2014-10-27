@@ -1,0 +1,17 @@
+post_id: /2008/04/23/caching-is-easy-expiration-is-hard
+name: Wil Clouser
+date: '2008-04-23 15:37:55 -0700'
+comment: "<blockquote>For the different-links-for-different-people case, I would
+  suggest creating a single page with everything in it, and then serving hide-admin/hide-developer/hide-localizer
+  CSS rules in a tiny non-cached CSS file for the current user if they’re logged
+  in. You can do the same with JS to stick the user’s name in the right place if
+  needed. &lt;noscript&gt; blocks in the content can provide a boring-but-workable
+  alternative for the few who turn off JS for the site.</blockquote>\r\n\r\nI think
+  we're starting to do this in a few places already as we rewrite stuff, but it's
+  definitely a direction I see us going.\r\n\r\n<blockquote>If you just invalidated
+  the main add-on page on any developer edit, and the rec-list/front page, but left
+  search to expire over 15 mins or whatever, do you think that people would still
+  complain?</blockquote>\r\n\r\nHeh, probably ;), but it would be much more reasonable
+  that what we have.  If we can expire the main add-on page and the API (both relatively
+  easy compared to search) I think we'd be in a pretty good place."
+

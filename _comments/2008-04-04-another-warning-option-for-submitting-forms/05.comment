@@ -1,0 +1,11 @@
+post_id: /2008/04/04/another-warning-option-for-submitting-forms
+name: Blair McBride
+date: '2008-04-04 23:44:20 -0700'
+comment: "I think its a step in the right direction. But it won't solve the problem.
+  Maybe have some extra checks to see if the form is being submitted to a different
+  domain? Unfortunately, this still won't solve the problem of poisoned DNS.\r\n\r\nAlso
+  have to be careful with giving people a false sense of security. Sometimes, that's
+  worse than having no security at all.\r\n\r\nOf course, it would help if websites
+  did things properly - but I'm not exactly holding my breath on that happening
+  any time soon. Or ever happening at all, for that matter."
+

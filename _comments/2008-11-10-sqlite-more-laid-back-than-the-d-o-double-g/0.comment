@@ -1,0 +1,8 @@
+post_id: /2008/11/10/sqlite-more-laid-back-than-the-d-o-double-g
+name: Orrin
+date: '2008-11-11 11:01:48 -0800'
+comment: "Is that a good thing?  If I have a column and I know that I always want
+  numbers with a certain decimal value in it, wouldn't I want to enforce that?  What
+  if you have a column that does not enforce it, am I now able to do do math on
+  the values in it?\r\n\r\nI don't know much about SQLite, and this does seem like
+  it could be a good feature in some settings."

@@ -1,0 +1,16 @@
+post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
+name: Leo
+date: '2012-01-31 09:27:56 -0800'
+comment: "I found out your script while searching for a better solutions for verifying
+  file integrity. My problem is a little bit different but it lays on the same land
+  that yours, to be sure that the files still the same.\r\nI my case I do several
+  HUGE copies and in some cases the files get corrupted during the process, what
+  gives me an incredible headache. My solution did not work well since it took several
+  hours to verify each file using cksum (On Solaris and HP-UX).\r\nAs I supposed
+  there's no way to perform a check sum of each file without wait hundreds of hours
+  for the script to be finished.\r\nI know that it is a very tough task for the
+  machine to open and hash the files but I was eager to find out some magic solution
+  for it, and it seems there's not. Your script also take too much time to finish
+  the verification. (Ok, I habe to check the integrity of 1000000 files) :\\\r\nAnyway,
+  thanks for sharing your solution, it's pretty well done.  :)"
+

@@ -1,0 +1,6 @@
+post_id: /2009/03/02/differentiate-bugzilla-emails
+name: Bradley Baetz
+date: '2009-03-02 16:58'
+comment: You should be able to filter on the X-Bugzilla-URL field. But it looks
+  like that's not set on bugzilla.mozilla.org for some reason.....
+

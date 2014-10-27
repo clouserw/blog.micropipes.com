@@ -1,0 +1,33 @@
+post_id: /2009/02/23/how-addonsmozillaorg-defends-against-xss-attacks
+name: Jones
+date: '2009-03-13 04:10:32 -0700'
+comment: "what about cookies and http headers and post? seems an architectural weekness
+  to check this on other places in your app. the best thing would be to check ALL
+  input channels in ONE file and with the same expressions, not clutter it over
+  different files. Also tighten your app to only let ALL input channels through
+  ONE special file, where no side-effects can occur. Also, of course, WHITELIST
+  and not BLACKLIST. \r\nI checked cakephp and it seems one of the weeker frameworks
+  considering security architecture - it leaves certain important steps to the user,
+  that means the framework does NOT make things more secure for you but you have
+  to think yourself - besides having a lot of development goodness from a security
+  pov the question arises \"so wtf is the framework good for then?\". Also the AUTH
+  and especially the ACL system is not integrated into he backend but users have
+  to configure and built it itself - it shows that most people do not understand
+  how to do it and open new security holes. As we have seen in the recent past even
+  mature cake devs are not able to implement secure auth themaselves - how could
+  users, if documentation is extremely vague?\r\ncake is a great tool for rapid
+  dev - but it is contraproductive in security as it A) not gives you security for
+  your apps out-of-the-box and B) complicates the way you might be used to secure
+  your site because it injects another level of abstraction. A framework with these
+  weeknesses in security can only be used by extremely experienced developers which
+  are used to study forign code - you will have to study cake very deeply to make
+  a secure site. Of course, if you are that experienced, you will already have your
+  own framework that might be much more accurate and adopts common anti-xss measures
+  to the max. \r\nI predict: many many middle- to low-skilled php developers, mostly
+  typically \"designers with some web skillz\" will adopt cakephp as a  \"cool framework\"
+  without even knowing anything about its inner workings - and they will produce
+  the next big wave of insecure php applications. That is why a framework MUST be
+  secure out-of-.the-box - every action that might endanger your site must be safe
+  by default and an experienced developer *might* disable this behaviour if she
+  knows what she is doing, not the other way around."
+

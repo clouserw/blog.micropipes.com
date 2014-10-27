@@ -1,0 +1,8 @@
+post_id: /2009/03/02/some-considerations-when-adding-tags-to-amo
+name: Austin King
+date: '2009-03-04 19:12:37 -0800'
+comment: 'Tags and localization is a tough beast. Untested idea: What about separating
+  tags per locale. This will encourage the use of common idioms within a locale
+  and not pollute the display of other locales. Additionally it may provide some
+  performance benefits on the backend where character set optimizations can be made.'
+

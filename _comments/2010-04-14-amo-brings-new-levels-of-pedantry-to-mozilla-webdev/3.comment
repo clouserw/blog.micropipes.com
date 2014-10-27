@@ -1,0 +1,7 @@
+post_id: /2010/04/14/amo-brings-new-levels-of-pedantry-to-mozilla-webdev
+name: F Wolff
+date: '2010-04-16 00:55:10 -0700'
+comment: Thanks Wil. We also use pylint with the violations plug-in, but I was hoping
+  that I can maybe configure this check script separately.  The pylint output is
+  still a bit too much, and it would be useful to have this separately.
+

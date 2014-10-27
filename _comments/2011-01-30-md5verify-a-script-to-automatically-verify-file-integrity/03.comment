@@ -1,0 +1,8 @@
+post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
+name: Wil Clouser
+date: '2011-01-31 12:06:50 -0800'
+comment: "ZFS is a great idea, but it doesn't give me the (admittedly easy to make)
+  checksums files with each directory.\r\n\r\nI figured I could deal with the small
+  number of warnings manually (by checking the backup vs the live file and figuring
+  out which was correct).  Recursive checksumming is an interesting idea though."
+

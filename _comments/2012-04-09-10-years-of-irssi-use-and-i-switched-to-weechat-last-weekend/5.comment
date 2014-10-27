@@ -1,0 +1,10 @@
+post_id: /2012/04/09/10-years-of-irssi-use-and-i-switched-to-weechat-last-weekend
+name: Wil Clouser
+date: '2012-09-23 07:35:08 -0700'
+comment: "<blockquote>could you sharer your settings for weechat that makes it behave
+  more like vim?</blockquote>\r\n\r\nweechat is actually pretty unfriendly about
+  sharing settings.  I wanted to share my changes in the original post but weechat
+  just mixes your changes in with the defaults across 13 .conf files making it hard
+  to have portable settings.  If there were a way to give you the changes I would,
+  but I don't know how."
+

@@ -1,0 +1,9 @@
+post_id: /2011/03/29/welcome-to-the-landfill
+name: Wil Clouser
+date: '2011-04-21 08:35:13 -0700'
+comment: "<blockquote>I tried to register, but the message was appear:\r\n\"Forbidden
+  (403)\r\nCSRF verification failed. Request aborted.\"\r\nIs it possible to have
+  administrator or editor privileges on this site without registration?</blockquote>\r\n\r\nYou'll
+  need to register - it works just like AMO.  That 403 error happens when a person
+  blocks referrers - are you blocking referrers?"
+

@@ -1,0 +1,8 @@
+post_id: /2009/03/02/some-considerations-when-adding-tags-to-amo
+name: Jan!
+date: '2009-03-03 05:36:25 -0800'
+comment: To add to the fun, not everything always maps to the same character, so
+  strtr is not really safe. For example, German ö can be written as "oe", but not
+  "o". I think Finnish has some other translations for umlauted characters, so it
+  not only depends on the input script, but also the input language.
+

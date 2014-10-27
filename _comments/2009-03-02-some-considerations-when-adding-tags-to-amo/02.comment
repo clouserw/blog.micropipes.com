@@ -1,0 +1,17 @@
+post_id: /2009/03/02/some-considerations-when-adding-tags-to-amo
+name: Daniel Einspanjer
+date: '2009-03-02 18:54:14 -0800'
+comment: "I know it isn't that useful for PHP, but I also dug up the sample Java
+  code I used elsewhere for storing normalized text for use in a search form:\r\n\r\n\r\nimport
+  java.io.*;\r\nimport java.text.Normalizer;\r\nimport java.text.Normalizer.Form;\r\n\r\npublic
+  class NFD {\r\n  public static void main(String[] args) {\r\n    final String
+  INPUT_ENC = \"UTF-8\";\r\n    final String OUTPUT_ENC = \"UTF-8\";\r\n    try
+  {                \r\n      BufferedReader r = new BufferedReader(\r\n        new
+  InputStreamReader(System.in, INPUT_ENC));\r\n      PrintWriter w = new PrintWriter(\r\n
+  \       new OutputStreamWriter(System.out, OUTPUT_ENC), true);\r\n      String
+  s;\r\n      while ((s = r.readLine()) != null) {\r\n        // decompose and remove
+  accents\r\n        String decomposed = Normalizer.normalize(s, Form.NFD);\r\n
+  \       String accentsGone = \r\n            decomposed.replaceAll(\"\\\\p{InCombiningDiacriticalMarks}+\",
+  \"\");\r\n        w.println(accentsGone);\r\n      }\r\n    } catch (Exception
+  ex) {\r\n      ex.printStackTrace();\r\n    }\r\n  }\r\n}"
+

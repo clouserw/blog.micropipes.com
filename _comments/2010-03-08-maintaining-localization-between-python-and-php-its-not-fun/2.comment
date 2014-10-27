@@ -1,0 +1,6 @@
+post_id: /2010/03/08/maintaining-localization-between-python-and-php-its-not-fun
+name: Pierre
+date: '2010-03-09 04:14:58 -0800'
+comment: "Btw, take a look at intl, it is an ICU based module and covers some of
+  of the issues you describe here.\r\n\r\nhttp://www.php.net/intl"
+

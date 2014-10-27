@@ -1,0 +1,11 @@
+post_id: /2009/03/06/the-tagging-plan-for-amo
+name: Dave
+date: '2009-03-06 18:16:47 -0800'
+comment: "Why such high limits on characters and tag count?  The whole point of
+  tagging is to give short concise labels to help find things.  80 tags per add-on
+  feels excessive, and a 128 char tag feels really excessive.  Tags should be words
+  or phrases, not entire sentences.  Taken to the extreme, this means I can theoretically
+  tag my add-on with 10kB of tagging text... which is insane.  With high limits
+  you'll have more redundancy instead of forcing people to be concise so we can
+  actually sort things here.\r\n\r\nI'd suggest something more on the line with
+  32 char/tag and 20-40 tags/add-on."
