@@ -28,8 +28,8 @@ layout: default
         </p>
         <form id="commentform" method="POST" action="http://micropipes.com/jekyll-static-comments/commentsubmit.php">
             <input type="hidden" name="post_id" value="{{page.id}}" />
-            <input type="hidden" name="tuber" value="" />
-            <input type="hidden" name="sprout" value="potato" />
+            <input type="text" name="tuber" value="" class="potato-captcha" />
+            <input type="text" name="sprout" id="sprout" value="" class="potato-captcha" />
             <input type="hidden" name="return_url" value="{{page.url}}" />
             <table>
                 <tr>
@@ -44,4 +44,7 @@ layout: default
                 </tr>
             </table>
         </form>
+        <script type="text/javascript">
+            document.getElementById('sprout').value = 'potato';
+        </script>
 </div>

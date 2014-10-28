@@ -1,0 +1,6 @@
+.potato-captcha {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
