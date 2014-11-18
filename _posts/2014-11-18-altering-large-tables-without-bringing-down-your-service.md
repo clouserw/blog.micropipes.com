@@ -19,7 +19,7 @@ read-lock the table while they alter it, but they will pause any further
 replication until the change is done, potentially adding many more hours of
 outdated data being returned to your service as the replication catches up.
 
-The good news is, we can take advantage of having database slaves to keep the
+The good news is, in some situations, we can take advantage of having database slaves to keep the
 site at 100% uptime while we make time consuming changes to the table structure.
 The notes below assume a single master with multiple independent slaves
 (meaning, the slaves aren't replicating to each other).
@@ -38,7 +38,5 @@ master and switch the temporary master back to a slave.
 At this point you should have the modified table structure everywhere and be
 back to your original cluster configuration.
 
-*Special thanks to [Sheeri][1] who explained how to do all the above and saved
+*Special thanks to [Sheeri](http://www.sheeri.com/) who explained how to do all the above and saved
 us from temporarily incapacitating our service.*
-
-[1]: http://www.sheeri.com/
