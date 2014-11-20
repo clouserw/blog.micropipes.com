@@ -6,10 +6,10 @@ tags:
 ---
 
 When we run *ALTER* statements on our big tables we have to plan ahead to keep
-from breaking whatever service is using the database.  In MySQL, many times a
+from breaking whatever service is using the database.  In MySQL, many times\* a
 simple change to a column (say, from being a short varchar to being a text
 field) can read-lock the entire table for however long it takes to make the
-change[1].  If you have a service using the table when you begin the query you'll
+change.  If you have a service using the table when you begin the query you'll
 start eating into your downtime budget.
 
 If you have a large enough site to have database slaves you'll have a
@@ -41,7 +41,7 @@ back to your original cluster configuration.
 *Special thanks to [Sheeri][1] who explained how to do all
 the above and saved us from temporarily incapacitating our service.*
 
-[1] What changes will lock a table vary depending on the version of MySQL.  Look
+\*What changes will lock a table vary depending on the version of MySQL.  Look
 for "Allows concurrent DML?" [in the table on this manual page][2].
 
 [1]: http://www.sheeri.com/
