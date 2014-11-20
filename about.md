@@ -10,7 +10,7 @@ spent figuring out how to get everything we promised we’d do done on time.  Wh
 I get to play with code, my interests lean towards web security and scaling
 dynamic, high traffic sites.
 
-![Picture of Wil Clouser](http://micropipes.com/blog/wp-content/img/clouserw-2.jpg)
+![Picture of Wil Clouser](http://micropipes.com/blog/public/img/clouserw-2.jpg)
 
 ### Contact
 
