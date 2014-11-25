@@ -1,0 +1,7 @@
+post_id: /2014/10/31/contributing-a-patch-to-the-firefox-marketplace-from-scratch
+date: 2014-11-25 19:42
+name: 'Wil Clouser'
+comment: 'Want to fill in some fake data?  Run this:
+
+
+    <code>fig run zamboni ./manage.py generate_apps 10</code>'
