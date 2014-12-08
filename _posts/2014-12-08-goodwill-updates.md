@@ -20,7 +20,7 @@ and the next time they are near another Firefox OS phone which doesn't have the
 updates they are copied over and the phone is updated to the latest versions -
 getting new features and important security updates.
 
-*image + caption*
+![a concept drawing](http://placehold.it/500x250)
 
 This could be mostly in the background (assuming disk space and battery life, it
 just works) or more in the foreground where people could get a notification
@@ -28,3 +28,7 @@ about a nearby phone and the host phone could see in real time how much
 bandwidth and money has been saved.
 
 Would this help relieve pressure on users in emerging markets?
+
+PS. Special thanks to Katie and [Tiffanie][1] for the image.
+
+[1]: http://tiffanieshakespeare.com/
