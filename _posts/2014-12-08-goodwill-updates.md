@@ -25,9 +25,10 @@ internet connectivity.
 [![a concept drawing](/blog/public/img/2014-goodwill-small.jpg)][1]
 
 Goodwill Update could either run in the background (assuming there is disk space
-battery life) or could be more user-facing presenting people with notifications
-about the presence of updates or even showing how much money has been saved by
-avoiding bandwidth charges. Perhaps they could even offer to buy Bob a beer!
+and battery life) or could be more user-facing presenting people with
+notifications about the presence of updates or even showing how much money has
+been saved by avoiding bandwidth charges. Perhaps they could even offer to buy
+Bob a beer!
 
 Would this be worth doing to help emerging markets stay up to date?
 
