@@ -5,11 +5,11 @@ tags:
 - Mozilla
 ---
 
-One common aspect of the regions Firefox OS has been targeting is a lack of
-dependable bandwidth.  Mobile data, if it's even available, can be slow and
-expensive, wifi can be rare, and in-home internet completely absent.  When
-bandwidth is at a premium it's easy to ignore device updates (which are likely
-quite large) in lieu of focusing on the content you want to get to.
+A common aspect amongst the regions Firefox OS targets is a lack of dependable
+bandwidth. Mobile data (if available) can be slow and expensive, wi-fi 
+connections are rare, and in-home internet completely absent. With the lack of
+regular or affordable connectivity, it’s easy for people to ignore device and
+app updates and instead opt to focus on downloading their content.
 
 Currently, Firefox OS pings for system and app updates every day and downloads
 them when available.  Once it has downloaded the update it is discarded.
@@ -29,7 +29,7 @@ bandwidth and money has been saved.
 
 Would this help relieve pressure on users in emerging markets?
 
-PS. Special thanks to Katie and [Tiffanie][2] for the image.
+PS. Hat tip to Katie and [Tiffanie][2] for the image and idea help.
 
 [1]: /blog/public/img/2014-goodwill.jpg
-[2]: http://tiffanieshakespeare.com/
+[2]: https://twitter.com/lime124
