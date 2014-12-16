@@ -1,6 +1,6 @@
 post_id: /2014/09/24/the-great-add-on-bug-triage
 name: Henrik Skupin
-date: '2014-09-25 01:59:22 -0700'
+date: 2014-09-25 01:59:22
 comment: Thanks Wil. Just one thing I wonder about is, why those bugs are not getting
   closed as INCOMPLETE. That feels less frustrating for people who filed the bug
   in the past. Those bugs we can always reopen, while WONTFIX gives another tone
