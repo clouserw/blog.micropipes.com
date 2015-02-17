@@ -5,16 +5,18 @@ tags:
 - Mozilla
 ---
 
-A couple years ago [https://twitter.com/parijaatha](Krupa) filled up a
+A couple years ago [Krupa](https://twitter.com/parijaatha) filled up a
 whiteboard with boxes and arrows, diagramming what the AMO systems looked
 like.  There was recently interest in reviving that diagram and seeing what the
 Marketplace systems would look like in the same style so I sat down and drew the
 diagrams below, one for the Marketplace and one for Payments.
 
 Marketplace:
+
 <a href="/blog/public/img/mkt_systems.png"><img src="/blog/public/img/mkt_systems_small.png" title="Marketplace Systems Diagram" /></a>
 
 Payments:
+
 <a href="/blog/public/img/pmt_systems.png"><img src="/blog/public/img/pmt_systems_small.png" title="Payments Systems Diagram" /></a>
 
 Honestly, I appreciate the view, but I wince at first glance because of all the
@@ -27,6 +29,7 @@ if I simply had a single node for each service and drew lines all over the
 diagram.  I might try that next time, unless someone gives me a different idea. :)
 
 <a href="/blog/public/img/mkt_layers.png"><img src="/blog/public/img/mkt_layers_small.png" title="Marketplace Layers Diagram" /></a>
+
 Lastly, this is the diagram that came out first when I was trying to draw the
 two above.  It breaks the Marketplace down into layers which I like because we
 emphasize being API driven frequently, but I'm not sure the significant vertical
