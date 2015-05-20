@@ -3,6 +3,7 @@ Here are some step by step instructions for enabling encryption using
 
 First, ensure the crypt.py script is installed.  The easiest way is from within weechat itself:
 
+    /plugin load script
     /script install crypt.py
     /script autoload crypt.py
 
