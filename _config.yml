@@ -8,7 +8,7 @@ relative_permalinks: true
 
 # Setup
 title:            all night diner
-description:      'at 3am anything sounds good'
+description:      "get it while it's hot"
 url:              http://micropipes.com/blog/
 baseurl:          /blog/
 
