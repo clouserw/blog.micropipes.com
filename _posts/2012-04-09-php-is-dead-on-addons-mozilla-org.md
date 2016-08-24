@@ -25,4 +25,4 @@ great community to work with.
 is still on the server but nothing uses it.  We'll be removing it completely in
 the near future.
 
-[0]: /2009/11/17/amo-development-changes-in-2010/
+[0]: /blog/2009/11/17/amo-development-changes-in-2010/
