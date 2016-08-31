@@ -60,9 +60,9 @@ $ gpg --armor --export 04D1111C
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Next, load https://github.com/settings/keys and click *New GPG Key*.  Then copy
-and paste the entire output from the command you ran above into the textarea on
-that page and click save.
+Next, load [https://github.com/settings/keys][3] and click *New GPG Key*.  Then
+copy and paste the entire output from the command you ran above into the
+textarea on that page and click save.
 
 Signing the commit
 ------------------
@@ -122,3 +122,4 @@ And that's it.  Signed commits!
 
 [1]: https://twitter.com/chuckharmston
 [2]: https://twitter.com/jvehent
+[3]: https://github.com/settings/keys
