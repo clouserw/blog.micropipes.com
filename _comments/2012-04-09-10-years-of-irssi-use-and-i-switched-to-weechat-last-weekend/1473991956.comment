@@ -1,0 +1,7 @@
+post_id: /2012/04/09/10-years-of-irssi-use-and-i-switched-to-weechat-last-weekend
+date: 2016-09-15 19:12
+name: 'grindhold'
+comment: 'A really easy way to make portable Weechat configuration is by using
+InWee ( https://github.com/susam/inwee ). I have been using this tool for a year
+now and it makes it possible to keep all my WeeChat configuration in a single
+file and pipe it into WeeChat using the command: inwee file.'
