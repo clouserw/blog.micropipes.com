@@ -1,0 +1,6 @@
+post_id: /2016/09/16/getting-firefox-nightly-to-stick-to-ubuntus-unity-dock
+date: 2016-09-16 18:31
+name: 'Simon'
+comment: 'The ''~'' directory thing sounds like a bug... I''m guessing the
+command assumes that anything not starting with / is a relative path, so it
+became $PWD/~/...'
