@@ -14,15 +14,15 @@ new program without some kind of notification and opting-in.
 
 We decided the best way to do that was simply push out a new version of the
 legacy add-on which opened a new tab to the Test Pilot website and then
-uninstalled itself.  This lets an audience interested in testing experiments
-know about the new program without being overbearing.  Worst case scenario, they
+uninstalled itself.  This lets people interested in testing experiments know
+about the new program without being overbearing.  Worst case scenario, they
 close the tab and have one less add-on loading every time Firefox is started.
 
-In our planning meeting it was suggested that with this method getting three
-percent of users from the old program to the new would be a reasonable
-compromise between realistic and optimistic.  I guffawed, suggested that the
-audience had *already opted-in once*, and put 6% in as our goal.  Spoiler alert:
-They were right and I was wrong.
+In our planning meeting it was suggested that getting three percent of users
+from the old program to the new would be a reasonable compromise between
+realistic and optimistic.  I guffawed, suggested that the audience had *already
+opted-in once*, and put 6% in as our goal and figured it would be way higher.
+Spoiler alert: I was wrong.
 
 I'll spare you the pain of writing the add-on (most of the trouble was that the
 legacy add-on was so old you had to restart Firefox to uninstall it which really
