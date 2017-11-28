@@ -47,7 +47,7 @@ into it:
 Version=1.0
 Name=Nightly
 Comment=Browse the World Wide Web
-Icon=/opt/firefox/browser/icons/mozicon128.png
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
 Exec=/opt/firefox/firefox %u
 Terminal=false
 Type=Application
@@ -120,3 +120,6 @@ will generate .desktop files but I didn't want to install more things I'd rarely
 use.  Please leave a comment if I'm way off on these instructions! :)
 
 [1]:https://nightly.mozilla.org/
+
+Updated 2017-11-27: I updated the icon path above.  Thanks to kus for the
+comment.
