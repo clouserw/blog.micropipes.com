@@ -108,21 +108,21 @@ detection, and confrimed that it's looking at USB ports which won't work for
 the Razberry which comes in on `/dev/ttyAMA0`.
 
 <div class="aside">
-I'm just going to stick in a little aside here...
+<p>I'm just going to stick in a little aside here...</p>
 
-I modified the `zwave-adapter.js` file to add some logging and make sure that
-was as far as it was getting and restarted the server (which, took 4
-minutes...) and then saw the module failed to load because the checksum didn't
-match.  I deleted the checksum file (4 minutes...), and it failed again, so I
-finally just removed the one line from the checksum file.
+<p>I modified the <code>zwave-adapter.js</code> file to add some logging and
+make sure that was as far as it was getting and restarted the server (which,
+took 4 minutes...) and then saw the module failed to load because the checksum
+didn't match.  I deleted the checksum file (4 minutes...), and it failed again,
+so I finally just removed the one line from the checksum file.</p>
 
-The checksum is a great idea and I assume there is some kind of flag I can pass
-to the server to ignore it, but I haven't found it yet (or docs about it).
+<p>The checksum is a great idea and I assume there is some kind of flag I can pass
+to the server to ignore it, but I haven't found it yet.</p>
 </div>
 
 One last thing I wanted to verify before I dug too far into the Gateway was to
 make sure OpenZWave was working.  They include a program with their code called
-`MinOZW`.  I never found documentation for it, but it takes the port to monitor
+`MinOZW`.  I didn't see documentation for it, but it takes the port to monitor
 as it's first parameter:
 
 ```bash
