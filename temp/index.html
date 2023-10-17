@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>WooWooWooWoo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style type="text/css">
+        .zoidberg {
+            height: 385px;
+            width: 512px;
+            top: inherit;
+            position:fixed;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+    // <![CDATA[
+    var zoidbergs = ["shot0001.png", "shot0002.png", "shot0011.png",
+                     "shot0020.png", "shot0021.png", "shot0024.png",
+                     "shot0025.png", "shot0035.png", "shot0056.png",
+                     "shot0063.png", "shot0065.png", "shot0066.png",
+                     "shot0073.png", "shot0082_.png", "shot0082.png",
+                     "shot0083_.png", "shot0086.png", "shot0090.png",
+                     "shot0146.png", "shot0150.png", "shot0161.png",
+                     "shot0182_.png", "shot0199.png", "shot0200.png",
+                     "shot0209.png", "shot0212.png", "shot0231.png",
+                     "shot0234.png", "shot0252.png", "shot0254.png",
+                     "shot0255.png", "shot0268.png", "shot0276.png",
+                     "shot0281.png", "shot0282.png", "shot0300.png",
+                     "shot0336.png", "shot0346.png", "shot0349.png",
+                     "shot0375.png", "shot0403.png", "shot0422.png",
+                     "shot0439.png", "shot0446.png", "shot0466.png",
+                     "shot0493.png", "shot0500.png", "shot0501.png",
+                     "shot0505.png", "shot0555.png", "shot0600.png",
+                     "shot0604.png", "shot0655.png", "shot0673.png",
+                     "shot0698.png", "shot0729.png", "shot0739.png",
+                     "shot0744.png", "shot0764.png", "shot0766.png",
+                     "shot0799.png", "shot0809.png", "shot0829.png",
+                     "shot0831.png", "shot0866.png", "shot0874.png",
+                     "shot0893.png", "shot0944.png", "shot1028.png",
+                     "shot1073.png", "shot1091.png", "shot1092.png",
+                     "shot1107.png", "shot1114.png", "shot1115.png",
+                     "shot1157.png", "shot1173.png", "shot1183.png",
+                     "shot1248.png", "shot1249.png", "shot1265.png",
+                     "shot1297.png", "shot1306.png", "shot1333.png",
+                     "shot1337.png", "shot1340.png", "shot1384.png",
+                     "shot1385.png", "shot1436.png", "shot1484.png",
+                     "shot1501.png", "shot1526.png", "shot1527.png",
+                     "shot1535.png", "shot1553.png", "shot1585.png",
+                     "shot1589.png", "shot1630.png", "shot1637.png",
+                     "shot1680.png", "shot1705.png", "shot1724.png",
+                     "shot1727.png", "shot1743.png", "shot1777.png",
+                     "shot1786.png", "shot1794.png", "shot1845.png",
+                     "shot1882.png", "shot1888.png", "shot1906.png",
+                     "shot1922.png", "shot1950.png", "shot1970.png",
+                     "shot1975.png", "shot1988.png", "shot2037.png",
+                     "shot2072.png", "shot2077.png", "shot2104.png",
+                     "shot2132.png", "shot2139.png", "shot2170.png",
+                     "shot2183.png", "shot2238.png", "shot2246_.png",
+                     "shot2246.png", "shot2247.png", "shot2255.png",
+                     "shot2273.png", "shot2290.png", "shot2351.png",
+                     "shot2373.png", "shot2400.png", "shot2404.png",
+                     "shot2418.png", "shot2433.png", "shot2437.png",
+                     "shot2510.png", "shot2524.png", "shot2539.png",
+                     "shot2542.png", "shot2556.png", "shot2624.png",
+                     "shot2655.png", "shot2715.png", "shot2718.png",
+                     "shot2752.png", "shot2804.png", "shot2866.png",
+                     "shot2878.png", "shot2896.png", "shot2944.png",
+                     "shot2956.png", "shot2969.png", "shot2973.png",
+                     "shot3006.png", "shot3037.png", "shot3047.png",
+                     "shot3068.png", "shot3174.png", "shot3179.png",
+                     "shot3184.png", "shot3206.png", "shot3213.png",
+                     "shot3220.png", "shot3224.png", "shot3269.png",
+                     "shot3303.png", "shot3322.png", "shot3335.png",
+                     "shot3344.png", "shot3368.png", "shot3375.png",
+                     "shot3403.png", "shot3500.png", "shot3584.png",
+                     "shot3589.png", "shot3601.png", "shot3606.png",
+                     "shot3616.png", "shot3653.png", "shot3667.png",
+                     "shot3710.png", "shot3726.png", "shot3729.png",
+                     "shot3866.png", "shot3880.png", "shot3891.png",
+                     "shot3907.png", "shot4012.png", "shot4033.png",
+                     "shot4083.png", "shot4104.png", "shot4141.png",
+                     "shot4234.png", "shot4279.png", "shot4313.png",
+                     "shot4318.png", "shot4324.png", "shot4362.png",
+                     "shot4420.png", "shot4424.png", "shot4461.png",
+                     "shot4474.png", "shot4485.png", "shot4532.png",
+                     "shot4575.png", "shot4596.png", "shot4678.png",
+                     "shot4684.png", "shot4690.png", "shot4821.png",
+                     "shot4872.png", "shot4967.png", "shot5010.png",
+                     "shot5019.png", "shot5082.png", "shot5123.png",
+                     "shot5175.png", "shot5184.png", "shot5244.png",
+                     "shot5277.png", "shot5727.png", "shot5793.png",
+                     "shot5966.png", "shot6134.png", "shot6271.png"];
+    var imagesize = {width: 512, height: 385};
+    var windowsize = {width: 1500, height: 1200};
+    if (navigator.appName.indexOf("Microsoft")!=-1) {
+        windowsize.width = document.body.offsetWidth;
+        windowsize.height = document.body.offsetHeight;
+    } else if (window.innerWidth && window.innerHeight) {
+        windowsize.width = window.innerWidth;
+        windowsize.height = window.innerHeight;
+    }
+
+    var horizontal = Math.ceil(windowsize.width / imagesize.width);
+
+    var vertical = Math.ceil(windowsize.height / imagesize.height);
+
+    $(function() {
+        // Build the horizontal panes
+        for(i=0; i<vertical; i++) {
+            $('#parent').append($('<div class="latitude" title="Zoidberg"></div>').css('top', i*imagesize.height + 'px'));
+        }
+
+        // Fill the panes from left to right
+        for(j=0; j<horizontal; j++) {
+            $('.latitude').each(function() {
+                var key = Math.floor(Math.random() * 228);
+                $(this).append($('<div class="zoidberg"></div>').css(
+                    { 'left': j*imagesize.width + 'px',
+                      'background-image': "url('zoidberg/" + zoidbergs[key] + "')"
+                    }));
+            });
+        }
+
+        //potch wanted moar zoidbergs
+        (function($) {
+            var z = $('.zoidberg');
+            window.moarZoidbergs = function() {
+                var key = Math.floor(Math.random() * 228);
+                var i = new Image();
+                i.style.display = "none";
+                i.style.pointerEvents = "none";
+                i.onload = function() {
+                    var el = z.eq(Math.floor(z.length * Math.random()));
+                    var img = el.find("img");
+                    if (img.length) {
+                        img.fadeOut('slow', function() {
+                            el.empty()
+                        });
+                    } else {
+                        el.append(i);
+                        el.find("img").fadeIn('slow', function() {
+                            el.css('background-image', "url(zoidberg/" + zoidbergs[key] + ")");
+                        });
+                    }
+                };
+                i.src = "zoidberg/" + zoidbergs[key];
+            };
+        })(window.jQuery);
+        setInterval(window.moarZoidbergs, 3000);
+    });
+    // ]]>
+    </script>
+
+    <div id="parent"></div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-3608380-1");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    </script>
+</body>
+</html>
