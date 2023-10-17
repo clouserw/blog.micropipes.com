@@ -12,5 +12,5 @@ those old shirts I never wear.  It turns out we Mozillians used to really like
 making t-shirts.  Below is a pile of shirts I found from around 2005-2011 or so.
 How many can you identify?
 
-<a href="/blog/public/img/mozilla_shirts.jpg">![Mozilla Shirts](/blog/public/img/mozilla_shirts_small.jpg)</a>
+<a href="{{ site.baseurl }}/assets/img/mozilla_shirts.jpg">![Mozilla Shirts]({{ site.baseurl }}/assets/img/mozilla_shirts_small.jpg)</a>
 

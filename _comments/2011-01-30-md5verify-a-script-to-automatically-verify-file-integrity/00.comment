@@ -1,7 +1,0 @@
-post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
-name: Jan!
-date: '2011-01-31 00:25:33 -0800'
-comment: This reminds me of Tripwire (http://sourceforge.net/projects/tripwire/)
-  and rsync (with --itemize-changes --archive --link-dest). We used the former for
-  file change detection and the latter for incremental backups with hard links (reporting
-  new and changed files), like OS X's Time Machine does.

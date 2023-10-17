@@ -3,6 +3,7 @@ layout: post
 title: ThreadBubble 0.5 released
 tags:
 - Mozilla
+- software
 ---
 
 This release fixes an annoying bug that caused messages to disappear from the

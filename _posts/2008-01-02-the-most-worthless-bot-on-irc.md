@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The most worthless bot on IRC
+tags:
+- software
 ---
 <p>I'm not one to jump on bandwagons just because they're rolling by (even with
 <a href="http://xkcd.com/353/">great companions</a>), but I <a

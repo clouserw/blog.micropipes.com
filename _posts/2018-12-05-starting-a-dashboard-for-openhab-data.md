@@ -2,15 +2,15 @@
 layout: post
 title: Starting a dashboard for openHAB data
 tags:
-- Automation
-- Walkthrough
+- automation
+- walkthrough
 ---
 
 In this post I'll set up the software needed to store data from [openHAB][1]
 and display it on a dashboard.  I'll use a z-wave thermostat I have already set
 up on my network, and I'll add Grafana and InfluxDB.
 
-<img src="/blog/public/img/2018-dashboard-one.png" title="24 hours of temperature data" />
+![24 hours of temperature data]({{ site.baseurl }}/assets/img/2018-dashboard-one.png)
 
 ### Set up the containers
 
@@ -145,7 +145,7 @@ The metrics tab has the queries and since the data is already flowing in, the
 correctly named Keys appear in a dropdown when I'm editing them.  The query can
 stay mostly as defaults, here is what mine looks like:
 
-<img src="/blog/public/img/2018-dashboard-two.png" title="Grafana configuration" />
+![Grafana congfiguration]({{ site.baseurl }}/assets/img/2018-dashboard-two.png)
 
 My Key names (eg. `HVAC_Temperature`) come from how I set the device up in openHAB.
 

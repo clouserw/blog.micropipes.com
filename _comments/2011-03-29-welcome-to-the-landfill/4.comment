@@ -1,8 +1,0 @@
-post_id: /2011/03/29/welcome-to-the-landfill
-name: Wil Clouser
-date: '2011-04-21 20:11:45 -0700'
-comment: "I see what you mean.  I have the same problems and filed <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=652039\"
-  rel=\"nofollow\">bug 652039</a> to fix it.\r\n\r\nWe're migrating to a new CSRF
-  protection library and still working out some kinks.  See https://github.com/mozilla/django-session-csrf
-  if you're curious.\r\n\r\nEdit: it's fixed now"
-

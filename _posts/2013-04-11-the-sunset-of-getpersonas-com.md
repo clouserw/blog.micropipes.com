@@ -83,7 +83,7 @@ explored.  Finishing this long awaited migration will breathe new life into the
 themes community and I'm looking forward to all the fun new ways we'll see
 Perso-uhh - I mean - themes, being used.
 
-![A screenshot showing the spike of new users on AMO](/blog/public/img/2013-newusers.png)
+![A screenshot showing the spike of new users on AMO]({{ site.baseurl }}/assets/img/2013-newusers.png)
 A screenshot of new users on AMO on the night we imported the
 accounts.  Our usual numbers of 1500/day are eclipsed by 1.5 million that night.
 Also a testament to the site's scalability that it didn't miss a beat.

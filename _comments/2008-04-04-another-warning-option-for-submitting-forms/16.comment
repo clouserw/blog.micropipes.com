@@ -1,9 +1,0 @@
-post_id: /2008/04/04/another-warning-option-for-submitting-forms
-name: James
-date: '2008-04-06 22:26:26 -0700'
-comment: "Like Neil, I use the option to give me that second chance to consider
-  if I want to submit the form or not. I'd say I end up using it at least once a
-  day. Speaking of second chances, I hate blog comment forms without a Preview option.\r\n\r\nFred:
-  LiveJournal uses a nonce when hashing credentials for HTTP submission to prevent
-  replay attacks, I imagine other (well-designed) sites do too."
-

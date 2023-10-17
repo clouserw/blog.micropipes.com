@@ -32,7 +32,7 @@ HTML with every request (something which the developers have been demoing the
 past couple weeks at our show and tells).  A rough diagram is below, subject to
 change, of course.
 
-<img src="/blog/public/img/2013-mkt-services.png" alt="Marketplace Architecture Diagram" />
+<img src="{{ site.baseurl }}/assets/img/2013-mkt-services.png" alt="Marketplace Architecture Diagram" />
 
 Some benefits of this approach include:
 

@@ -3,6 +3,7 @@ layout: post
 title: June PDX Drupal Meetup
 tags:
 - Mozilla
+- software
 ---
 I caught wind of a [Drupal meetup][1] tonight, and since I'm [going to be
 working with Drupal in the near future][2] I thought I'd stop by and check it

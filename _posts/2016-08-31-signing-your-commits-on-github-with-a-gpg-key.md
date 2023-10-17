@@ -8,7 +8,7 @@ tags:
 Every time [Chuck Harmston][1] commits to GitHub he has that fancy [verified]
 tag next to his name and I'm super jealous.
 
-<img src="/blog/public/img/2016-gpg-1.png" title="Screenshot of Chuck's fancy signed commits" />
+<img src="{{ site.baseurl }}/assets/img/2016-gpg-1.png" title="Screenshot of Chuck's fancy signed commits" />
 
 I've been too lazy to add GPG signing to my Git commits because it seemed like
 too much work, but I had some free time this afternoon and [Julien Vehent][2]
@@ -92,7 +92,7 @@ You'll be prompted for your GPG password (unless you use an agent, and you
 should) and everything else should just work like normal.  Github will
 recognize the signed commit:
 
-<img src="/blog/public/img/2016-gpg-2.png" title="Screenshot of my signed commit" />
+<img src="{{ site.baseurl }}/assets/img/2016-gpg-2.png" title="Screenshot of my signed commit" />
 
 
 Transferring the key to your laptop

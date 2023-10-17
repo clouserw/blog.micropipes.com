@@ -1,6 +1,8 @@
 ---
 layout: post
 title: SQLite more laid back than the D-O-double-G
+tags:
+- software
 ---
 <p>SQLite only supports a <a href="http://www.sqlite.org/datatype3.html">simple set of data types</a> and the only one that really matters is "INTEGER PRIMARY KEY" so you can have it auto-increment.  In fact, by default, I can declare the columns as anything I want and it doesn't even throw a warning.</p>
 <pre><code>

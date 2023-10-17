@@ -3,6 +3,7 @@ layout: post
 title: Planning your API is important
 tags:
 - Mozilla
+- software
 ---
 <p>I'm upgrading some code I wrote to talk to a new version of the <a
 href="http://www.citrix.com/English/ps2/products/product.asp?contentID=21679">Citrix

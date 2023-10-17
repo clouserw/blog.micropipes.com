@@ -1,9 +1,0 @@
-post_id: /2008/01/07/cakephps-cache-that-wouldnt-quit
-name: ChR1ZmO
-date: '2008-10-23 07:23:26 -0700'
-comment: "Oops!\r\n\r\nIt seems, that this blog strips all \"tags\" - so my code-example
-  is gone... Here's the code again, but now WITHOUT the php-brackets (be sure to
-  place them around the code!)\r\n\r\n-----\r\n<pre>\r\nrequire_once(LIBS.'model'.DS.'dbo'.DS.'dbo_mysql.php');\r\n\r\nclass
-  DboMysqlFixed extends DboMysql {\r\n\tfunction fetchAll($sql, $cache = false,
-  $modelName = null) {\r\n\t\treturn parent::fetchAll($sql, $cache, $modelName);\r\n\t}\r\n}\r\n</pre>"
-

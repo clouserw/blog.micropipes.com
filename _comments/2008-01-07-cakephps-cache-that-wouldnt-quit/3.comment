@@ -1,6 +1,0 @@
-post_id: /2008/01/07/cakephps-cache-that-wouldnt-quit
-name: A dude
-date: '2009-06-18 08:18:48 -0700'
-comment: Thanks mate, the $this-&gt;ModelName-&gt;query($sql,false) thing was what
-  I was looking for ... Cake sucks as always.
-

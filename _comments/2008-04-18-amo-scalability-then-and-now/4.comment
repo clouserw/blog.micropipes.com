@@ -1,9 +1,0 @@
-post_id: /2008/04/18/amo-scalability-then-and-now
-name: Dave Miller
-date: '2008-04-21 20:44:50 -0700'
-comment: Also in that history was a pair and then a triplet of Squid proxies pointing
-  at a single back-end box, followed by a triplet of Apache+mod_proxy+mod_cache
-  proxies sitting in front of that same box, followed by 4 webservers behind an
-  LVS load balancer with each of those proxying the /developer/ subdirectory back
-  to that original single box, before we had the Netscaler.
-

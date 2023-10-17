@@ -3,6 +3,7 @@ layout: post
 title: CakePHP's cache that wouldn't quit
 tags:
 - Mozilla
+- software
 ---
 I had the joy of debugging some unit tests the other day on [<abbr
 title="addons.mozilla.org">AMO</abbr>][1] and ran into caching trouble.  Turns

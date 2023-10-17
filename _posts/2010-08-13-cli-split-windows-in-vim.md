@@ -16,7 +16,7 @@ mode you interact with the shell as expected.  In normal mode you can scroll
 back through your history, yank text into buffers, paste and manipulate text.
 Best thing ever.
 
-<a href="/blog/public/img/vim_cli.png"><img src="/blog/public/img/vim_cli_small.png" /></a><br />
+<a href="{{ site.baseurl }}/assets/img/vim_cli.png"><img src="{{ site.baseurl }}/assets/img/vim_cli_small.png" /></a><br />
 <caption>Two files open on the left, three shells on the right; iPython, MySQL, and Django's web server - all with syntax highlighting.</caption>
 
 [1]: http://www.vim.org/

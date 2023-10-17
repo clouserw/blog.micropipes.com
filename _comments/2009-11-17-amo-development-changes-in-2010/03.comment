@@ -1,8 +1,0 @@
-post_id: /2009/11/17/amo-development-changes-in-2010
-name: kabturek
-date: '2009-11-17 20:23:34 -0800'
-comment: "Moving to CakePHP 1.2 wouldn't solve most of their problems and it would
-  be harder than you think. they modified the framework heavily so they would have
-  a hard time merging their changes.\r\nThanks guys for using CakePHP and good luck
-  with the transition."
-

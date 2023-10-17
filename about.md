@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 I’m an engineering manager in the Cloud Services group at Mozilla.  Primarily
@@ -10,11 +11,12 @@ spent figuring out how to get everything we promised we’d do done on time.  Wh
 I get to play with code, my interests lean towards web security and scaling
 dynamic, high traffic sites.
 
-![Picture of Wil Clouser](http://micropipes.com/blog/public/img/clouserw-2.jpg)
+![Picture of Wil Clouser]({{ site.baseurl }}/assets/img/clouserw-2.jpg)
 
 ### Contact
 
-* [email](mailto:clouserw@micropipes.com)
+* clouserw@micropipes.com
+* [@clouserw@mozilla.social](https://mozilla.social/@clouserw)
 * [@clouserw](https://twitter.com/clouserw)
 
 ### GPG Info

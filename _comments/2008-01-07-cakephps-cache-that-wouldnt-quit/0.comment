@@ -1,9 +1,0 @@
-post_id: /2008/01/07/cakephps-cache-that-wouldnt-quit
-name: yihfeng
-date: '2008-02-27 20:12:53 -0800'
-comment: "I had the exact same problem as you did, and I couldn't fix it with the
-  fixes you recommended above (which  makes lots of sense, looking at the Cake source
-  code). \r\n\r\nIn the end I just learned to live with it, since I couldn't fix
-  it. I did stuff like having little arrays to 'cache' things myself etc etc. Ugly
-  stuff. But works.\r\n\r\nThat's the thing with Cake. All good, until the magic
-  fails :("

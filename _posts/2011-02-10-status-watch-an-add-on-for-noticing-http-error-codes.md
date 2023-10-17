@@ -3,6 +3,7 @@ layout: post
 title: 'Status Watch: An add-on for noticing HTTP error codes'
 tags:
 - Mozilla
+- software
 ---
 <p>Often on complex pages with many assets it can be easy to overlook assets which don't load.  Usually they are minor JS, CSS, or tracking pixels which aren't noticed until you've spent way too long trying to track down the problem (or a month later you log into your stats dashboard to discover you haven't been collecting stats).</p>
 <p>With the launch of the new <a href="https://builder.addons.mozilla.org">Add-on Builder</a> (still an alpha product, but usable) I decided to make my first Jetpack to fix this.</p>

@@ -1,9 +1,0 @@
-post_id: /2010/03/08/maintaining-localization-between-python-and-php-its-not-fun
-name: Les
-date: '2010-07-27 08:35:44 -0700'
-comment: "I wish you luck. I had to share data between ASP.NET and PHP pages running
-  on the same domain. You can't share Sessions. I passed some params and used Cookies
-  but the security model breaks each time. \r\nI came to the conclusion that you
-  should use one or the other. In the end jQuery and Web Services came to my aid;
-  it's the best way to share this type of work."
-

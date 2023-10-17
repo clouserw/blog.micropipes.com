@@ -3,6 +3,7 @@ layout: post
 title: How addons.mozilla.org defends against XSS attacks
 tags:
 - Mozilla
+- software
 ---
 One of the things that gets a lot of news time these days is <abbr title="Cross
 Site Scripting">XSS</abbr>.  There are a lot of places that explain what it is

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ThreadBubble 0.8 Released
+tags:
+- software
 ---
 <p>A new version of ThreadBubble is available.  Changes include:</p>
 

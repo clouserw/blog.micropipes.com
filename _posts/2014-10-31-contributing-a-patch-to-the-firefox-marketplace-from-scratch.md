@@ -53,7 +53,7 @@ saying it had successfully built.  One more command:
 
 and I loaded http://mp.dev/ in my browser:
 
-![Screenshot of Marketplace](/blog/public/img/docker_marketplace.png)
+![Screenshot of Marketplace]({{ site.baseurl }}/assets/img/docker_marketplace.png)
 
 A weird empty home page, but it's a running version of the Marketplace on my
 local computer!  Success!  Although,  I'm not sure it counts unless the unit
@@ -96,7 +96,7 @@ Now my changes are on Github!  When I load the repository I committed to in my
 browser I see a big green button at the top asking if I want to make a pull
 request.
 
-![Github pull request button](/blog/public/img/github_pull.png)
+![Github pull request button]({{ site.baseurl }}/assets/img/github_pull.png)
 
 I click the button and submit [my pull request][8] which notifies the
 Marketplace developers that I'd like to merge the changes in.  It will also

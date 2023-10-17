@@ -1,8 +1,0 @@
-post_id: /2009/01/22/add-on-statistics-status
-name: Wil Clouser
-date: '2009-01-22 17:10:51 -0800'
-comment: We've got plenty of processing power now.  The AMO script was written (like
-  many things) before it had to deal with so much data so it's pretty inefficient.  Once
-  the new system is connected we'll be able to grab update pings every day instead
-  of just every week with no troubles.
-

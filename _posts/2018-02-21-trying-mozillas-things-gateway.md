@@ -20,7 +20,7 @@ This original Raspberry Pi is a single core 700mhz CPU, so I'm planning on
 running it headless and doing everything remotely over SSH to save on GUI
 resources.
 
-<img style="border:1px solid #aaa;" src="{{ site.baseurl}}/public/img/2018.raspberry.pi.1.jpg" />
+<img style="border:1px solid #aaa;" src="{{ site.baseurl}}/assets/img/2018.raspberry.pi.1.jpg" />
 
 Firstly, since I hadn't plugged this in forever, I booted it up, uninstalled
 OpenHAB and the RaZberry software and [upgraded Raspbian to the latest

@@ -1,7 +1,0 @@
-post_id: /2007/07/26/ten-tips-for-website-localization
-name: Karellen
-date: '2007-07-26 10:06:41 -0700'
-comment: "\"With the creation of UTF-8, characters from all over the world are assigned
-  numbers between 0 and 65,535.\"\r\n\r\nActually, UTF-8 can hold not just the BMP,
-  but all unicode characters from 0x00 to 0x10FFFF, or numbers between 0 and 1,114,111.\r\n\r\nUCS-2
-  is the encoding limited to the first 65535 chars."

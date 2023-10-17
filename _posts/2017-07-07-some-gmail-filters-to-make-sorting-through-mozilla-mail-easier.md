@@ -15,7 +15,7 @@ Google's new Inbox will make this irrelevant, but in the mean time:
 
 I have some labels set up in Gmail:
 
-<img src="/blog/public/img/2017-email-list.png" title="Some labels in GMail" />
+<img src="{{ site.baseurl }}/assets/img/2017-email-list.png" title="Some labels in GMail" />
 
 And some filters:
 

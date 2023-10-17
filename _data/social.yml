@@ -1,0 +1,12 @@
+- title: Email
+  url: mailto:clouserw@micropipes.com
+  icon: fas fa-envelope
+- title: Mastadon
+  url: https://mozilla.social/@clouserw
+  icon: fa fa-comment
+- title: Twitter
+  url: https://twitter.com/clouserw
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/clouserw
+  icon: fab fa-github

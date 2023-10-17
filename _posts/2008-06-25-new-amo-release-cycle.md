@@ -15,7 +15,7 @@ that we're never too far away from bug fixes and new features.  The short turn
 around cycle also means there aren't dramatic changes which lead to confusion
 and panic (I'm looking at you <a
 href="http://forums.mozillazine.org/">mozillaZine</a> ;) <img
-src="/blog/public/img/heart.gif" alt="<3 Heart" />).</p>
+src="{{ site.baseurl}}/assets/img/heart.gif" alt="<3 Heart" />).</p>
 
 <p>In an effort to keep the community informed I've also posted to <a
 href="http://blog.mozilla.com/webdev/">the Webdev blog</a> when each release is

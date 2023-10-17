@@ -1,9 +1,0 @@
-post_id: /2009/02/23/how-addonsmozillaorg-defends-against-xss-attacks
-name: Bryan Migliorisi
-date: '2009-03-18 09:28:54 -0700'
-comment: "Check out HTML purifier @ http://urbangiraffe.com/plugins/html-purified/\r\n\r\nIt
-  is a php solution that uses whitelists, is recursive, and checks attributes as
-  well as tags.  I have never used HTML purifier, but I recently wrote a Java class
-  for doing this exact thing for our web application and it has passed every test
-  I've thrown at it thus far.  It seems to be a pretty good solution."
-

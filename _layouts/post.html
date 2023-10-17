@@ -2,49 +2,74 @@
 layout: default
 ---
 
-<div class="post">
+<article class="post">
+  {% if page.categories.size > 0 %}
+    <div class="post-meta">
+      <ul class="post-categories">
+        {%- for category in page.categories -%}
+          <li>
+            {% assign slugified_category = category | slugify %}
+            {%- if site.categories_path -%}
+              <a class="post-category" href="{{ site.categories_path | relative_url }}#{{ slugified_category }}">{{ category }}</a>
+            {%- else -%}
+              <span class="post-category">{{ category }}</span>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ page.date | date_to_string }}
+    </time>
+    {%- if page.last_modified_at -%}
+      <span> ~ </span>
+      {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+      <time datetime="{{ mdate }}" itemprop="dateModified">
+        {{ mdate | date_to_string }}
+      </time>
+    {%- endif -%}
+    {%- if page.author -%}
+      <span> • </span>
+      {% for author in page.author %}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          {{ author }}
+        </span>
+        {%- if forloop.last == false %}, {% endif -%}
+      {% endfor %}
+    {%- endif -%}
+  </div>
+
   {{ content }}
-</div>
-<div id="comments">
-    {% case page.comment_count %}
-        {% when 0 %}
-        {% when 1 %}
-            <h3>1 Comment</h3>
-        {% else %}
-            <h3>{{page.comment_count}} Comments</h3>
-    {% endcase %}
-    {% for c in page.comments %}
-        <div class="comment {% cycle 'odd', 'even' %}">
-          <blockquote>{{ c.comment | newline_to_br }}
-              <br />-- <cite>{{ c.name }}, {{ c.date | date_to_string }}</cite>
-          </blockquote>
-        </div>
-    {% endfor %}
-        <h3>Post a comment</h3>
-        <p style="font-style: italic">
-                All comments are held for moderation; basic HTML formatting accepted.
-        </p>
-        <form id="commentform" method="POST" action="http://micropipes.com/jekyll-static-comments/commentsubmit.php">
-            <input type="hidden" name="post_id" value="{{page.id}}" />
-            <input type="text" name="tuber" value="" class="potato-captcha" />
-            <input type="text" name="sprout" id="sprout" value="" class="potato-captcha" />
-            <input type="hidden" name="return_url" value="{{page.url}}" />
-            <table>
-                <tr>
-                    <th>Name:</th>
-                    <td><input type="text" size="25" name="name" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><textarea style="width:100%; height:10em;" name="comment"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:right"><input type="submit" name="submit" value="Submit Comment" /></td>
-                </tr>
-            </table>
-        </form>
-        <script type="text/javascript">
-            document.getElementById('sprout').value = 'potato';
-        </script>
-</div>
+
+  {% if page.tags.size > 0 %}
+    <div class="post-meta">
+      <i class="post-tags-icon fas fa-tag"></i>
+      <ul class="post-tags">
+        {%- for tag in page.tags -%}
+          <li>
+            {% assign slugified_tag = tag | slugify %}
+            {%- if site.tags_path -%}
+              <a class="post-tag" href="{{ site.tags_path | relative_url }}#{{ slugified_tag }}">{{ slugified_tag }}</a>
+            {%- else -%}
+              <span class="post-tag">{{ slugified_tag }}</span>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
+
+    <div class="pure-g" style="justify-content: center;">
+      <div class="pure-u-1" style="width:auto; color: rgb(134, 142, 150); font-size: 80%;">
+      This is a static site.  If you have any comments please get in touch in <a href="https://mozilla.social/@clouserw">the fediverse</a> or <a href="mailto:{{ site.author.email }}">email</a>.
+      </div>
+    </div>
+  {% if jekyll.environment == "production" and site.disqus and page.comments != false %}
+    {% include disqus.html %}
+  {% endif %}
+
+</article>
+

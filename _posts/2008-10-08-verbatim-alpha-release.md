@@ -3,6 +3,7 @@ layout: post
 title: Verbatim Alpha Release
 tags:
 - Mozilla
+- software
 ---
 <p>Last week I connected Verbatim to the addons.mozilla.org <abbr title="Subversion">SVN</abbr> repository and with great help from #verbatim on <abbr title="Internet Relay Chat">IRC</abbr> the blocker bugs have been ironed out.  Special thanks to Rubén Martín (Nukeador) for making the <a href="http://viewvc.svn.mozilla.org/vc/addons/trunk/site/app/locale/es_ES/LC_MESSAGES/messages.po?r1=18049&r2=18488">maiden commit</a>.</p>
 <p>The server is a bit more unstable than I'd like[1] but it's usable.  If you'd like to give it a shot to localize the latest <abbr title="addons.mozilla.org">AMO</abbr> changes follow these steps:</p>

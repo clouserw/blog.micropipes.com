@@ -1,9 +1,0 @@
-post_id: /2009/03/02/differentiate-bugzilla-emails
-name: Clint Talbert
-date: '2009-03-03 10:08'
-comment: When I attempted to use gmail as a view into my bugmail (leaving Thunderbird
-  2.x behind) the first thing I did was try to replicate my intricate filter system
-  that is based on the custom headers in bugzilla.  And since Gmail doesn't filter
-  on custom headers, I filed an issue with them.  Nothing to my knowledge ever came
-  of it.  Please spam them with more bugs until they fix it. :-)
-

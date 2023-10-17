@@ -1,8 +1,0 @@
-post_id: /2010/03/08/maintaining-localization-between-python-and-php-its-not-fun
-name: Paul Stone
-date: '2010-03-09 04:50:15 -0800'
-comment: "I remember reading somewhere that you'd written some Django middleware
-  that allowed you to access PHP sessions from Django. \r\n\r\nI need to do something
-  similar to this for a project I'm working on at the moment. Is this code available
-  anywhere?"
-

@@ -1,8 +1,0 @@
-post_id: /2009/09/01/using-substitution-strings-in-po-files
-name: Alexander Limi
-date: '2009-09-02 15:29:56 -0700'
-comment: "Interesting, we independently came up with the same solution back in 2002-3
-  for <a href=\"http://plone.org\" rel=\"nofollow\">Plone</a>, and we are moving
-  away from it now too. \r\n\r\nThanks for blogging about the scripts and advice
-  — I'm sure it'll come in handy for our i18n people. :)"
-

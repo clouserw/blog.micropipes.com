@@ -1,6 +1,0 @@
-post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
-name: Wil Clouser
-date: '2012-01-16 12:06:10 -0800'
-comment: SQLite is an option.  I wanted the capability of copying a directory and
-  getting all the checksums under it automatically.
-

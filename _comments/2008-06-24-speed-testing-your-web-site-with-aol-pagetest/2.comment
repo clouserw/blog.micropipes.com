@@ -1,9 +1,0 @@
-post_id: /2008/06/24/speed-testing-your-web-site-with-aol-pagetest
-name: zuborg
-date: '2008-09-11 10:09:04 -0700'
-comment: "I would also recommend this online free tool: http://Site-Perf.com/\r\n\r\nIt
-  measure loading speed of page and it's requisites (images/js/css) like browsers
-  do and shows nice detailed chart - so you can easily spot bottlenecks.\r\n\r\nAlso
-  very useful thing is that this tool is able to verify network quality of your
-  server (packet loss level and ping delays)."
-

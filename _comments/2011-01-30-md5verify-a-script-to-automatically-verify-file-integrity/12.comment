@@ -1,6 +1,0 @@
-post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
-name: Wil Clouser
-date: '2012-03-06 15:12:21 -0800'
-comment: I don't think os.walk has changed in a while and 2.6.6. is pretty new.  I
-  run the script on 2.6.5 for what it's worth.
-

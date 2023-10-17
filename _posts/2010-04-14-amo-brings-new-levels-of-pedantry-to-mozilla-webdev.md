@@ -31,7 +31,7 @@ a good compromise:  actual code is limited to 80 characters, templates can be
 more but should be a "reasonable" length.  I took a screenshot of my actual
 workspace one day as I was digging into some code.
 
-<a href="/blog/public/img/code_layout.png"><img src="/blog/public/img/code_layout_small.png" title="IDE Screenshot" /></a>
+<a href="{{ site.baseurl }}/assets/img/code_layout.png"><img src="{{ site.baseurl }}/assets/img/code_layout_small.png" title="IDE Screenshot" /></a>
 <caption>Click to enlarge</caption>
 
 What do you notice about style?  Aside from the Django code in the small window

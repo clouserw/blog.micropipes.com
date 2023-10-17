@@ -98,7 +98,7 @@ Some people report having to run `unity` again to get the change to appear, but
 it showed up for me.  Now left-clicking runs Nightly and right-clicking opens a
 menu asking me which profile I want to use.
 
-<img src="/blog/public/img/2016-nightly-on-unity.png" title="Screenshot of the right-click menu." />
+<img src="{{ site.baseurl }}/assets/img/2016-nightly-on-unity.png" title="Screenshot of the right-click menu." />
 
 Modifying the Firefox Launcher
 ------------------------------

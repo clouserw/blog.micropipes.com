@@ -1,9 +1,0 @@
-post_id: /2009/02/23/how-addonsmozillaorg-defends-against-xss-attacks
-name: AD7six
-date: '2009-03-12 01:54:29 -0700'
-comment: "Hi Wil,\r\n\r\nInteresting stuff.\r\n\r\nWould it be easier/simpler/the
-  same (or is there an additional advantage?) to drop the iconv call and add this
-  to the preg_replace\r\n\r\n\"/\\x00-\\x1f/\" =&gt; ''\r\n( OR \"/\\x{0000}-\\x{002f}/\"
-  =&gt; '' )\r\n\r\nI ask primarily because this is what I do, and want to know
-  if I'm missing out/opening things up ( :) ).\r\n\r\nCheers,\r\n\r\nAndy"
-

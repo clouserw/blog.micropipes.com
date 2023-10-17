@@ -6,7 +6,7 @@ tags:
 ---
 <p>These are our current options for submitting forms in Firefox 3:<br />
 
-<img src="/blog/public/img/firefox_security_options.png" alt="Firefox security
+<img src="{{ site.baseurl }}/assets/img/firefox_security_options.png" alt="Firefox security
 options dialog" /></p>
 
 <p>I don't know anyone that has the "I submit information that's not encrypted"

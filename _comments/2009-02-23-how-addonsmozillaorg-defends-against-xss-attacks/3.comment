@@ -1,6 +1,0 @@
-post_id: /2009/02/23/how-addonsmozillaorg-defends-against-xss-attacks
-name: Fernando Hartmann
-date: '2009-03-03 07:25:49 -0800'
-comment: Good post, I will suggest you, to transform this code in a separated library/project,
-  so all of us can use your skills in our projects.
-

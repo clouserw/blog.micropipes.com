@@ -1,8 +1,0 @@
-post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
-name: Wil Clouser
-date: '2012-01-15 17:49:48 -0800'
-comment: "Thanks Adam, I'll check out your changes.  I'd be wary of running the
-  script on a dying hard drive, it's pretty intensive.  Sometimes I'm wary of running
-  it on my healthy hard drives. :)\r\n\r\nI'll put a BSD license file in the root
-  which is GPL compatible."
-

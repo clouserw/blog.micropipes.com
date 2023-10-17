@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Threadbubble on AMO
+tags:
+- software
 ---
 I submitted Threadbubble to [AMO][1] tonight.  I wanted to work out the bugs and
 get it in a stable state before I put it on there and I think it's reached that

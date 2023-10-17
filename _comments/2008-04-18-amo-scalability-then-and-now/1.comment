@@ -1,9 +1,0 @@
-post_id: /2008/04/18/amo-scalability-then-and-now
-name: Wil Clouser
-date: '2008-04-18 15:14:34 -0700'
-comment: "<blockquote>Just curious, how is this charted against the usage growth
-  of AMO?</blockquote>\r\n\r\nWe started using urchin on AMO about this time last
-  year so I don't have numbers from before that without time consuming log crunching.
-  \ I can tell you we're averaging 125M hits per day right now, and a year ago it
-  was 50M."
-

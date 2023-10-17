@@ -3,6 +3,7 @@ layout: post
 title: 10000 commits and going strong
 tags:
 - Mozilla
+- software
 ---
 [Mozilla's SVN repository][1] was started on September 2nd, 2006 and just hit
 10000 commits.  That's an average of over 19 commits a day for 520 days

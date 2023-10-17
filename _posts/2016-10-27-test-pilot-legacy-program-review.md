@@ -28,7 +28,7 @@ I'll spare you the pain of writing the add-on (most of the trouble was that the
 legacy add-on was so old you had to restart Firefox to uninstall it which really
 broke up the flow).  On August 24th, we [pushed the update to the old program][2].
 
-<img src="/blog/public/img/2016-testpilot-adu.png" title="Graph of daily usage" />
+<img src="{{ site.baseurl }}/assets/img/2016-testpilot-adu.png" title="Graph of daily usage" />
 
 In the daily usage graph, you can see we successfully uninstalled ourselves from
 several hundred thousand profiles, but we still have a long tail that doesn't
@@ -49,7 +49,7 @@ for these folks right now, unfortunately.
 Let's talk about the overall goal though - how many people joined the new
 program as a result of the new tab?
 
-<img src="/blog/public/img/2016-testpilot-conversions.png" title="Graph of conversions" />
+<img src="{{ site.baseurl }}/assets/img/2016-testpilot-conversions.png" title="Graph of conversions" />
 
 As of the end of Q3, we had just over 26k conversions making for a *3.6%
 conversion rate*.  Quite close to what was suggested in the original meeting by

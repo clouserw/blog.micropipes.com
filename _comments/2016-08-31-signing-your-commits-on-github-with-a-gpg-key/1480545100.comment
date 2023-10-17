@@ -1,9 +1,0 @@
-post_id: /2016/08/31/signing-your-commits-on-github-with-a-gpg-key
-date: 2016-11-30 14:31
-name: 'Wil Clouser'
-comment: 'And a follow up if you don''t want to type your password all the time,
-put the following in `~/.gnupg/gpg-agent.conf`:
-<blockquote>
-  default-cache-ttl       3942000<br />
-  max-cache-ttl           3942000
-</blockquote>'

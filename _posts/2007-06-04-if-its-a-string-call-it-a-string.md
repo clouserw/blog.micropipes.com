@@ -3,6 +3,7 @@ layout: post
 title: If it's a string, call it a string
 tags:
 - Mozilla
+- software
 ---
 <p>This is probably well documented, but it's a good reminder anyway.  If you've got a column in MySQL that is textual (like a varchar), you need to make sure MySQL sees the data going into it as a string.  Here's an example I stumbled across today when I left out some quotation marks - `averagerating` is a varchar(255):</p>
 <div class="code">

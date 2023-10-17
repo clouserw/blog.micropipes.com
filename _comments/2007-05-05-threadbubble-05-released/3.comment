@@ -1,8 +1,0 @@
-post_id: /2007/05/05/threadbubble-05-released
-name: Wil Clouser
-date: '2007-12-11 12:31'
-comment: "Hey Jesse,\r\n\r\nThis extension builds off the threads in 2.0.0.9.  When
-  a new message comes in to Thunderbird it's just added to the conversation.  If
-  you have a lot of mail in your inbox you might not notice it, especially if the
-  conversation is old.  This extension will put the conversation with the new mail
-  at the top of your inbox so it's easy to notice the new message."

@@ -9,13 +9,13 @@ I work with some cool cats who are on the cutting edge of hip new technologies
 like emojis.  OS X shows the emojis correctly but if I'm using IRC over SSH
 from Linux all I see are missing characters:
 
-<img src="/blog/public/img/2016-noemoji.png" title="Emojis don't show up for me in IRC." />
+<img src="{{ site.baseurl }}/assets/img/2016-noemoji.png" title="Emojis don't show up for me in IRC." />
 
 Are they ready to push the site?  I always just assume so, but before that comes
 back to bite me I decided to write a quick script to replace emojis with their
 text aliases:
 
-<img src="/blog/public/img/2016-emoji2alias.png" title="Emojis are replaced with aliases." />
+<img src="{{ site.baseurl }}/assets/img/2016-emoji2alias.png" title="Emojis are replaced with aliases." />
 
 On the left is their view, and on the right is my client that is still stuck in
 two-thousand-late.

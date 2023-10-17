@@ -1,6 +1,0 @@
-post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
-name: Thomas
-date: '2013-10-14 07:34:06 -0700'
-comment: Yeah, the script does not work on Debian. It cannot recurse through folders.
-  However it works on a flat dir with only files in it.
-

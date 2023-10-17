@@ -1,8 +1,0 @@
-post_id: /2011/01/30/md5verify-a-script-to-automatically-verify-file-integrity
-name: Wil Clouser
-date: '2011-02-01 16:08:54 -0800'
-comment: "Yeah, that was the idea.  \r\n\r\nEvery time I rebuild a computer I look
-  at ZFS and it always seems like the stable kernel space version is right around
-  the corner (or so the mailing lists would lead me to believe).  One of these days
-  I'll stop believing it and just install it with fuse."
-

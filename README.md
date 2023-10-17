@@ -1,3 +1,3 @@
 Just the content for my blog
 
-Theme is based on [Hyde](https://github.com/poole/hyde) and uses [Jekyll](http://jekyllrb.com)
+Theme is based on [Hydure](https://github.com/zivong/jekyll-theme-hydure) and uses [Jekyll](http://jekyllrb.com)

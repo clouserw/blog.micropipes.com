@@ -1,8 +1,0 @@
-post_id: /2009/03/02/some-considerations-when-adding-tags-to-amo
-name: AndyEd
-date: '2009-03-03 13:18:45 -0800'
-comment: I'm a big advocate of pruning the tag space as it gets large with essentially
-  "mark as duplicate".  This can either rewrite the original tag or allow the original
-  to point to the master version of the tag.  This would solve your problem around
-  localized versions as well.
-

@@ -1,7 +1,0 @@
-post_id: /2008/04/23/caching-is-easy-expiration-is-hard
-name: shaver
-date: '2008-04-23 19:18:15 -0700'
-comment: Yeah, search sucks because you need to invalidate basically every search
-  that hit on either the old or new version of the data.  When Laura reinvents search,
-  I'm sure she'll find a good way to solve that. :)
-

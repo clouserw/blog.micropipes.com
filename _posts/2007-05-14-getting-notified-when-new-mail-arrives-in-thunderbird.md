@@ -3,6 +3,7 @@ layout: post
 title: Getting notified when new mail arrives in Thunderbird
 tags:
 - Mozilla
+- software
 ---
 
 When writing an extension for Thunderbird, it's a common goal to be able to

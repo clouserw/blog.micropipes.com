@@ -1,8 +1,0 @@
-post_id: /2010/03/08/maintaining-localization-between-python-and-php-its-not-fun
-name: Rasizu
-date: '2014-03-12 04:43:02 -0700'
-comment: 'I have been working with this  localization tool: https://poeditor.com
-  and it really does a great job. It support a large number of translators on the
-  same project, working on different languages. There are also plenty of features
-  that ease the work. It has API and github integration also.'
-

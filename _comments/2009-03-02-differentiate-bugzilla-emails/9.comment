@@ -1,9 +1,0 @@
-post_id: /2009/03/02/differentiate-bugzilla-emails
-name: jcollado
-date: '2014-01-25 18:08'
-comment: "Being able to filter messages by custom header, such as X-Bugzilla-*,
-  in my Gmail account has been a painful for me for quite a while. That's why I've
-  decided to develop a Gmail application that will filter your e-mail as your desktop
-  client would do:\r\nhttp://www.filtermygmail.com/\r\n\r\nAny feedback about this
-  idea would be more than welcome."
-

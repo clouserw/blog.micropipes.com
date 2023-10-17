@@ -22,7 +22,7 @@ other Firefox OS devices. This Goodwill Update would make it easier for people
 to get new features and important security fixes without having to rely on
 internet connectivity.
 
-[![a concept drawing](/blog/public/img/2014-goodwill-small.jpg)][1]
+[![a concept drawing]({{ site.baseurl }}/assets/img/2014-goodwill-small.jpg)][1]
 
 Goodwill Update could either run in the background (assuming there is disk space
 and battery life) or could be more user-facing presenting people with

@@ -1,7 +1,0 @@
-post_id: /2011/02/10/status-watch-an-add-on-for-noticing-http-error-codes
-name: Fred
-date: '2011-02-11 15:50:49 -0800'
-comment: "Very nice. Good job!\r\n\r\nOne thing you might want to filter out is
-  401 responses (that are thrown by pages that require authentication). Since a)
-  this is most likely intentional and b) the user will be greeted with a popup anyway."
-

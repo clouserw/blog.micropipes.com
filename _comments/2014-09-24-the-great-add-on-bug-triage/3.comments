@@ -1,7 +1,0 @@
-post_id: /2014/09/24/the-great-add-on-bug-triage
-name: 'Jesse Ruderman'
-date: 2014-12-16 01:24
-comment: 'Closing these bugs was a terrible thing to do. It makes things unclear
-for people filing new bugs (is this a dup?) and for volunteers looking for bugs
-    to fix. Please reopen them and use a whiteboard marker to indicate their low
-    priority instead.'

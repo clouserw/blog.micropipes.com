@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Automating "Thinking of you"
+tags:
+- software
 ---
 <p>I had an idea a few weeks ago.  I've got a bunch of great photos on my computer that no one ever sees unless we meet in person.  Sure, we've got <a href="http://www.flickr.com/">flickr</a> and social networking sites, but I'm talking about an old photo that someone only saw once in passing, or a favorite shot from summer while you're huddled over your heater wondering when the sun is coming back.</p>
 <p>I can look at them any time, and there are a few on flickr that other people can look at, but what about people that aren't tech savvy or are really busy and get caught up in the daily grind?</p>

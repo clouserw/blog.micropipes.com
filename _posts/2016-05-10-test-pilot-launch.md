@@ -5,7 +5,7 @@ tags:
 - Mozilla
 ---
 
-<img src="/blog/public/img/2016-copter.png" title="Test Pilot 'copter" />
+<img src="{{ site.baseurl }}/assets/img/2016-copter.png" title="Test Pilot 'copter" />
 
 [Check out Test Pilot][1] or read the [official announcement][2].
 
