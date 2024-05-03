@@ -41,6 +41,7 @@ remote_theme: hydecorp/hydejack
 cover: /assets/img/cover-1.jpg
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 permalink: pretty
 
