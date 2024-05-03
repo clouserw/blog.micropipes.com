@@ -36,7 +36,7 @@ author:
   email: clouserw@micropipes.com
 
 # Build settings
-#theme: jekyll-theme-hydure
+theme: jekyll-theme-hydure
 remote_theme: hydecorp/hydejack
 cover: /assets/img/cover-1.jpg
 plugins:
