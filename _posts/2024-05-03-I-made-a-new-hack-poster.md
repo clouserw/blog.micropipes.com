@@ -5,7 +5,7 @@ cover: /assets/img/cover-mozilla.jpg
 tags:
 - art
 - laser
-- mozilla
+- Mozilla
 ---
 
 I was feeling nostalgic a couple months ago and built a hack poster out of
