@@ -1,16 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed/by_tag/Mozilla.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2024-05-10T20:22:10-07:00</updated><id>https://micropipes.com/feed/by_tag/Mozilla.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">I made a new hack poster</title><link href="https://micropipes.com/2024/05/03/I-made-a-new-hack-poster/" rel="alternate" type="text/html" title="I made a new hack poster" /><published>2024-05-03T00:00:00-07:00</published><updated>2024-05-03T00:00:00-07:00</updated><id>https://micropipes.com/2024/05/03/I-made-a-new-hack-poster</id><content type="html" xml:base="https://micropipes.com/2024/05/03/I-made-a-new-hack-poster/"><![CDATA[<p>I was feeling nostalgic a couple months ago and built a hack poster out of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://192.168.10.201:4000/feed/by_tag/Mozilla.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.10.201:4000/" rel="alternate" type="text/html" /><updated>2024-05-19T13:55:29-07:00</updated><id>http://192.168.10.201:4000/feed/by_tag/Mozilla.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Retiring BrowserID on Mozilla Accounts</title><link href="http://192.168.10.201:4000/2024/05/19/retiring-browserid-on-mozilla-accounts/" rel="alternate" type="text/html" title="Retiring BrowserID on Mozilla Accounts" /><published>2024-05-19T00:00:00-07:00</published><updated>2024-05-19T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/05/19/retiring-browserid-on-mozilla-accounts</id><content type="html" xml:base="http://192.168.10.201:4000/2024/05/19/retiring-browserid-on-mozilla-accounts/"><![CDATA[<p>The <abbr title="too long; didn't read">tl;dr</abbr> here is that Mozilla
+Accounts is turning off SyncStorage BrowserID support and it probably doesn’t
+affect you at all.</p>
+
+<h2 id="a-little-history">A little history</h2>
+
+<p>In 2011, when Mozilla Accounts (called “Firefox Accounts” back then) was first
+built it used BrowserID identity certificates in its authentication model.  The
+BrowserID protocol never took off and Mozilla’s work on it ended in 2016.
+However, the sync service in Firefox continued to use BrowserID even as OAuth
+support was added to Mozilla Accounts as an alternative for all other relying
+parties.</p>
+
+<p>Over time, we recognized BrowserID was becoming a maintenance liability.  As a
+non-standard protocol it created significant complexity in our codebase.
+Therefore, we decided to migrate the Firefox clients off of it in favor of
+OAuth.</p>
+
+<p>This was an enormous effort, and while much more could be written about this
+transition, the main takeaway is that Firefox Sync’s BrowserID support ended
+with Firefox 78, which shipped in June 2020 and reached its end of life in
+November 2021.</p>
+
+<h2 id="present-day">Present day</h2>
+
+<p>We’ve been waiting a long time for the usage of Firefox 78 to drop.</p>
+
+<p>Aside from being an <abbr title="Extended Support Release">ESR</abbr> version
+there are a couple of other reasons for its extra longevity:</p>
+
+<ul>
+  <li>It was the last version of the browser to support Flash</li>
+  <li>It was the last version of the browser to support OS X versions &lt; 10.12</li>
+</ul>
+
+<p>With Flash now largely obsolete on the web and traffic from older operating
+systems becoming rarer, we’ve decided that now is the appropriate time to turn
+off support for this legacy protocol.</p>
+
+<p>To avoid surprises and not leave anyone behind, we attempted to email anyone
+still using that endpoint earlier this year. We didn’t receive any feedback and
+we continued with the plan.</p>
+
+<h2 id="our-method">Our method</h2>
+
+<p>Our plan is simple:  BrowserID requests are the only traffic hitting our
+<code class="language-plaintext highlighter-rouge">/v1/certificate/sign</code> endpoint.  We’ll begin returning <code class="language-plaintext highlighter-rouge">HTTP 404</code> replies to a
+small percentage of traffic from that endpoint and monitor for any issues.
+Our testing showed no concerns but it’s challenging to be comprehensive with so
+many combinations of browser versions and operating systems.  Over the next few
+weeks we’ll continue to ramp up the percentage of 404s until we can remove the
+endpoint completely and let the traffic bounce off the front-end like any other
+404.</p>
+
+<h2 id="current-status">Current status</h2>
+
+<p>Surprise!  I’m a few weeks late with this post.  We started returning 404s on
+May 1 and are currently up to ~66% of traffic on that endpoint.  So far there
+haven’t been any unexpected complications.  We’ll continue to increase over the
+next few weeks and aim to have all the code removed this summer.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[The tl;dr here is that Mozilla Accounts is turning off SyncStorage BrowserID support and it probably doesn’t affect you at all.]]></summary></entry><entry><title type="html">I made a new hack poster</title><link href="http://192.168.10.201:4000/2024/05/03/I-made-a-new-hack-poster/" rel="alternate" type="text/html" title="I made a new hack poster" /><published>2024-05-03T00:00:00-07:00</published><updated>2024-05-03T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/05/03/I-made-a-new-hack-poster</id><content type="html" xml:base="http://192.168.10.201:4000/2024/05/03/I-made-a-new-hack-poster/"><![CDATA[<p>I was feeling nostalgic a couple months ago and built a hack poster out of
 plywood.  It’s mostly modeled after the original but I added the radio tower
 and changed the words.  “This technology could fall into the right hands” still
 makes me smile when I see it out in the world.</p>
 
 <p><img src="/assets/img/2024-art-hack-poster-1.jpg" alt="Poster hanging on the wall" />
 <img src="/assets/img/2024-art-hack-poster-2.jpg" alt="Close-up of radio tower" />
-<img src="/assets/img/2024-art-hack-poster-3.jpg" alt="Close-up of lettering" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><category term="Mozilla" /><summary type="html"><![CDATA[I was feeling nostalgic a couple months ago and built a hack poster out of plywood. It’s mostly modeled after the original but I added the radio tower and changed the words. “This technology could fall into the right hands” still makes me smile when I see it out in the world.]]></summary></entry><entry><title type="html">Retiring the Hera library</title><link href="https://micropipes.com/2023/04/06/retiring-hera/" rel="alternate" type="text/html" title="Retiring the Hera library" /><published>2023-04-06T00:00:00-07:00</published><updated>2023-04-06T00:00:00-07:00</updated><id>https://micropipes.com/2023/04/06/retiring-hera</id><content type="html" xml:base="https://micropipes.com/2023/04/06/retiring-hera/"><![CDATA[<p>Thirteen years ago I wrote <a href="/2010/03/23/libraries-to-connect-to-a-citrix-netscaler-or-zeus-traffic-manager/">a library called Hera</a> to make expiring content on Zeus Traffic Managers easier.  It was on PyPi
+<img src="/assets/img/2024-art-hack-poster-3.jpg" alt="Close-up of lettering" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><category term="Mozilla" /><summary type="html"><![CDATA[I was feeling nostalgic a couple months ago and built a hack poster out of plywood. It’s mostly modeled after the original but I added the radio tower and changed the words. “This technology could fall into the right hands” still makes me smile when I see it out in the world.]]></summary></entry><entry><title type="html">Retiring the Hera library</title><link href="http://192.168.10.201:4000/2023/04/06/retiring-hera/" rel="alternate" type="text/html" title="Retiring the Hera library" /><published>2023-04-06T00:00:00-07:00</published><updated>2023-04-06T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2023/04/06/retiring-hera</id><content type="html" xml:base="http://192.168.10.201:4000/2023/04/06/retiring-hera/"><![CDATA[<p>Thirteen years ago I wrote <a href="/2010/03/23/libraries-to-connect-to-a-citrix-netscaler-or-zeus-traffic-manager/">a library called Hera</a> to make expiring content on Zeus Traffic Managers easier.  It was on PyPi
 but never super popular and the maintainers of <a href="https://github.com/argoproj-labs/hera">Hera
 Workflow</a> got in touch with
 me about taking over the namespace.  I don’t use the library anymore so it was
 easy to give up the name.  If you do need the library you can find it <a href="https://github.com/clouserw/hera">on
-GitHub</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[Thirteen years ago I wrote a library called Hera to make expiring content on Zeus Traffic Managers easier. It was on PyPi but never super popular and the maintainers of Hera Workflow got in touch with me about taking over the namespace. I don’t use the library anymore so it was easy to give up the name. If you do need the library you can find it on GitHub.]]></summary></entry><entry><title type="html">Trying Mozilla’s Things Gateway</title><link href="https://micropipes.com/2018/02/21/trying-mozillas-things-gateway/" rel="alternate" type="text/html" title="Trying Mozilla’s Things Gateway" /><published>2018-02-21T00:00:00-08:00</published><updated>2018-02-21T00:00:00-08:00</updated><id>https://micropipes.com/2018/02/21/trying-mozillas-things-gateway</id><content type="html" xml:base="https://micropipes.com/2018/02/21/trying-mozillas-things-gateway/"><![CDATA[<p><em>Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but
+GitHub</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[Thirteen years ago I wrote a library called Hera to make expiring content on Zeus Traffic Managers easier. It was on PyPi but never super popular and the maintainers of Hera Workflow got in touch with me about taking over the namespace. I don’t use the library anymore so it was easy to give up the name. If you do need the library you can find it on GitHub.]]></summary></entry><entry><title type="html">Trying Mozilla’s Things Gateway</title><link href="http://192.168.10.201:4000/2018/02/21/trying-mozillas-things-gateway/" rel="alternate" type="text/html" title="Trying Mozilla’s Things Gateway" /><published>2018-02-21T00:00:00-08:00</published><updated>2018-02-21T00:00:00-08:00</updated><id>http://192.168.10.201:4000/2018/02/21/trying-mozillas-things-gateway</id><content type="html" xml:base="http://192.168.10.201:4000/2018/02/21/trying-mozillas-things-gateway/"><![CDATA[<p><em>Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but
 I’m posting anyway because it’s ok to fail. :)</em></p>
 
 <p>Last weekend I was inspired by <a href="http://www.twobraids.com/2018/02/lars-and-real-internet-of-things-part-1.html">Lars’s posts on IoT</a> to try <a href="https://iot.mozilla.org/gateway/">Mozilla’s Things
@@ -136,7 +195,7 @@ it, and that’s as far as I got.  So far:</p>
 <ul>
   <li>I have really high hopes for the Mozilla IoT Gateway</li>
   <li>A first generation Raspberry Pi might be too slow for these shenanigans 😞</li>
-</ul>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but I’m posting anyway because it’s ok to fail. :)]]></summary></entry><entry><title type="html">Some GMail filters to make sorting through Mozilla email easier</title><link href="https://micropipes.com/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier/" rel="alternate" type="text/html" title="Some GMail filters to make sorting through Mozilla email easier" /><published>2017-07-07T00:00:00-07:00</published><updated>2017-07-07T00:00:00-07:00</updated><id>https://micropipes.com/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier</id><content type="html" xml:base="https://micropipes.com/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier/"><![CDATA[<p>I use some GMail filters to help sort out the flood of emails I get from Mozilla
+</ul>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but I’m posting anyway because it’s ok to fail. :)]]></summary></entry><entry><title type="html">Some GMail filters to make sorting through Mozilla email easier</title><link href="http://192.168.10.201:4000/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier/" rel="alternate" type="text/html" title="Some GMail filters to make sorting through Mozilla email easier" /><published>2017-07-07T00:00:00-07:00</published><updated>2017-07-07T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier</id><content type="html" xml:base="http://192.168.10.201:4000/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier/"><![CDATA[<p>I use some GMail filters to help sort out the flood of emails I get from Mozilla
 projects.  They help me identify bugs and issues I’ve been asked for
 information on versus the mail I get from, for example, being an owner for our
 GitHub organization.</p>
@@ -180,7 +239,7 @@ Do this: Apply label "github/mine"
 
 <p>Then I just keep an eye on the labels where things are assigned to me and I can
 mostly stay up with requests.  This system isn’t perfect – how do you handle
-the mail? :)</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[I use some GMail filters to help sort out the flood of emails I get from Mozilla projects. They help me identify bugs and issues I’ve been asked for information on versus the mail I get from, for example, being an owner for our GitHub organization.]]></summary></entry><entry><title type="html">Test Pilot Legacy Program Final Review</title><link href="https://micropipes.com/2016/10/27/test-pilot-legacy-program-review/" rel="alternate" type="text/html" title="Test Pilot Legacy Program Final Review" /><published>2016-10-27T02:55:00-07:00</published><updated>2016-10-27T02:55:00-07:00</updated><id>https://micropipes.com/2016/10/27/test-pilot-legacy-program-review</id><content type="html" xml:base="https://micropipes.com/2016/10/27/test-pilot-legacy-program-review/"><![CDATA[<p>One of my Q3 goals was to migrate the Legacy Test Pilot users into our new
+the mail? :)</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[I use some GMail filters to help sort out the flood of emails I get from Mozilla projects. They help me identify bugs and issues I’ve been asked for information on versus the mail I get from, for example, being an owner for our GitHub organization.]]></summary></entry><entry><title type="html">Test Pilot Legacy Program Final Review</title><link href="http://192.168.10.201:4000/2016/10/27/test-pilot-legacy-program-review/" rel="alternate" type="text/html" title="Test Pilot Legacy Program Final Review" /><published>2016-10-27T02:55:00-07:00</published><updated>2016-10-27T02:55:00-07:00</updated><id>http://192.168.10.201:4000/2016/10/27/test-pilot-legacy-program-review</id><content type="html" xml:base="http://192.168.10.201:4000/2016/10/27/test-pilot-legacy-program-review/"><![CDATA[<p>One of my Q3 goals was to migrate the Legacy Test Pilot users into our new
 Test Pilot program (<a href="http://micropipes.com/blog/2016/01/27/meet-the-new-test-pilot/">some background on the two programs</a>).  The previous
 program was similar in that people could give feedback on experiments, but
 different enough that we didn’t feel comfortable simply moving the users to the
@@ -235,7 +294,7 @@ the people who do this stuff for a living, and quite short of my brash guess.</p
 
 <p>Since I’m writing this post a few weeks after the end of Q3, I can see that
 we’re continuing to get about 80 new users per day from the add-on prompt.
-Overall that makes for about 28.5k total conversions as of Oct 27th.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[One of my Q3 goals was to migrate the Legacy Test Pilot users into our new Test Pilot program (some background on the two programs). The previous program was similar in that people could give feedback on experiments, but different enough that we didn’t feel comfortable simply moving the users to the new program without some kind of notification and opting-in.]]></summary></entry><entry><title type="html">Test Pilot 2016 Q4 OKRs</title><link href="https://micropipes.com/2016/10/14/test-pilot-2016-q4-okrs/" rel="alternate" type="text/html" title="Test Pilot 2016 Q4 OKRs" /><published>2016-10-14T00:00:00-07:00</published><updated>2016-10-14T00:00:00-07:00</updated><id>https://micropipes.com/2016/10/14/test-pilot-2016-q4-okrs</id><content type="html" xml:base="https://micropipes.com/2016/10/14/test-pilot-2016-q4-okrs/"><![CDATA[<p>The Test Pilot <a href="https://wiki.mozilla.org/Test_Pilot/2016Q4">2016 Q4 OKRs are published</a>.  Primarily we’ll be focused on
+Overall that makes for about 28.5k total conversions as of Oct 27th.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[One of my Q3 goals was to migrate the Legacy Test Pilot users into our new Test Pilot program (some background on the two programs). The previous program was similar in that people could give feedback on experiments, but different enough that we didn’t feel comfortable simply moving the users to the new program without some kind of notification and opting-in.]]></summary></entry><entry><title type="html">Test Pilot 2016 Q4 OKRs</title><link href="http://192.168.10.201:4000/2016/10/14/test-pilot-2016-q4-okrs/" rel="alternate" type="text/html" title="Test Pilot 2016 Q4 OKRs" /><published>2016-10-14T00:00:00-07:00</published><updated>2016-10-14T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2016/10/14/test-pilot-2016-q4-okrs</id><content type="html" xml:base="http://192.168.10.201:4000/2016/10/14/test-pilot-2016-q4-okrs/"><![CDATA[<p>The Test Pilot <a href="https://wiki.mozilla.org/Test_Pilot/2016Q4">2016 Q4 OKRs are published</a>.  Primarily we’ll be focused on
 continued growth of users (our overall 2016 goal).  We deprioritized
 localization last quarter and over-rotated on publishing experiments by
 launching four when we were only aiming for one.  This quarter we’ll turn that
@@ -245,7 +304,7 @@ knob back down (we’re aiming for two new experiments) and get localization don
 important part of our entire process since it includes drawing conclusions and
 publishing our results.  This quarter we’ll graduate three experiments from Test
 Pilot, publish our findings so we can improve Firefox, and clear out space in
-Test Pilot for the next big ideas.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[The Test Pilot 2016 Q4 OKRs are published. Primarily we’ll be focused on continued growth of users (our overall 2016 goal). We deprioritized localization last quarter and over-rotated on publishing experiments by launching four when we were only aiming for one. This quarter we’ll turn that knob back down (we’re aiming for two new experiments) and get localization done.]]></summary></entry><entry><title type="html">testpilot.firefox.com just got a lot easier to work on</title><link href="https://micropipes.com/2016/10/11/test-pilot-just-got-easier-to-work-on/" rel="alternate" type="text/html" title="testpilot.firefox.com just got a lot easier to work on" /><published>2016-10-11T00:00:00-07:00</published><updated>2016-10-11T00:00:00-07:00</updated><id>https://micropipes.com/2016/10/11/test-pilot-just-got-easier-to-work-on</id><content type="html" xml:base="https://micropipes.com/2016/10/11/test-pilot-just-got-easier-to-work-on/"><![CDATA[<p>We originally built Test Pilot on top of Django and some JS libraries to fulfill
+Test Pilot for the next big ideas.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[The Test Pilot 2016 Q4 OKRs are published. Primarily we’ll be focused on continued growth of users (our overall 2016 goal). We deprioritized localization last quarter and over-rotated on publishing experiments by launching four when we were only aiming for one. This quarter we’ll turn that knob back down (we’re aiming for two new experiments) and get localization done.]]></summary></entry><entry><title type="html">testpilot.firefox.com just got a lot easier to work on</title><link href="http://192.168.10.201:4000/2016/10/11/test-pilot-just-got-easier-to-work-on/" rel="alternate" type="text/html" title="testpilot.firefox.com just got a lot easier to work on" /><published>2016-10-11T00:00:00-07:00</published><updated>2016-10-11T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2016/10/11/test-pilot-just-got-easier-to-work-on</id><content type="html" xml:base="http://192.168.10.201:4000/2016/10/11/test-pilot-just-got-easier-to-work-on/"><![CDATA[<p>We originally built Test Pilot on top of Django and some JS libraries to fulfill
 our product requirements as well as keep us flexible enough to evolve quickly
 since we were a brand new site.</p>
 
@@ -282,7 +341,7 @@ in the repository already.</p>
 </ul>
 
 <p>If you want to get involved with Test Pilot, come join us in <a href="irc://irc.mozilla.org/testpilot">#testpilot</a> (or
-<a href="http://chat.mibbit.com/?server=irc.mozilla.org&amp;channel=#testpilot">webchat</a>)!</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[We originally built Test Pilot on top of Django and some JS libraries to fulfill our product requirements as well as keep us flexible enough to evolve quickly since we were a brand new site.]]></summary></entry><entry><title type="html">Test Pilot Q3 OKR Review</title><link href="https://micropipes.com/2016/10/10/test-pilot-q3-okr-review/" rel="alternate" type="text/html" title="Test Pilot Q3 OKR Review" /><published>2016-10-10T00:00:00-07:00</published><updated>2016-10-10T00:00:00-07:00</updated><id>https://micropipes.com/2016/10/10/test-pilot-q3-okr-review</id><content type="html" xml:base="https://micropipes.com/2016/10/10/test-pilot-q3-okr-review/"><![CDATA[<p>For the third quarter of 2016 the Test Pilot team decided to try using the <abbr title="Objectives and Key Results">OKR</abbr> method (<a href="https://library.gv.com/how-google-sets-goals-okrs-a1f69b0b72c7">an OKR overview</a>) for
+<a href="http://chat.mibbit.com/?server=irc.mozilla.org&amp;channel=#testpilot">webchat</a>)!</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[We originally built Test Pilot on top of Django and some JS libraries to fulfill our product requirements as well as keep us flexible enough to evolve quickly since we were a brand new site.]]></summary></entry><entry><title type="html">Test Pilot Q3 OKR Review</title><link href="http://192.168.10.201:4000/2016/10/10/test-pilot-q3-okr-review/" rel="alternate" type="text/html" title="Test Pilot Q3 OKR Review" /><published>2016-10-10T00:00:00-07:00</published><updated>2016-10-10T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2016/10/10/test-pilot-q3-okr-review</id><content type="html" xml:base="http://192.168.10.201:4000/2016/10/10/test-pilot-q3-okr-review/"><![CDATA[<p>For the third quarter of 2016 the Test Pilot team decided to try using the <abbr title="Objectives and Key Results">OKR</abbr> method (<a href="https://library.gv.com/how-google-sets-goals-okrs-a1f69b0b72c7">an OKR overview</a>) for
 our goal setting.</p>
 
 <p>We all sat down in London and hashed out what direction we wanted to move in for
@@ -315,7 +374,7 @@ project.</p>
 </ul>
 
 <p>The feedback I’ve received about the OKR process we followed has been
-really positive and I expect to continue it in the future.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[For the third quarter of 2016 the Test Pilot team decided to try using the OKR method (an OKR overview) for our goal setting.]]></summary></entry><entry><title type="html">Test Pilot is launching three new experiments for Firefox</title><link href="https://micropipes.com/2016/09/28/test-pilot-is-launching-three-new-experiments-for-firefox/" rel="alternate" type="text/html" title="Test Pilot is launching three new experiments for Firefox" /><published>2016-09-28T00:00:00-07:00</published><updated>2016-09-28T00:00:00-07:00</updated><id>https://micropipes.com/2016/09/28/test-pilot-is-launching-three-new-experiments-for-firefox</id><content type="html" xml:base="https://micropipes.com/2016/09/28/test-pilot-is-launching-three-new-experiments-for-firefox/"><![CDATA[<p>The Test Pilot team has been heads-down for months working on three new
+really positive and I expect to continue it in the future.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[For the third quarter of 2016 the Test Pilot team decided to try using the OKR method (an OKR overview) for our goal setting.]]></summary></entry><entry><title type="html">Test Pilot is launching three new experiments for Firefox</title><link href="http://192.168.10.201:4000/2016/09/28/test-pilot-is-launching-three-new-experiments-for-firefox/" rel="alternate" type="text/html" title="Test Pilot is launching three new experiments for Firefox" /><published>2016-09-28T00:00:00-07:00</published><updated>2016-09-28T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2016/09/28/test-pilot-is-launching-three-new-experiments-for-firefox</id><content type="html" xml:base="http://192.168.10.201:4000/2016/09/28/test-pilot-is-launching-three-new-experiments-for-firefox/"><![CDATA[<p>The Test Pilot team has been heads-down for months working on three new
 experiments for Firefox and you can get them all today!</p>
 
 <h2 id="min-vid">Min Vid</h2>
@@ -354,113 +413,4 @@ this project to life.</p>
 <p>I called out the engineers who have been working to bring their creations to
 life, but of course there are so many teams who were critical to today’s
 launches.  A big thank you to the people who have been working tirelessly and
-congratulations on launching your products! :)</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[The Test Pilot team has been heads-down for months working on three new experiments for Firefox and you can get them all today!]]></summary></entry><entry><title type="html">Getting Firefox Nightly to stick to Ubuntu’s Unity Dock</title><link href="https://micropipes.com/2016/09/16/getting-firefox-nightly-to-stick-to-ubuntus-unity-dock/" rel="alternate" type="text/html" title="Getting Firefox Nightly to stick to Ubuntu’s Unity Dock" /><published>2016-09-16T00:00:00-07:00</published><updated>2016-09-16T00:00:00-07:00</updated><id>https://micropipes.com/2016/09/16/getting-firefox-nightly-to-stick-to-ubuntus-unity-dock</id><content type="html" xml:base="https://micropipes.com/2016/09/16/getting-firefox-nightly-to-stick-to-ubuntus-unity-dock/"><![CDATA[<p>I installed Ubuntu 16.04.1 this week and decided to try out Unity, the default
-window manager.  After I installed Nightly I assumed it would be simple to get
-the icon to stay in the dock, but Unity seemed confused about Nightly vs the
-built-in Firefox (I assume because the executables have the same name).</p>
-
-<p>It took some doing to get Nightly to stick to the Dock with its own icon.  I
-retraced my steps and wrote them down below.</p>
-
-<p>My goal was to be able to run a couple versions of Firefox with several
-profiles.  I thought the easiest way to accomplish that would be to add a new
-icon for each version+profile combination and a single left click on the
-icon would run the profile I want.</p>
-
-<p>After some research, I think the Unity way is to have a single icon for each
-version of Firefox, and then add <code class="language-plaintext highlighter-rouge">Actions</code> to it so you can right click on the
-icon and launch a specific profile from there.</p>
-
-<h2 id="installing-nightly">Installing Nightly</h2>
-<p>If you don’t have Nighly yet, <a href="https://nightly.mozilla.org/">download Nightly</a> (these steps should work fine with Aurora or Beta
-also).  Open a terminal:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir</span> /opt/firefox
-<span class="nv">$ </span><span class="nb">tar</span> <span class="nt">-xvjf</span> ~/Downloads/firefox-51.0a1.en-US.linux-x86_64.tar.bz2 /opt
-</code></pre></div></div>
-
-<p>You may need to <code class="language-plaintext highlighter-rouge">chown</code> some directories to get that in <code class="language-plaintext highlighter-rouge">/opt</code> which is fine.
-At the end of the day, make sure your regular user can write to the directory or
-else you won’t be able to install Nightly’s updates.</p>
-
-<h2 id="adding-the-icon-to-the-dock">Adding the icon to the dock</h2>
-
-<p>Then create a file in your home directory named <code class="language-plaintext highlighter-rouge">nightly.desktop</code> and paste this
-into it:</p>
-
-<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[Desktop Entry]</span>
-<span class="py">Version</span><span class="p">=</span><span class="s">1.0</span>
-<span class="py">Name</span><span class="p">=</span><span class="s">Nightly</span>
-<span class="py">Comment</span><span class="p">=</span><span class="s">Browse the World Wide Web</span>
-<span class="py">Icon</span><span class="p">=</span><span class="s">/opt/firefox/browser/chrome/icons/default/default128.png</span>
-<span class="py">Exec</span><span class="p">=</span><span class="s">/opt/firefox/firefox %u</span>
-<span class="py">Terminal</span><span class="p">=</span><span class="s">false</span>
-<span class="py">Type</span><span class="p">=</span><span class="s">Application</span>
-<span class="py">Categories</span><span class="p">=</span><span class="s">Network;WebBrowser;</span>
-<span class="py">Actions</span><span class="p">=</span><span class="s">Default;Mozilla;ProfileManager;</span>
-
-<span class="nn">[Desktop Action Default]</span>
-<span class="py">Name</span><span class="p">=</span><span class="s">Default Profile</span>
-<span class="py">Exec</span><span class="p">=</span><span class="s">/opt/firefox/firefox --no-remote -P minefield-default</span>
-
-<span class="nn">[Desktop Action Mozilla]</span>
-<span class="py">Name</span><span class="p">=</span><span class="s">Mozilla Profile</span>
-<span class="py">Exec</span><span class="p">=</span><span class="s">/opt/firefox/firefox --no-remote -P minefield-mozilla</span>
-
-<span class="nn">[Desktop Action ProfileManager]</span>
-<span class="py">Name</span><span class="p">=</span><span class="s">Profile Manager</span>
-<span class="py">Exec</span><span class="p">=</span><span class="s">/opt/firefox/firefox --no-remote --profile-manager</span>
-</code></pre></div></div>
-
-<p>Adjust anything that looks like it should change, the main callout being the
-<code class="language-plaintext highlighter-rouge">Exec</code> line should have the names of the profiles you want to use (in the above
-file mine are called <code class="language-plaintext highlighter-rouge">minefield-default</code> and <code class="language-plaintext highlighter-rouge">minefield-mozilla</code>).  If you have
-more profiles just make more copies of that section and name them appropriately.</p>
-
-<p>If you think you’ve got it, run this command:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>desktop-file-validate nightly.desktop
-</code></pre></div></div>
-
-<p>No output?  Great – it passed the validator.  Now install it:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>desktop-file-install <span class="nt">--dir</span><span class="o">=</span>.local/share/applications nightly.desktop
-</code></pre></div></div>
-
-<p>Two notes on this command:</p>
-
-<ol>
-  <li>If you leave off –dir it will write to <code class="language-plaintext highlighter-rouge">/usr/share/applications/</code> and
-affect all users of the computer.  You’ll probably need to <code class="language-plaintext highlighter-rouge">sudo</code> the
-command if you want that.</li>
-  <li>Something is weird with the parsing.  Originally I passed in
-<code class="language-plaintext highlighter-rouge">--dir=~/.local/...</code> and it literally made a directory named <code class="language-plaintext highlighter-rouge">~</code> in my home
-directory, so, if the menu isn’t updating, double check the file is getting
-copied to the right spot.</li>
-</ol>
-
-<p>Some people report having to run <code class="language-plaintext highlighter-rouge">unity</code> again to get the change to appear, but
-it showed up for me.  Now left-clicking runs Nightly and right-clicking opens a
-menu asking me which profile I want to use.</p>
-
-<p><img src="/assets/img/2016-nightly-on-unity.png" title="Screenshot of the right-click menu." /></p>
-
-<h2 id="modifying-the-firefox-launcher">Modifying the Firefox Launcher</h2>
-
-<p>I also wanted to launch profiles off the regular Firefox icon in the same way.</p>
-
-<p>The easiest way to do that is to copy the built-in one from
-<code class="language-plaintext highlighter-rouge">/usr/share/applications/firefox.desktop</code> and modify it to suit you.
-Conveniently, Unity will override a system-wide .desktop file if you have one
-with the same name in your local directory so installing it with the same
-commands as you did for Nightly will work fine.</p>
-
-<h2 id="postscript">Postscript</h2>
-
-<p>I should probably add a disclaimer that I’ve used Unity for all of two days and there
-may be a smoother way to do this.  I saw a couple of 3rd-party programs that
-will generate .desktop files but I didn’t want to install more things I’d rarely
-use.  Please leave a comment if I’m way off on these instructions! :)</p>
-
-<p>Updated 2017-11-27: I updated the icon path above.  Thanks to kus for the
-comment.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[I installed Ubuntu 16.04.1 this week and decided to try out Unity, the default window manager. After I installed Nightly I assumed it would be simple to get the icon to stay in the dock, but Unity seemed confused about Nightly vs the built-in Firefox (I assume because the executables have the same name).]]></summary></entry></feed>
+congratulations on launching your products! :)</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[The Test Pilot team has been heads-down for months working on three new experiments for Firefox and you can get them all today!]]></summary></entry></feed>

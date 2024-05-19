@@ -1,16 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2024-05-10T20:22:10-07:00</updated><id>https://micropipes.com/feed.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">OBEY PROPAGANDA ENGINEERING</title><link href="https://micropipes.com/2024/05/10/obey-propaganda-engineering/" rel="alternate" type="text/html" title="OBEY PROPAGANDA ENGINEERING" /><published>2024-05-10T00:00:00-07:00</published><updated>2024-05-10T00:00:00-07:00</updated><id>https://micropipes.com/2024/05/10/obey-propaganda-engineering</id><content type="html" xml:base="https://micropipes.com/2024/05/10/obey-propaganda-engineering/"><![CDATA[<p><img src="/assets/img/2024-art-obey-propaganda-1.jpg" alt="Sign hanging on the wall" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://192.168.10.201:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.10.201:4000/" rel="alternate" type="text/html" /><updated>2024-05-19T13:55:29-07:00</updated><id>http://192.168.10.201:4000/feed.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Retiring BrowserID on Mozilla Accounts</title><link href="http://192.168.10.201:4000/2024/05/19/retiring-browserid-on-mozilla-accounts/" rel="alternate" type="text/html" title="Retiring BrowserID on Mozilla Accounts" /><published>2024-05-19T00:00:00-07:00</published><updated>2024-05-19T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/05/19/retiring-browserid-on-mozilla-accounts</id><content type="html" xml:base="http://192.168.10.201:4000/2024/05/19/retiring-browserid-on-mozilla-accounts/"><![CDATA[<p>The <abbr title="too long; didn't read">tl;dr</abbr> here is that Mozilla
+Accounts is turning off SyncStorage BrowserID support and it probably doesn’t
+affect you at all.</p>
+
+<h2 id="a-little-history">A little history</h2>
+
+<p>In 2011, when Mozilla Accounts (called “Firefox Accounts” back then) was first
+built it used BrowserID identity certificates in its authentication model.  The
+BrowserID protocol never took off and Mozilla’s work on it ended in 2016.
+However, the sync service in Firefox continued to use BrowserID even as OAuth
+support was added to Mozilla Accounts as an alternative for all other relying
+parties.</p>
+
+<p>Over time, we recognized BrowserID was becoming a maintenance liability.  As a
+non-standard protocol it created significant complexity in our codebase.
+Therefore, we decided to migrate the Firefox clients off of it in favor of
+OAuth.</p>
+
+<p>This was an enormous effort, and while much more could be written about this
+transition, the main takeaway is that Firefox Sync’s BrowserID support ended
+with Firefox 78, which shipped in June 2020 and reached its end of life in
+November 2021.</p>
+
+<h2 id="present-day">Present day</h2>
+
+<p>We’ve been waiting a long time for the usage of Firefox 78 to drop.</p>
+
+<p>Aside from being an <abbr title="Extended Support Release">ESR</abbr> version
+there are a couple of other reasons for its extra longevity:</p>
+
+<ul>
+  <li>It was the last version of the browser to support Flash</li>
+  <li>It was the last version of the browser to support OS X versions &lt; 10.12</li>
+</ul>
+
+<p>With Flash now largely obsolete on the web and traffic from older operating
+systems becoming rarer, we’ve decided that now is the appropriate time to turn
+off support for this legacy protocol.</p>
+
+<p>To avoid surprises and not leave anyone behind, we attempted to email anyone
+still using that endpoint earlier this year. We didn’t receive any feedback and
+we continued with the plan.</p>
+
+<h2 id="our-method">Our method</h2>
+
+<p>Our plan is simple:  BrowserID requests are the only traffic hitting our
+<code class="language-plaintext highlighter-rouge">/v1/certificate/sign</code> endpoint.  We’ll begin returning <code class="language-plaintext highlighter-rouge">HTTP 404</code> replies to a
+small percentage of traffic from that endpoint and monitor for any issues.
+Our testing showed no concerns but it’s challenging to be comprehensive with so
+many combinations of browser versions and operating systems.  Over the next few
+weeks we’ll continue to ramp up the percentage of 404s until we can remove the
+endpoint completely and let the traffic bounce off the front-end like any other
+404.</p>
+
+<h2 id="current-status">Current status</h2>
+
+<p>Surprise!  I’m a few weeks late with this post.  We started returning 404s on
+May 1 and are currently up to ~66% of traffic on that endpoint.  So far there
+haven’t been any unexpected complications.  We’ll continue to increase over the
+next few weeks and aim to have all the code removed this summer.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[The tl;dr here is that Mozilla Accounts is turning off SyncStorage BrowserID support and it probably doesn’t affect you at all.]]></summary></entry><entry><title type="html">Mario and Link</title><link href="http://192.168.10.201:4000/2024/05/17/mario-and-link/" rel="alternate" type="text/html" title="Mario and Link" /><published>2024-05-17T00:00:00-07:00</published><updated>2024-05-17T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/05/17/mario-and-link</id><content type="html" xml:base="http://192.168.10.201:4000/2024/05/17/mario-and-link/"><![CDATA[<p><img src="/assets/img/2024-art-small-mario.jpg" alt="Mario hanging on the wall" /></p>
+
+<p>A small Mario for me and a couple of Links to give away to friends.  All about
+6” tall.</p>
+
+<p><img src="/assets/img/2024-art-small-link.jpg" alt="Two Links on a table" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">OBEY PROPAGANDA ENGINEERING</title><link href="http://192.168.10.201:4000/2024/05/10/obey-propaganda-engineering/" rel="alternate" type="text/html" title="OBEY PROPAGANDA ENGINEERING" /><published>2024-05-10T00:00:00-07:00</published><updated>2024-05-10T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/05/10/obey-propaganda-engineering</id><content type="html" xml:base="http://192.168.10.201:4000/2024/05/10/obey-propaganda-engineering/"><![CDATA[<p><img src="/assets/img/2024-art-obey-propaganda-1.jpg" alt="Sign hanging on the wall" /></p>
 
 <p>A sticker included in an order from <a href="https://obeygiant.com/">Obey Giant</a> turned
 into a wall hanging.  Approx 6”x19” because that was the biggest piece of plywood I had.</p>
 
-<p><img src="/assets/img/2024-art-obey-propaganda-2.jpg" alt="Sign being assembled" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">I made a new hack poster</title><link href="https://micropipes.com/2024/05/03/I-made-a-new-hack-poster/" rel="alternate" type="text/html" title="I made a new hack poster" /><published>2024-05-03T00:00:00-07:00</published><updated>2024-05-03T00:00:00-07:00</updated><id>https://micropipes.com/2024/05/03/I-made-a-new-hack-poster</id><content type="html" xml:base="https://micropipes.com/2024/05/03/I-made-a-new-hack-poster/"><![CDATA[<p>I was feeling nostalgic a couple months ago and built a hack poster out of
+<p><img src="/assets/img/2024-art-obey-propaganda-2.jpg" alt="Sign being assembled" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">I made a new hack poster</title><link href="http://192.168.10.201:4000/2024/05/03/I-made-a-new-hack-poster/" rel="alternate" type="text/html" title="I made a new hack poster" /><published>2024-05-03T00:00:00-07:00</published><updated>2024-05-03T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/05/03/I-made-a-new-hack-poster</id><content type="html" xml:base="http://192.168.10.201:4000/2024/05/03/I-made-a-new-hack-poster/"><![CDATA[<p>I was feeling nostalgic a couple months ago and built a hack poster out of
 plywood.  It’s mostly modeled after the original but I added the radio tower
 and changed the words.  “This technology could fall into the right hands” still
 makes me smile when I see it out in the world.</p>
 
 <p><img src="/assets/img/2024-art-hack-poster-1.jpg" alt="Poster hanging on the wall" />
 <img src="/assets/img/2024-art-hack-poster-2.jpg" alt="Close-up of radio tower" />
-<img src="/assets/img/2024-art-hack-poster-3.jpg" alt="Close-up of lettering" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><category term="Mozilla" /><summary type="html"><![CDATA[I was feeling nostalgic a couple months ago and built a hack poster out of plywood. It’s mostly modeled after the original but I added the radio tower and changed the words. “This technology could fall into the right hands” still makes me smile when I see it out in the world.]]></summary></entry><entry><title type="html">A crude case for the W8BH morse tutor</title><link href="https://micropipes.com/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor/" rel="alternate" type="text/html" title="A crude case for the W8BH morse tutor" /><published>2024-02-25T00:00:00-08:00</published><updated>2024-02-25T00:00:00-08:00</updated><id>https://micropipes.com/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor</id><content type="html" xml:base="https://micropipes.com/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor/"><![CDATA[<p>I looked everywhere for a case for <a href="http://w8bh.net">W8BH’s Morse Tutor project</a>[1].
+<img src="/assets/img/2024-art-hack-poster-3.jpg" alt="Close-up of lettering" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><category term="Mozilla" /><summary type="html"><![CDATA[I was feeling nostalgic a couple months ago and built a hack poster out of plywood. It’s mostly modeled after the original but I added the radio tower and changed the words. “This technology could fall into the right hands” still makes me smile when I see it out in the world.]]></summary></entry><entry><title type="html">A crude case for the W8BH morse tutor</title><link href="http://192.168.10.201:4000/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor/" rel="alternate" type="text/html" title="A crude case for the W8BH morse tutor" /><published>2024-02-25T00:00:00-08:00</published><updated>2024-02-25T00:00:00-08:00</updated><id>http://192.168.10.201:4000/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor</id><content type="html" xml:base="http://192.168.10.201:4000/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor/"><![CDATA[<p>I looked everywhere for a case for <a href="http://w8bh.net">W8BH’s Morse Tutor project</a>[1].
 The only one I found was a <a href="https://www.thingiverse.com/thing:4190589">3d printed one for the previous revision</a> with the smaller screen.</p>
 
 <p>I have the ESP32 version with the 3.2” screen and to protect it and make it
@@ -24,7 +88,7 @@ make one you’re welcome to <a href="/assets/img/2024-w8bh-case.svg">download t
 <p>[1] I can’t link to the project itself because it’s a series of PDFs but it’s
 listed under the arduino projects menu.</p>
 
-<p>Update March 2024: <a href="https://www.thingiverse.com/thing:5377530">Here is a 3D printed case which should fit</a></p>]]></content><author><name>Wil Clouser</name></author><category term="laser" /><category term="radio" /><category term="morse" /><summary type="html"><![CDATA[I looked everywhere for a case for W8BH’s Morse Tutor project[1]. The only one I found was a 3d printed one for the previous revision with the smaller screen.]]></summary></entry><entry><title type="html">Automatically transcribing digital radio</title><link href="https://micropipes.com/2024/02/07/automatically-transcribing-digital-radio/" rel="alternate" type="text/html" title="Automatically transcribing digital radio" /><published>2024-02-07T00:00:00-08:00</published><updated>2024-02-07T00:00:00-08:00</updated><id>https://micropipes.com/2024/02/07/automatically-transcribing-digital-radio</id><content type="html" xml:base="https://micropipes.com/2024/02/07/automatically-transcribing-digital-radio/"><![CDATA[<p>I’ve recently been using <a href="https://github.com/lwvmobile/dsd-fme">DSD FME</a> to
+<p>Update March 2024: <a href="https://www.thingiverse.com/thing:5377530">Here is a 3D printed case which should fit</a></p>]]></content><author><name>Wil Clouser</name></author><category term="laser" /><category term="radio" /><category term="morse" /><summary type="html"><![CDATA[I looked everywhere for a case for W8BH’s Morse Tutor project[1]. The only one I found was a 3d printed one for the previous revision with the smaller screen.]]></summary></entry><entry><title type="html">Automatically transcribing digital radio</title><link href="http://192.168.10.201:4000/2024/02/07/automatically-transcribing-digital-radio/" rel="alternate" type="text/html" title="Automatically transcribing digital radio" /><published>2024-02-07T00:00:00-08:00</published><updated>2024-02-07T00:00:00-08:00</updated><id>http://192.168.10.201:4000/2024/02/07/automatically-transcribing-digital-radio</id><content type="html" xml:base="http://192.168.10.201:4000/2024/02/07/automatically-transcribing-digital-radio/"><![CDATA[<p>I’ve recently been using <a href="https://github.com/lwvmobile/dsd-fme">DSD FME</a> to
 decode Silke Communication’s <a href="https://www.silkecom.com/fleetnet">FleetNet Network</a>
 radio traffic around me.  After some configuration effort it’s working well,
 but I realized one of the things I’ve really appreciated about the past decade
@@ -81,7 +145,7 @@ challenging data set.</p>
 of using Whisper to decode audio like this, even in real time.  I wrote this
 because all the examples seem too complicated for someone just looking at the
 library for the first time and it’s fun to start and finish a project in a
-couple of hours!</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="radio" /><summary type="html"><![CDATA[I’ve recently been using DSD FME to decode Silke Communication’s FleetNet Network radio traffic around me. After some configuration effort it’s working well, but I realized one of the things I’ve really appreciated about the past decade is the slow migration to asynchronous communications (email, messages, etc.) instead of voice calls or in-person meetings that interrupt whatever I’m doing. I don’t want to actually listen to the radio traffic, rather, I’d like to skim it, preferably visually, after-the-fact to see if anything interesting happened.]]></summary></entry><entry><title type="html">Setting up a Yaesu FTDX-3000 with FT8 on OS X</title><link href="https://micropipes.com/2023/07/10/setting-up-Yaesu-FTDX-3000-with-FT8-on-OS-X/" rel="alternate" type="text/html" title="Setting up a Yaesu FTDX-3000 with FT8 on OS X" /><published>2023-07-10T00:00:00-07:00</published><updated>2023-07-10T00:00:00-07:00</updated><id>https://micropipes.com/2023/07/10/setting-up-Yaesu-FTDX-3000-with-FT8-on-OS-X</id><content type="html" xml:base="https://micropipes.com/2023/07/10/setting-up-Yaesu-FTDX-3000-with-FT8-on-OS-X/"><![CDATA[<p>There are plenty of walkthroughs online about setting up FT8 on the DX-3000 with Windows but I didn’t find any for OS X.  So, here we are.  I’m using the USB interface.</p>
+couple of hours!</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="radio" /><summary type="html"><![CDATA[I’ve recently been using DSD FME to decode Silke Communication’s FleetNet Network radio traffic around me. After some configuration effort it’s working well, but I realized one of the things I’ve really appreciated about the past decade is the slow migration to asynchronous communications (email, messages, etc.) instead of voice calls or in-person meetings that interrupt whatever I’m doing. I don’t want to actually listen to the radio traffic, rather, I’d like to skim it, preferably visually, after-the-fact to see if anything interesting happened.]]></summary></entry><entry><title type="html">Setting up a Yaesu FTDX-3000 with FT8 on OS X</title><link href="http://192.168.10.201:4000/2023/07/10/setting-up-Yaesu-FTDX-3000-with-FT8-on-OS-X/" rel="alternate" type="text/html" title="Setting up a Yaesu FTDX-3000 with FT8 on OS X" /><published>2023-07-10T00:00:00-07:00</published><updated>2023-07-10T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2023/07/10/setting-up-Yaesu-FTDX-3000-with-FT8-on-OS-X</id><content type="html" xml:base="http://192.168.10.201:4000/2023/07/10/setting-up-Yaesu-FTDX-3000-with-FT8-on-OS-X/"><![CDATA[<p>There are plenty of walkthroughs online about setting up FT8 on the DX-3000 with Windows but I didn’t find any for OS X.  So, here we are.  I’m using the USB interface.</p>
 
 <p>Unfortunately you’ll need to install the <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads">CP210x USB to UART Bridge Virtual COM Port driver</a> manually.</p>
 
@@ -127,12 +191,12 @@ pressing <code class="language-plaintext highlighter-rouge">menu</code> on the r
 <p><img src="/assets/img/2023-wsjt-x-settings.png" alt="A screenshot of the radio tab of the WSJT-X settings window." /></p>
 
 <p>I have two serial ports provided by the radio, one regular and one “enhanced” -
-only the enhanced one works.</p>]]></content><author><name>Wil Clouser</name></author><category term="radio" /><category term="walkthrough" /><summary type="html"><![CDATA[There are plenty of walkthroughs online about setting up FT8 on the DX-3000 with Windows but I didn’t find any for OS X. So, here we are. I’m using the USB interface.]]></summary></entry><entry><title type="html">Retiring the Hera library</title><link href="https://micropipes.com/2023/04/06/retiring-hera/" rel="alternate" type="text/html" title="Retiring the Hera library" /><published>2023-04-06T00:00:00-07:00</published><updated>2023-04-06T00:00:00-07:00</updated><id>https://micropipes.com/2023/04/06/retiring-hera</id><content type="html" xml:base="https://micropipes.com/2023/04/06/retiring-hera/"><![CDATA[<p>Thirteen years ago I wrote <a href="/2010/03/23/libraries-to-connect-to-a-citrix-netscaler-or-zeus-traffic-manager/">a library called Hera</a> to make expiring content on Zeus Traffic Managers easier.  It was on PyPi
+only the enhanced one works.</p>]]></content><author><name>Wil Clouser</name></author><category term="radio" /><category term="walkthrough" /><summary type="html"><![CDATA[There are plenty of walkthroughs online about setting up FT8 on the DX-3000 with Windows but I didn’t find any for OS X. So, here we are. I’m using the USB interface.]]></summary></entry><entry><title type="html">Retiring the Hera library</title><link href="http://192.168.10.201:4000/2023/04/06/retiring-hera/" rel="alternate" type="text/html" title="Retiring the Hera library" /><published>2023-04-06T00:00:00-07:00</published><updated>2023-04-06T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2023/04/06/retiring-hera</id><content type="html" xml:base="http://192.168.10.201:4000/2023/04/06/retiring-hera/"><![CDATA[<p>Thirteen years ago I wrote <a href="/2010/03/23/libraries-to-connect-to-a-citrix-netscaler-or-zeus-traffic-manager/">a library called Hera</a> to make expiring content on Zeus Traffic Managers easier.  It was on PyPi
 but never super popular and the maintainers of <a href="https://github.com/argoproj-labs/hera">Hera
 Workflow</a> got in touch with
 me about taking over the namespace.  I don’t use the library anymore so it was
 easy to give up the name.  If you do need the library you can find it <a href="https://github.com/clouserw/hera">on
-GitHub</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[Thirteen years ago I wrote a library called Hera to make expiring content on Zeus Traffic Managers easier. It was on PyPi but never super popular and the maintainers of Hera Workflow got in touch with me about taking over the namespace. I don’t use the library anymore so it was easy to give up the name. If you do need the library you can find it on GitHub.]]></summary></entry><entry><title type="html">Starting a dashboard for openHAB data</title><link href="https://micropipes.com/2018/12/05/starting-a-dashboard-for-openhab-data/" rel="alternate" type="text/html" title="Starting a dashboard for openHAB data" /><published>2018-12-05T00:00:00-08:00</published><updated>2018-12-05T00:00:00-08:00</updated><id>https://micropipes.com/2018/12/05/starting-a-dashboard-for-openhab-data</id><content type="html" xml:base="https://micropipes.com/2018/12/05/starting-a-dashboard-for-openhab-data/"><![CDATA[<p>In this post I’ll set up the software needed to store data from <a href="https://www.openhab.org/">openHAB</a>
+GitHub</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[Thirteen years ago I wrote a library called Hera to make expiring content on Zeus Traffic Managers easier. It was on PyPi but never super popular and the maintainers of Hera Workflow got in touch with me about taking over the namespace. I don’t use the library anymore so it was easy to give up the name. If you do need the library you can find it on GitHub.]]></summary></entry><entry><title type="html">Starting a dashboard for openHAB data</title><link href="http://192.168.10.201:4000/2018/12/05/starting-a-dashboard-for-openhab-data/" rel="alternate" type="text/html" title="Starting a dashboard for openHAB data" /><published>2018-12-05T00:00:00-08:00</published><updated>2018-12-05T00:00:00-08:00</updated><id>http://192.168.10.201:4000/2018/12/05/starting-a-dashboard-for-openhab-data</id><content type="html" xml:base="http://192.168.10.201:4000/2018/12/05/starting-a-dashboard-for-openhab-data/"><![CDATA[<p>In this post I’ll set up the software needed to store data from <a href="https://www.openhab.org/">openHAB</a>
 and display it on a dashboard.  I’ll use a z-wave thermostat I have already set
 up on my network, and I’ll add Grafana and InfluxDB.</p>
 
@@ -300,7 +364,7 @@ with a custom query:</p>
 set it up.</p>
 
 <p>And that’s it.  Returning to the dashboard after 24 hours should show something
-like the graph at the top of this post.</p>]]></content><author><name>Wil Clouser</name></author><category term="automation" /><category term="walkthrough" /><summary type="html"><![CDATA[In this post I’ll set up the software needed to store data from openHAB and display it on a dashboard. I’ll use a z-wave thermostat I have already set up on my network, and I’ll add Grafana and InfluxDB.]]></summary></entry><entry><title type="html">Trying Mozilla’s Things Gateway</title><link href="https://micropipes.com/2018/02/21/trying-mozillas-things-gateway/" rel="alternate" type="text/html" title="Trying Mozilla’s Things Gateway" /><published>2018-02-21T00:00:00-08:00</published><updated>2018-02-21T00:00:00-08:00</updated><id>https://micropipes.com/2018/02/21/trying-mozillas-things-gateway</id><content type="html" xml:base="https://micropipes.com/2018/02/21/trying-mozillas-things-gateway/"><![CDATA[<p><em>Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but
+like the graph at the top of this post.</p>]]></content><author><name>Wil Clouser</name></author><category term="automation" /><category term="walkthrough" /><summary type="html"><![CDATA[In this post I’ll set up the software needed to store data from openHAB and display it on a dashboard. I’ll use a z-wave thermostat I have already set up on my network, and I’ll add Grafana and InfluxDB.]]></summary></entry><entry><title type="html">Trying Mozilla’s Things Gateway</title><link href="http://192.168.10.201:4000/2018/02/21/trying-mozillas-things-gateway/" rel="alternate" type="text/html" title="Trying Mozilla’s Things Gateway" /><published>2018-02-21T00:00:00-08:00</published><updated>2018-02-21T00:00:00-08:00</updated><id>http://192.168.10.201:4000/2018/02/21/trying-mozillas-things-gateway</id><content type="html" xml:base="http://192.168.10.201:4000/2018/02/21/trying-mozillas-things-gateway/"><![CDATA[<p><em>Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but
 I’m posting anyway because it’s ok to fail. :)</em></p>
 
 <p>Last weekend I was inspired by <a href="http://www.twobraids.com/2018/02/lars-and-real-internet-of-things-part-1.html">Lars’s posts on IoT</a> to try <a href="https://iot.mozilla.org/gateway/">Mozilla’s Things
@@ -426,103 +490,4 @@ it, and that’s as far as I got.  So far:</p>
 <ul>
   <li>I have really high hopes for the Mozilla IoT Gateway</li>
   <li>A first generation Raspberry Pi might be too slow for these shenanigans 😞</li>
-</ul>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but I’m posting anyway because it’s ok to fail. :)]]></summary></entry><entry><title type="html">Some GMail filters to make sorting through Mozilla email easier</title><link href="https://micropipes.com/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier/" rel="alternate" type="text/html" title="Some GMail filters to make sorting through Mozilla email easier" /><published>2017-07-07T00:00:00-07:00</published><updated>2017-07-07T00:00:00-07:00</updated><id>https://micropipes.com/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier</id><content type="html" xml:base="https://micropipes.com/2017/07/07/some-gmail-filters-to-make-sorting-through-mozilla-mail-easier/"><![CDATA[<p>I use some GMail filters to help sort out the flood of emails I get from Mozilla
-projects.  They help me identify bugs and issues I’ve been asked for
-information on versus the mail I get from, for example, being an owner for our
-GitHub organization.</p>
-
-<p>I thought I blogged about this before but I couldn’t find the post, and maybe
-Google’s new Inbox will make this irrelevant, but in the mean time:</p>
-
-<p>I have some labels set up in Gmail:</p>
-
-<p><img src="/assets/img/2017-email-list.png" title="Some labels in GMail" /></p>
-
-<p>And some filters:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(bugzilla-daemon@mozilla.org) to:(wclouser@mozilla.com) ("X-Bugzilla-Reason: Reporter" OR "X-Bugzilla-Reason: CC")
-Do this: Apply label "bug/cc"
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(bugzilla-daemon@mozilla.org) to:(wclouser@mozilla.com) "X-Bugzilla-Severity: blocker"
-Do this: Apply label "bug/blocker"
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(bugzilla-daemon@mozilla.org) to:(wclouser@mozilla.com) "X-Bugzilla-Assigned-To: wclouser@mozilla.com"
-Do this: Apply label "bug/mine"
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(bugzilla-daemon@mozilla.org) to:(wclouser@mozilla.com) "needinfo?wclouser"
-Do this: Apply label "bug/mine"
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(notifications@github.com)
-Do this: Skip Inbox, Apply label "github"
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(notifications@github.com) "You are receiving this because you are on a team that was mentioned."
-Do this: Skip Inbox, Apply label "github/mine"
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matches: from:(notifications@github.com) to:(wclouser@mozilla.com) "You are receiving this because you were mentioned."
-Do this: Apply label "github/mine"
-</code></pre></div></div>
-
-<p>Then I just keep an eye on the labels where things are assigned to me and I can
-mostly stay up with requests.  This system isn’t perfect – how do you handle
-the mail? :)</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[I use some GMail filters to help sort out the flood of emails I get from Mozilla projects. They help me identify bugs and issues I’ve been asked for information on versus the mail I get from, for example, being an owner for our GitHub organization.]]></summary></entry><entry><title type="html">Test Pilot Legacy Program Final Review</title><link href="https://micropipes.com/2016/10/27/test-pilot-legacy-program-review/" rel="alternate" type="text/html" title="Test Pilot Legacy Program Final Review" /><published>2016-10-27T02:55:00-07:00</published><updated>2016-10-27T02:55:00-07:00</updated><id>https://micropipes.com/2016/10/27/test-pilot-legacy-program-review</id><content type="html" xml:base="https://micropipes.com/2016/10/27/test-pilot-legacy-program-review/"><![CDATA[<p>One of my Q3 goals was to migrate the Legacy Test Pilot users into our new
-Test Pilot program (<a href="http://micropipes.com/blog/2016/01/27/meet-the-new-test-pilot/">some background on the two programs</a>).  The previous
-program was similar in that people could give feedback on experiments, but
-different enough that we didn’t feel comfortable simply moving the users to the
-new program without some kind of notification and opting-in.</p>
-
-<p>We decided the best way to do that was simply push out a new version of the
-legacy add-on which opened a new tab to the Test Pilot website and then
-uninstalled itself.  This lets people interested in testing experiments know
-about the new program without being overbearing.  Worst case scenario, they
-close the tab and have one less add-on loading every time Firefox is started.</p>
-
-<p>In our planning meeting it was suggested that getting three percent of users
-from the old program to the new would be a reasonable compromise between
-realistic and optimistic.  I guffawed, suggested that the audience had <em>already
-opted-in once</em>, and put 6% in as our goal and figured it would be way higher.
-Spoiler alert: I was wrong.</p>
-
-<p>I’ll spare you the pain of writing the add-on (most of the trouble was that the
-legacy add-on was so old you had to restart Firefox to uninstall it which really
-broke up the flow).  On August 24th, we <a href="http://micropipes.com/blog/2016/08/24/time-to-upgrade-from-test-pilot-to-test-pilot/">pushed the update to the old program</a>.</p>
-
-<p><img src="/assets/img/2016-testpilot-adu.png" title="Graph of daily usage" /></p>
-
-<p>In the daily usage graph, you can see we successfully uninstalled ourselves from
-several hundred thousand profiles, but we still have a long tail that doesn’t
-seem to be uninstalling.  Fortunately, AMO has really great statistics
-dashboards (<a href="https://addons.mozilla.org/en-US/firefox/addon/test-pilot/statistics/">these stats are public, by the way</a>) and we can dig a little
-deeper.  So, as of today there are around 150k profiles with the old add-on
-still installed.  About half of those are reporting running the latest version
-(the one that uninstalls itself) and about half are disabled by the user.  I
-suspect those halves overlap and account for 75k of the installed profiles.</p>
-
-<p>The second 75k profiles are on older add-on versions and are not upgrading to a
-new version.  There could be many reasons when we’re dealing with profiles this
-old: they could be broken, they might not have write permissions to their
-profile, their network traffic could be being blocked, an internet security
-suite could be misbehaving, etc.  I don’t think there is much more we can do
-for these folks right now, unfortunately.</p>
-
-<p>Let’s talk about the overall goal though - how many people joined the new
-program as a result of the new tab?</p>
-
-<p><img src="/assets/img/2016-testpilot-conversions.png" title="Graph of conversions" /></p>
-
-<p>As of the end of Q3, we had just over 26k conversions making for a <em>3.6%
-conversion rate</em>.  Quite close to what was suggested in the original meeting by
-the people who do this stuff for a living, and quite short of my brash guess.</p>
-
-<p>Overall we got a 0.6 score on the <a href="https://wiki.mozilla.org/Test_Pilot/2016Q3">quarterly OKR</a>.</p>
-
-<hr />
-
-<p>Since I’m writing this post a few weeks after the end of Q3, I can see that
-we’re continuing to get about 80 new users per day from the add-on prompt.
-Overall that makes for about 28.5k total conversions as of Oct 27th.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[One of my Q3 goals was to migrate the Legacy Test Pilot users into our new Test Pilot program (some background on the two programs). The previous program was similar in that people could give feedback on experiments, but different enough that we didn’t feel comfortable simply moving the users to the new program without some kind of notification and opting-in.]]></summary></entry></feed>
+</ul>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[Spoiler: It doesn’t yet support my hardware and I didn’t get it working, but I’m posting anyway because it’s ok to fail. :)]]></summary></entry></feed>
