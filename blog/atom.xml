@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://192.168.10.201:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.10.201:4000/" rel="alternate" type="text/html" /><updated>2024-06-09T06:43:40-07:00</updated><id>http://192.168.10.201:4000/feed.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Nyan Cat</title><link href="http://192.168.10.201:4000/2024/06/09/nyan-cat/" rel="alternate" type="text/html" title="Nyan Cat" /><published>2024-06-09T00:00:00-07:00</published><updated>2024-06-09T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/06/09/nyan-cat</id><content type="html" xml:base="http://192.168.10.201:4000/2024/06/09/nyan-cat/"><![CDATA[<p><img src="/assets/img/2024-art-nyan-cat-1.jpg" alt="Nyan Cat hanging on the wall" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://192.168.10.201:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://192.168.10.201:4000/" rel="alternate" type="text/html" /><updated>2024-06-18T19:16:07-07:00</updated><id>http://192.168.10.201:4000/feed.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Using Borg on TrueNAS</title><link href="http://192.168.10.201:4000/2024/06/18/using-borg-on-truenas/" rel="alternate" type="text/html" title="Using Borg on TrueNAS" /><published>2024-06-18T00:00:00-07:00</published><updated>2024-06-18T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/06/18/using-borg-on-truenas</id><content type="html" xml:base="http://192.168.10.201:4000/2024/06/18/using-borg-on-truenas/"><![CDATA[<p>I installed TrueNAS a couple months ago to try out ZFS.  It has some simple
+backup options built-in but I didn’t see any encrypted options.  Since I use
+<a href="https://www.borgbackup.org/">Borg</a> elsewhere I thought this was a good
+opportunity to figure out how to put it on TrueNAS. TrueNAS is based on Debian,
+but relying on direct package installations isn’t recommended so I needed
+another option.</p>
+
+<p>I was going to use <a href="https://truecharts.org/charts/stable/borg-server/">TrueCharts’ borg chart</a> but TrueNAS SCALE is
+<a href="https://forums.truenas.com/t/the-future-of-electric-eel-and-apps/5409/7">phasing out support for charts completely</a>
+so I opted to install a binary manually and see if a standard approach appears
+later.  It turned out to be pretty straight forward, steps below:</p>
+
+<ol>
+  <li>Download a <a href="https://github.com/borgbackup/borg/releases">borg binary</a>.
+You’ll want to use a version of the unfortunately-named <code class="language-plaintext highlighter-rouge">borg-linuxnewer64</code>
+builds which are built for Debian 12.  I used the latest stable version,
+<code class="language-plaintext highlighter-rouge">1.2.8</code>.</li>
+  <li>Copy the binary somewhere.  I put it in <code class="language-plaintext highlighter-rouge">/mnt/bin/</code>.</li>
+  <li>Try to run <code class="language-plaintext highlighter-rouge">/mnt/bin/borg -V</code>.  If you get an error saying
+<code class="language-plaintext highlighter-rouge">/mnt/bin/borg: error while loading shared libraries: libz.so.1: failed to
+map segment from shared object</code> you need to add a temp directory it can
+write to.  I made <code class="language-plaintext highlighter-rouge">/mnt/tmp</code> and then ran <code class="language-plaintext highlighter-rouge">export TMPDIR="/mnt/tmp"</code>.</li>
+</ol>
+
+<p>Now <code class="language-plaintext highlighter-rouge">/mnt/bin/borg -V</code> should work and you can add it to whatever scripts you
+use to backup your system.  Don’t forget to set the TMPDIR in your scripts too.</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="walkthrough" /><summary type="html"><![CDATA[I installed TrueNAS a couple months ago to try out ZFS. It has some simple backup options built-in but I didn’t see any encrypted options. Since I use Borg elsewhere I thought this was a good opportunity to figure out how to put it on TrueNAS. TrueNAS is based on Debian, but relying on direct package installations isn’t recommended so I needed another option.]]></summary></entry><entry><title type="html">Nyan Cat</title><link href="http://192.168.10.201:4000/2024/06/09/nyan-cat/" rel="alternate" type="text/html" title="Nyan Cat" /><published>2024-06-09T00:00:00-07:00</published><updated>2024-06-09T00:00:00-07:00</updated><id>http://192.168.10.201:4000/2024/06/09/nyan-cat</id><content type="html" xml:base="http://192.168.10.201:4000/2024/06/09/nyan-cat/"><![CDATA[<p><img src="/assets/img/2024-art-nyan-cat-1.jpg" alt="Nyan Cat hanging on the wall" /></p>
 
 <p>Nyan Cat!  A classic internet meme.  I made this to put over a window.  About
 30” long and 6” tall.</p>
@@ -203,172 +228,4 @@ but never super popular and the maintainers of <a href="https://github.com/argop
 Workflow</a> got in touch with
 me about taking over the namespace.  I don’t use the library anymore so it was
 easy to give up the name.  If you do need the library you can find it <a href="https://github.com/clouserw/hera">on
-GitHub</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[Thirteen years ago I wrote a library called Hera to make expiring content on Zeus Traffic Managers easier. It was on PyPi but never super popular and the maintainers of Hera Workflow got in touch with me about taking over the namespace. I don’t use the library anymore so it was easy to give up the name. If you do need the library you can find it on GitHub.]]></summary></entry><entry><title type="html">Starting a dashboard for openHAB data</title><link href="http://192.168.10.201:4000/2018/12/05/starting-a-dashboard-for-openhab-data/" rel="alternate" type="text/html" title="Starting a dashboard for openHAB data" /><published>2018-12-05T00:00:00-08:00</published><updated>2018-12-05T00:00:00-08:00</updated><id>http://192.168.10.201:4000/2018/12/05/starting-a-dashboard-for-openhab-data</id><content type="html" xml:base="http://192.168.10.201:4000/2018/12/05/starting-a-dashboard-for-openhab-data/"><![CDATA[<p>In this post I’ll set up the software needed to store data from <a href="https://www.openhab.org/">openHAB</a>
-and display it on a dashboard.  I’ll use a z-wave thermostat I have already set
-up on my network, and I’ll add Grafana and InfluxDB.</p>
-
-<p><img src="/assets/img/2018-dashboard-one.png" alt="24 hours of temperature data" /></p>
-
-<h3 id="set-up-the-containers">Set up the containers</h3>
-
-<p>Lately I’ve been trying to compartmentalize things, so I want to run Grafana and
-InfluxDB in Docker.  There are <a href="https://github.com/philhawthorne/docker-influxdb-grafana">options</a> that run them all in the same container,
-but I liked <a href="https://github.com/nicolargo/docker-influxdb-grafana">nicolargo/docker-influxdb-grafana</a> which is essentially just a
-simple docker-compose file that uses base (read: maintained) images.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout https://github.com/nicolargo/docker-influxdb-grafana.git
-</code></pre></div></div>
-
-<p>In <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> there are two <code class="language-plaintext highlighter-rouge">volumes</code> keys that link out to the
-disk.  I modified those paths, but otherwise didn’t make any changes.  By
-setting up the volumes here, I’ll have persistent storage beyond restarts.</p>
-
-<p>When I first tried to run the containers, the Grafana container failed with
-permission problems.  Grafana <a href="http://docs.grafana.org/installation/docker/#migration-from-a-previous-version-of-the-docker-container-to-5-1-or-later">mentions some permissions changes in a different context</a>,
-but following these steps fixed my issues also:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">-ti</span> <span class="nt">--user</span> root <span class="nt">--volume</span> <span class="s2">"/data/docker/grafana/data:/var/lib/grafana"</span> <span class="nt">--entrypoint</span> bash grafana/grafana:latest
-
-<span class="c"># then within the container, run:</span>
-
-<span class="nv">$ </span><span class="nb">chown</span> <span class="nt">-R</span> root:root /etc/grafana
-<span class="nv">$ </span><span class="nb">chmod</span> <span class="nt">-R</span> a+r /etc/grafana
-<span class="nv">$ </span><span class="nb">chown</span> <span class="nt">-R</span> grafana:grafana /var/lib/grafana
-<span class="nv">$ </span><span class="nb">chown</span> <span class="nt">-R</span> grafana:grafana /usr/share/grafana
-</code></pre></div></div>
-
-<p>After that the containers fired right up:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker-compose up <span class="nt">-d</span>
-</code></pre></div></div>
-
-<h3 id="set-up-influxdb">Set up InfluxDB</h3>
-
-<p>InfluxDB is running now, but I need to add the new user and database.  First I
-opened a shell with <code class="language-plaintext highlighter-rouge">docker exec -it influxdb influx</code> and then made the
-changes:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; create database openhab
-&gt; create user openhab with password "openhab"
-&gt; grant all on openhab to openhab
-</code></pre></div></div>
-
-<h3 id="getting-data-into-influxdb">Getting data into InfluxDB</h3>
-
-<p>As with the rest of this walkthrough, someone already did the hard parts, so I
-really just need to install a plugin for openHAB.</p>
-
-<ol>
-  <li>Load the PaperUI in openHAB</li>
-  <li>Click Add-ons in the left menu</li>
-  <li>Click Persistence in the top menu</li>
-  <li>Click Install next to InfluxDB Persistence</li>
-</ol>
-
-<p>Next I’ll SSH into the openHAB box and edit or create two configuration files.
-Copies of mine are below.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># /etc/openhab2/services/influxdb.cfg
-
-# This is the URL for influxdb.  Don't forget the port.
-url=http://192.168.1.2:8086
-user=openhab
-password=openhab
-db=openhab
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># /etc/openhab2/persistence/influxdb.persist
-
-Strategies {
-    everyMinute : "0 * * * * ?"
-    everyHour   : "0 0 * * * ?"
-    everyDay    : "0 0 0 * * ?"
-
-    default = everyChange
-}
-
-Items {
-    *   : strategy = everyChange, everyHour
-}
-</code></pre></div></div>
-
-<p>I have an <code class="language-plaintext highlighter-rouge">*</code> in my Items declaration because I want to send everything to
-InfluxDB.  That can be changed to specific Items or Groups to narrow down what
-is sent if desired.</p>
-
-<p>With those files in place, openHAB will send data to InfluxDB every time
-something changes and every hour.  I had to restart openHAB for the changes to
-take effect:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>systemctl restart openhab2
-</code></pre></div></div>
-
-<h3 id="make-sure-data-is-flowing">Make sure data is flowing</h3>
-
-<p>Look at the logs for InfluxDB by running <code class="language-plaintext highlighter-rouge">docker-compose logs influxdb</code>.
-openHAB should have sent a hello:</p>
-
-<blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>influxdb</td>
-        <td>[httpd] 192.168.1.1 - - [02/Dec/2018:02:21:49 +0000] “GET /ping HTTP/1.1” 204 0 “-“ “okhttp/2.4.0”</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>
-
-<p>Depending on how much activity there is in openHAB there may be other entries in
-the logs also.  To double check inside InfluxDB itself try this:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker <span class="nb">exec</span> <span class="nt">-it</span> influxdb influx
-
-<span class="c"># And then inside the influxdb client</span>
-<span class="o">&gt;</span> use openhab
-<span class="o">&gt;</span> show measurements
-</code></pre></div></div>
-
-<p>A list of all the measurements sent so far will display.  <code class="language-plaintext highlighter-rouge">select * from
-somekey</code> will dig into the data itself.</p>
-
-<h3 id="set-up-grafana">Set up Grafana</h3>
-
-<p>The Grafana interface is on port 3000 by default and the credentials are
-admin/admin.  On first login Grafana shows a wizard interface, so this moves
-along pretty quickly.  The new Data Source is the InfluxDB type, probably with
-a URL of <code class="language-plaintext highlighter-rouge">http://influxdb:8086</code>.  Docker-compose does the DNS for free here.</p>
-
-<p>I’ll put a Graph panel on a new dashboard and click the title of it to edit.
-The metrics tab has the queries and since the data is already flowing in, the
-correctly named Keys appear in a dropdown when I’m editing them.  The query can
-stay mostly as defaults, here is what mine looks like:</p>
-
-<p><img src="/assets/img/2018-dashboard-two.png" alt="Grafana congfiguration" /></p>
-
-<p>My Key names (eg. <code class="language-plaintext highlighter-rouge">HVAC_Temperature</code>) come from how I set the device up in openHAB.</p>
-
-<p>The only other thing to change here is in the Display tab: I set the Null Value
-to <code class="language-plaintext highlighter-rouge">connected</code> so I’ll have a nicely drawn line chart even though the
-Temperature only changes periodically.</p>
-
-<h3 id="one-more-bit-of-fanciness">One more bit of fanciness</h3>
-
-<p>I have a wood stove that I use in winter, but if it gets below a certain
-temperature (depending on the time of day) I have my furnace kick on.  I wanted
-to be able to see when my furnace was coming on, so I decided to make use of
-Grafana’s Annotations capability (the red vertical lines in the top image).</p>
-
-<p>From within the dashboard I clicked the Settings Gear in the header (not the
-one on the left) and chose Annotations.  From there I made a new Annotation
-with a custom query:</p>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">value</span> <span class="k">from</span> <span class="n">HVAC_Operating_State</span> <span class="k">WHERE</span> <span class="n">value</span><span class="o">=</span><span class="mi">1</span> <span class="k">AND</span> <span class="err">$</span><span class="n">timeFilter</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="nb">time</span> <span class="k">ASC</span> <span class="k">LIMIT</span> <span class="mi">10</span>
-</code></pre></div></div>
-
-<p>The <code class="language-plaintext highlighter-rouge">AND $timeFilter</code> is important.  As before, mine is named
-<code class="language-plaintext highlighter-rouge">HVAC_Operating_State</code> because that’s what I named the Item in openHAB when I
-set it up.</p>
-
-<p>And that’s it.  Returning to the dashboard after 24 hours should show something
-like the graph at the top of this post.</p>]]></content><author><name>Wil Clouser</name></author><category term="automation" /><category term="walkthrough" /><summary type="html"><![CDATA[In this post I’ll set up the software needed to store data from openHAB and display it on a dashboard. I’ll use a z-wave thermostat I have already set up on my network, and I’ll add Grafana and InfluxDB.]]></summary></entry></feed>
+GitHub</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[Thirteen years ago I wrote a library called Hera to make expiring content on Zeus Traffic Managers easier. It was on PyPi but never super popular and the maintainers of Hera Workflow got in touch with me about taking over the namespace. I don’t use the library anymore so it was easy to give up the name. If you do need the library you can find it on GitHub.]]></summary></entry></feed>
