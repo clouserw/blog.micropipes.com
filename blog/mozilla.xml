@@ -1,4 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed/by_tag/Mozilla.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2024-10-02T08:16:00-07:00</updated><id>https://micropipes.com/feed/by_tag/Mozilla.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">PyFxA 0.7.9 Released</title><link href="https://micropipes.com/2024/09/30/pyfxa-0.7.9-released/" rel="alternate" type="text/html" title="PyFxA 0.7.9 Released" /><published>2024-09-30T00:00:00-07:00</published><updated>2024-09-30T00:00:00-07:00</updated><id>https://micropipes.com/2024/09/30/pyfxa-0.7.9-released</id><content type="html" xml:base="https://micropipes.com/2024/09/30/pyfxa-0.7.9-released/"><![CDATA[<p>We released <a href="https://github.com/mozilla/PyFxA/releases/tag/0.7.9">PyFxA 0.7.9</a> last week (<a href="https://pypi.org/project/pyfxa/">pypi</a>).  This added:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed/by_tag/Mozilla.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2024-10-28T12:14:58-07:00</updated><id>https://micropipes.com/feed/by_tag/Mozilla.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Mozilla Accounts password hashing upgrades</title><link href="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/" rel="alternate" type="text/html" title="Mozilla Accounts password hashing upgrades" /><published>2024-10-28T00:00:00-07:00</published><updated>2024-10-28T00:00:00-07:00</updated><id>https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades</id><content type="html" xml:base="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/"><![CDATA[<p>We’ve recently finished two significant changes to how Mozilla Accounts handles
+password hashes which will improve security and increase flexibility around
+changing emails.  The changes are entirely transparent to end-users and are
+applied automatically when someone logs in.</p>
+
+<h2 id="randomizing-salts">Randomizing Salts</h2>
+
+<p>If a system is going to store passwords, best practice is to hash the password
+with a unique salt per row.  When accounts was first built we used an account’s
+email address as the unique salt for password hashing.  This saved a column in
+the database and some bandwidth but overall I think was a poor idea.  It meant
+<a href="https://github.com/mozilla/fxa/issues/14178">people couldn’t re-use their email
+addresses</a> and it leaves <abbr title="Personally Identifiable Information">PII</abbr> sitting around
+unnecessarily.</p>
+
+<p>Instead, a better idea is just to generate a random salt.  We’ve now
+transitioned Mozilla Accounts to random salts.</p>
+
+<h2 id="increasing-key-stretching-iterations">Increasing Key Stretching Iterations</h2>
+
+<p>Eight years ago <a href="https://www.rfk.id.au/">Ryan Kelly</a> filed <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1320222">bug
+1320222</a> to review
+Mozilla Accounts’ client-side key stretching capabilities and sparked a
+spirited conversation about iterations and the priority of the bug.  Overall,
+this is routine maintenance - we expect any amount of stretching we do will
+have to be revisited periodically due to hardware improving and the value we
+choose is a compromise between security and time to login, particularly on
+older hardware.</p>
+
+<p>Since we were generating new hashes for the random salts already we took the
+opportunity to increase our PBKDF2 iterations from 1000 to 650000 – a number
+we’re seeing others in the industry using.  This means logging in with slower
+hardware (like older mobile phones) may be noticeably slower.  Below is an
+excerpt from the analysis we did showing a Macbook from 2007 will take an
+additional ~3 seconds to log in:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key Stretch Iterations</th>
+      <th>Overhead on 2007 Macbook</th>
+      <th>Overhead on 2021 MacBook Pro M1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100,000</td>
+      <td>0.4800024 seconds</td>
+      <td>0.00000681 seconds</td>
+    </tr>
+    <tr>
+      <td>200,000</td>
+      <td>0.9581234 seconds</td>
+      <td>0.00000169 seconds</td>
+    </tr>
+    <tr>
+      <td>300,000</td>
+      <td>1.4539928 seconds</td>
+      <td>0.00000277 seconds</td>
+    </tr>
+    <tr>
+      <td>400,000</td>
+      <td>1.9337903 seconds</td>
+      <td>0.00029750 seconds</td>
+    </tr>
+    <tr>
+      <td>500,000</td>
+      <td>2.4146366 seconds</td>
+      <td>0.00079127 seconds</td>
+    </tr>
+    <tr>
+      <td>600,000</td>
+      <td>2.9482827 seconds</td>
+      <td>0.00112186 seconds</td>
+    </tr>
+    <tr>
+      <td>700,000</td>
+      <td>3.3960513 seconds</td>
+      <td>0.00117956 seconds</td>
+    </tr>
+    <tr>
+      <td>800,000</td>
+      <td>3.8675677 seconds</td>
+      <td>0.00117956 seconds</td>
+    </tr>
+    <tr>
+      <td>900,000</td>
+      <td>4.3614942 seconds</td>
+      <td>0.00141616 seconds</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="implementation">Implementation</h2>
+
+<p><a href="https://github.com/dschom">Dan Schomburg</a> did the heavy lifting to make this a
+smooth and successful project.  He built the v2 system alongside v1 so both
+hashes are generated simultaneously and if the v2 exists the login system will
+use that.  This lets us roll the feature out slowly and gives us control if we
+need to disable it or roll back.</p>
+
+<p>We tested the code for several months on our staging server before rolling it
+out in production.  When we did enable it in production it was over the course
+of several weeks via small percentages while we watched for unintended
+side-effects and bug reports.</p>
+
+<p>I’m pleased to say everything appers to be working smoothly.  As always, if you
+notice any issues please <a href="https://github.com/mozilla/fxa/issues">let us know</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[We’ve recently finished two significant changes to how Mozilla Accounts handles password hashes which will improve security and increase flexibility around changing emails. The changes are entirely transparent to end-users and are applied automatically when someone logs in.]]></summary></entry><entry><title type="html">PyFxA 0.7.9 Released</title><link href="https://micropipes.com/2024/09/30/pyfxa-0.7.9-released/" rel="alternate" type="text/html" title="PyFxA 0.7.9 Released" /><published>2024-09-30T00:00:00-07:00</published><updated>2024-09-30T00:00:00-07:00</updated><id>https://micropipes.com/2024/09/30/pyfxa-0.7.9-released</id><content type="html" xml:base="https://micropipes.com/2024/09/30/pyfxa-0.7.9-released/"><![CDATA[<p>We released <a href="https://github.com/mozilla/PyFxA/releases/tag/0.7.9">PyFxA 0.7.9</a> last week (<a href="https://pypi.org/project/pyfxa/">pypi</a>).  This added:</p>
 
 <ul>
   <li>Support for key stretching v2.  See the end of <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1320222">bug
@@ -351,37 +458,4 @@ in the repository already.</p>
 </ul>
 
 <p>If you want to get involved with Test Pilot, come join us in <a href="irc://irc.mozilla.org/testpilot">#testpilot</a> (or
-<a href="http://chat.mibbit.com/?server=irc.mozilla.org&amp;channel=#testpilot">webchat</a>)!</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[We originally built Test Pilot on top of Django and some JS libraries to fulfill our product requirements as well as keep us flexible enough to evolve quickly since we were a brand new site.]]></summary></entry><entry><title type="html">Test Pilot Q3 OKR Review</title><link href="https://micropipes.com/2016/10/10/test-pilot-q3-okr-review/" rel="alternate" type="text/html" title="Test Pilot Q3 OKR Review" /><published>2016-10-10T00:00:00-07:00</published><updated>2016-10-10T00:00:00-07:00</updated><id>https://micropipes.com/2016/10/10/test-pilot-q3-okr-review</id><content type="html" xml:base="https://micropipes.com/2016/10/10/test-pilot-q3-okr-review/"><![CDATA[<p>For the third quarter of 2016 the Test Pilot team decided to try using the <abbr title="Objectives and Key Results">OKR</abbr> method (<a href="https://library.gv.com/how-google-sets-goals-okrs-a1f69b0b72c7">an OKR overview</a>) for
-our goal setting.</p>
-
-<p>We all sat down in London and hashed out what direction we wanted to move in for
-Q3, what we thought we could do in that timeframe, prioritized the results
-and then I <a href="https://wiki.mozilla.org/Test_Pilot/2016Q3">published the results on the wiki</a>.  If you’re interested in what
-Test Pilot did in Q3 you should read that link because it has a bunch of
-comments in it.</p>
-
-<p>I knew we deprioritized some of our goals mid-quarter, but I was surprised to
-see us come up with a pretty modest <em>.61</em>.  My takeaways from my first time
-using the OKR method is:</p>
-
-<ul>
-  <li>
-    <p>Wording is really important.  Even if you all agree on some words while
-sitting around a table, look them over again the next day because they might
-not make as much sense as you think.</p>
-  </li>
-  <li>
-    <p>Getting the goals for your quarter planned before the quarter starts is tops.</p>
-  </li>
-  <li>
-    <p>Having a public list of goals you can point people to is great for your team,
-other teams you work with, and anyone in the community interested in your
-project.</p>
-  </li>
-  <li>
-    <p>Estimates for how long things will take you is still a Really Hard Problem.</p>
-  </li>
-</ul>
-
-<p>The feedback I’ve received about the OKR process we followed has been
-really positive and I expect to continue it in the future.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[For the third quarter of 2016 the Test Pilot team decided to try using the OKR method (an OKR overview) for our goal setting.]]></summary></entry></feed>
+<a href="http://chat.mibbit.com/?server=irc.mozilla.org&amp;channel=#testpilot">webchat</a>)!</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><summary type="html"><![CDATA[We originally built Test Pilot on top of Django and some JS libraries to fulfill our product requirements as well as keep us flexible enough to evolve quickly since we were a brand new site.]]></summary></entry></feed>
