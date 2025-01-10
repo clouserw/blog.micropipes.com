@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2024-10-28T12:14:58-07:00</updated><id>https://micropipes.com/feed.xml</id><title type="html">all night diner</title><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Mozilla Accounts password hashing upgrades</title><link href="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/" rel="alternate" type="text/html" title="Mozilla Accounts password hashing upgrades" /><published>2024-10-28T00:00:00-07:00</published><updated>2024-10-28T00:00:00-07:00</updated><id>https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades</id><content type="html" xml:base="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/"><![CDATA[<p>We’ve recently finished two significant changes to how Mozilla Accounts handles
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2025-01-10T09:49:46-08:00</updated><id>https://micropipes.com/feed.xml</id><title type="html">all night diner</title><subtitle>Wil Clouser&apos;s personal blog. Opinions are my own.</subtitle><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Bowser in his Koopa Clown Car</title><link href="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/" rel="alternate" type="text/html" title="Bowser in his Koopa Clown Car" /><published>2025-01-10T00:00:00-08:00</published><updated>2025-01-10T00:00:00-08:00</updated><id>https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car</id><content type="html" xml:base="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/"><![CDATA[<p><img src="/assets/img/2025-art-bowser-1.jpg" alt="Bowser in his Koopa Clown Car" /></p>
+
+<p>I learned this was called a Koopa Clown Car while searching for “bowser in his
+teacup”.  About 20” tall.</p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://micropipes.com/assets/img/2025-art-bowser-2.jpg" /><media:content medium="image" url="https://micropipes.com/assets/img/2025-art-bowser-2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mozilla Accounts password hashing upgrades</title><link href="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/" rel="alternate" type="text/html" title="Mozilla Accounts password hashing upgrades" /><published>2024-10-28T00:00:00-07:00</published><updated>2024-10-28T00:00:00-07:00</updated><id>https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades</id><content type="html" xml:base="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/"><![CDATA[<p>We’ve recently finished two significant changes to how Mozilla Accounts handles
 password hashes which will improve security and increase flexibility around
 changing emails.  The changes are entirely transparent to end-users and are
 applied automatically when someone logs in.</p>
@@ -237,61 +240,4 @@ make one you’re welcome to <a href="/assets/img/2024-w8bh-case.svg">download t
 <p>[1] I can’t link to the project itself because it’s a series of PDFs but it’s
 listed under the arduino projects menu.</p>
 
-<p>Update March 2024: <a href="https://www.thingiverse.com/thing:5377530">Here is a 3D printed case which should fit</a></p>]]></content><author><name>Wil Clouser</name></author><category term="laser" /><category term="radio" /><category term="morse" /><summary type="html"><![CDATA[I looked everywhere for a case for W8BH’s Morse Tutor project[1]. The only one I found was a 3d printed one for the previous revision with the smaller screen.]]></summary></entry><entry><title type="html">Automatically transcribing digital radio</title><link href="https://micropipes.com/2024/02/07/automatically-transcribing-digital-radio/" rel="alternate" type="text/html" title="Automatically transcribing digital radio" /><published>2024-02-07T00:00:00-08:00</published><updated>2024-02-07T00:00:00-08:00</updated><id>https://micropipes.com/2024/02/07/automatically-transcribing-digital-radio</id><content type="html" xml:base="https://micropipes.com/2024/02/07/automatically-transcribing-digital-radio/"><![CDATA[<p>I’ve recently been using <a href="https://github.com/lwvmobile/dsd-fme">DSD FME</a> to
-decode Silke Communication’s <a href="https://www.silkecom.com/fleetnet">FleetNet Network</a>
-radio traffic around me.  After some configuration effort it’s working well,
-but I realized one of the things I’ve really appreciated about the past decade
-is the slow migration to asynchronous communications (email, messages, etc.)
-instead of voice calls or in-person meetings that interrupt whatever I’m doing.
-I don’t want to actually listen to the radio traffic, rather, I’d like to skim
-it, preferably visually, after-the-fact to see if anything interesting
-happened.</p>
-
-<p>Maybe we can automatically transcribe it?</p>
-
-<p>Historically, automatic transcription hasn’t been great, even in ideal
-environments, let alone something as sketchy as a radio where calls can fade
-and a good percentage of the words are jargon.  But this is 2024 and AI rules
-the day, right?  Maybe things are better.</p>
-
-<p>DSD FME can be configured to dump every call to a <code class="language-plaintext highlighter-rouge">.wav</code> file in a directory
-which takes care of the source audio.</p>
-
-<p>I wrote a <a href="https://github.com/clouserw/dsd-fme-transcribe">short python script</a>
-which watches a directory for file handles closing (meaning, the call is over)
-and sends the files through <a href="https://github.com/openai/whisper">OpenAI’s Whisper</a> library to convert it to text.
-Running it while audio files are coming in provides a roughly real-time
-transcription.  Example output from this evening while the local school buses
-were dropping off students:</p>
-
-<blockquote>
-  <p>TG Bus Dispatch RID 8703: 237 to central.</p>
-
-  <p>TG Bus Dispatch RID 8761: 2-3-7 standby just a moment. 2-3-2 go ahead.</p>
-
-  <p>TG Bus Dispatch RID 8784: I just wanted to update you that I’m route complete. Thank you.</p>
-
-  <p>TG Bus Dispatch RID 8761: Okay, 10-4. Thank you. Go ahead. Two, three, seven.</p>
-
-  <p>TG Bus Dispatch RID 8761: 274 standby just a moment. I got one more route calling in here. 237, I’m ready for you. Go ahead 237.</p>
-
-  <p>TG Bus Dispatch RID 8703: So it is closed and I have three stops down there. What do I do?</p>
-</blockquote>
-
-<p>The system works!  Is it accurate?</p>
-
-<p>Ehh.  I’d say it’s about 75% accurate after watching it for a bit.  It gets
-most of the messages but does trip up occasionally.  I’m using the <a href="https://github.com/openai/whisper?tab=readme-ov-file#available-models-and-languages">base model</a>
-because my computer isn’t very fast but using a larger model may improve the
-accuracy.  Even better would be to train a model on radio communications. One
-similar example where they did tune their model is <a href="https://repository.tudelft.nl/islandora/object/uuid:8aa780bf-47b6-4f81-b112-29e23bc06a7d?collection=education">this thesis applying the technique</a>
-to air traffic control radio.  They achieved a ~13% error rate with a pretty
-challenging data set.</p>
-
-<p>Is this revolutionary?</p>
-
-<p>Not really.  There are <a href="https://github.com/openai/whisper/discussions/categories/show-and-tell">many examples</a>
-of using Whisper to decode audio like this, even in real time.  I wrote this
-because all the examples seem too complicated for someone just looking at the
-library for the first time and it’s fun to start and finish a project in a
-couple of hours!</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="radio" /><summary type="html"><![CDATA[I’ve recently been using DSD FME to decode Silke Communication’s FleetNet Network radio traffic around me. After some configuration effort it’s working well, but I realized one of the things I’ve really appreciated about the past decade is the slow migration to asynchronous communications (email, messages, etc.) instead of voice calls or in-person meetings that interrupt whatever I’m doing. I don’t want to actually listen to the radio traffic, rather, I’d like to skim it, preferably visually, after-the-fact to see if anything interesting happened.]]></summary></entry></feed>
+<p>Update March 2024: <a href="https://www.thingiverse.com/thing:5377530">Here is a 3D printed case which should fit</a></p>]]></content><author><name>Wil Clouser</name></author><category term="laser" /><category term="radio" /><category term="morse" /><summary type="html"><![CDATA[I looked everywhere for a case for W8BH’s Morse Tutor project[1]. The only one I found was a 3d printed one for the previous revision with the smaller screen.]]></summary></entry></feed>

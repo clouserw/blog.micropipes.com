@@ -21,8 +21,7 @@
 title: all night diner
 email: clouserw@micropipes.com
 tagline: get it while it's hot
-#description: >- # this means to ignore newlines until "baseurl:"
-#    get it while it's hot
+description: Wil Clouser's personal blog. Opinions are my own.
 #baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://micropipes.com" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: clouserw
@@ -35,6 +34,17 @@ author:
   name: Wil Clouser
   email: clouserw@micropipes.com
 
+twitter:
+  username: clouserw
+  card: summary
+
+social:
+  name: Wil Clouser
+  links:
+    - https://fosstodon.org/@clouserw
+    - https://github.com/clouserw/
+    - https://x.com/clouserw
+
 # Build settings
 theme: jekyll-theme-hydure
 remote_theme: hydecorp/hydejack
@@ -42,6 +52,7 @@ cover: /assets/img/cover-1.jpg
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 
 permalink: pretty
 
