@@ -1,4 +1,224 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2025-01-10T09:49:46-08:00</updated><id>https://micropipes.com/feed.xml</id><title type="html">all night diner</title><subtitle>Wil Clouser&apos;s personal blog. Opinions are my own.</subtitle><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Bowser in his Koopa Clown Car</title><link href="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/" rel="alternate" type="text/html" title="Bowser in his Koopa Clown Car" /><published>2025-01-10T00:00:00-08:00</published><updated>2025-01-10T00:00:00-08:00</updated><id>https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car</id><content type="html" xml:base="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/"><![CDATA[<p><img src="/assets/img/2025-art-bowser-1.jpg" alt="Bowser in his Koopa Clown Car" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://micropipes.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2025-09-18T20:34:28-07:00</updated><id>https://micropipes.com/feed.xml</id><title type="html">all night diner</title><subtitle>Wil Clouser&apos;s personal blog. Opinions are my own.</subtitle><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Keith Burgan’s Interactive Forms</title><link href="https://micropipes.com/2025/09/18/keith-burgans-interactive-forms/" rel="alternate" type="text/html" title="Keith Burgan’s Interactive Forms" /><published>2025-09-18T00:00:00-07:00</published><updated>2025-09-18T00:00:00-07:00</updated><id>https://micropipes.com/2025/09/18/keith-burgans-interactive-forms</id><content type="html" xml:base="https://micropipes.com/2025/09/18/keith-burgans-interactive-forms/"><![CDATA[<blockquote>
+  <p>Within “interactive entertainment”, we can divide things into four <em>forms –</em> patterns of design that, in theory, work in a certain way.</p>
+  <ul>
+    <li>Toy: Systems that have no prescribed goals</li>
+    <li>Puzzle: Prescribes a goal</li>
+    <li>Contest: Allows measurement, play session is limited</li>
+    <li>Strategy Game: Obfuscates measurement, incomplete information requires ambiguous decision-making</li>
+  </ul>
+</blockquote>
+
+<p><a href="http://keithburgun.net/interactive-forms/">source</a></p>
+
+<p>A friend told me about this theory of game forms months ago, and we eventually tracked down the source: Keith Burgan.  Keith also talks more in depth about <a href="http://keithburgun.net/contests-explained/">contests on his blog</a>.</p>
+
+<p>Simple examples my friend and I talked about:</p>
+<ul>
+  <li><strong>Toy:</strong> Playing freely with Lego blocks</li>
+  <li><strong>Puzzle:</strong> Following Lego instructions to complete a model</li>
+  <li><strong>Contest:</strong> Completing the model against a timer</li>
+  <li><strong>Game:</strong> Building with others from a limited pool of blocks</li>
+</ul>
+
+<p>We found <a href="https://www.erasmatazz.com/library/the-journal-of-computer/jcgd-volume-4/my-definition-of-game.html">other taxonomies</a> but I like the simplicity of Keith’s.</p>]]></content><author><name>Wil Clouser</name></author><category term="quotes" /><summary type="html"><![CDATA[Within “interactive entertainment”, we can divide things into four forms – patterns of design that, in theory, work in a certain way. Toy: Systems that have no prescribed goals Puzzle: Prescribes a goal Contest: Allows measurement, play session is limited Strategy Game: Obfuscates measurement, incomplete information requires ambiguous decision-making]]></summary></entry><entry><title type="html">Jailbreak a Nixplay W10P Photo Frame</title><link href="https://micropipes.com/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame/" rel="alternate" type="text/html" title="Jailbreak a Nixplay W10P Photo Frame" /><published>2025-09-14T00:00:00-07:00</published><updated>2025-09-14T00:00:00-07:00</updated><id>https://micropipes.com/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame</id><content type="html" xml:base="https://micropipes.com/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame/"><![CDATA[<p>I own an older Nixplay W10P frame from 2023 which, despite having gigabytes of
+free space, will no longer accept new photos due to recent <a href="https://www.nixplay.ca/blogs/legal-policy-documents/important-update-from-nixplay-ceo-2025-changes-to-your-services-a">mandatory changes
+in the Nixplay’s terms of
+service</a>.
+I’m not opposed to a company charging for services but their reasoning of
+“rising storage and bandwidth costs” is unconvincing given both have declined
+significantly in recent years.  It’s reasonable to speculate that the next
+update will continue to erode the reasons I chose the frame in the first place.
+Who wants to bet it will be something to do with AI?</p>
+
+<p>Anyway, I’ve decided to decline these new terms and delete my Nixplay account.
+However, I don’t want to lose the functionality of the hardware.  Yo-less
+uploaded a detailed <a href="https://www.youtube.com/watch?v=TN5errM5UbA">video on youtube demonstrating how to jailbreak the
+Nixplay frame</a>.  The process
+seemed straightforward, involving nothing more than plugging a cord into a W10E
+frame and connecting to <code class="language-plaintext highlighter-rouge">adbd</code>.  I found that the process for the older W10P
+model was not as seamless. Since I spent a chunk my weekend working through
+this, I wanted to document the steps here to help others who may face similar
+issues.</p>
+
+<hr />
+
+<p><strong>The good news:</strong> You don’t have to take your frame apart at all.  Both the
+USB port and the reset button are accessible externally.</p>
+
+<p><strong>The bad news:</strong> Unfortunately, the firmware does not include the <code class="language-plaintext highlighter-rouge">adbd</code>
+executable in the system image, so it’s not immediately possible to connect to
+the frame using <code class="language-plaintext highlighter-rouge">adb</code>. I am using macOS for this process, and when first
+plugging in the frame, it does not show up in the system by default:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% brew <span class="nb">install </span>usbutils
+% lsusb
+Bus 000 Device 001: ID 1d6b:XHCI
+XHCI
+XHCI Linux Foundation USB 3.1 Bus
+</code></pre></div></div>
+
+<p>Hold down the reset button for about 5 seconds and try it again though:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% lsusb
+Bus 002 Device 001: ID 2207:310d Fuzhou Rockchip Electronics Co., Ltd. Composite Device
+Bus 000 Device 000: ID 2207:310d Fuzhou Rockchip Electronics Co., Ltd. USB 3.1 Bus
+Bus 000 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+</code></pre></div></div>
+
+<p>It lives!  At this point, the frame is detected. The screen will go black, and
+Android tools will not yet be functional, but we can use this bootloader to
+proceed. Let’s start by getting the necessary tools.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># brew's rkflashtool.  Note the syntax is slightly different than linux's...</span>
+brew <span class="nb">install </span>rkflashtool
+<span class="c"># adb &amp; friends</span>
+brew <span class="nb">install</span> <span class="nt">--cask</span> android-platform-tools
+</code></pre></div></div>
+
+<p>I suggest taking a full backup just in case but we actually only need the
+system and recovery images.  Skip the <code class="language-plaintext highlighter-rouge">userdata.img</code> at the end unless you have
+a specific need as it takes a couple of hours to run.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Script courtesy of ChatGPT.  Note that if you don't have a `W10P` model frame these offsets might not be right!</span>
+
+<span class="c"># Make sure rkflashtool is in your PATH or use full path</span>
+<span class="nv">RKFLASHTOOL</span><span class="o">=</span>rkflashtool
+
+<span class="nb">echo</span> <span class="s2">"Dumping uboot..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00002000 0x00002000 <span class="o">&gt;</span> uboot.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping trust..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00004000 0x00002000 <span class="o">&gt;</span> trust.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping misc..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00006000 0x00002000 <span class="o">&gt;</span> misc.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping resource..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00008000 0x00008000 <span class="o">&gt;</span> resource.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping kernel..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00010000 0x00006000 <span class="o">&gt;</span> kernel.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping boot..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00016000 0x00006000 <span class="o">&gt;</span> boot.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping recovery..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x0001C000 0x00010000 <span class="o">&gt;</span> recovery.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping backup..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x0002C000 0x000A0000 <span class="o">&gt;</span> backup.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping cache..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x000CC000 0x000A0000 <span class="o">&gt;</span> cache.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping metadata..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x0016C000 0x00008000 <span class="o">&gt;</span> metadata.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping kpanic..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00174000 0x00002000 <span class="o">&gt;</span> kpanic.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping radical_update..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00176000 0x00020000 <span class="o">&gt;</span> radical_update.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping keys..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x00196000 0x00008000 <span class="o">&gt;</span> keys.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping system..."</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x0019E000 0x00280000 <span class="o">&gt;</span> system.img
+
+<span class="nb">echo</span> <span class="s2">"Dumping userdata (rest of flash)..."</span>
+<span class="c"># adjust length if you know exact remaining size</span>
+<span class="nv">$RKFLASHTOOL</span> r 0x0041E000 0x00C00000 <span class="o">&gt;</span> userdata.img
+
+<span class="nb">echo</span> <span class="s2">"All partitions dumped."</span>
+
+</code></pre></div></div>
+
+<p>The next step is to add the <code class="language-plaintext highlighter-rouge">adbd</code> executable, which is missing from the system
+image. Fortunately, it exists in the recovery image.  I had to use Debian to
+manage all the image modification because I didn’t want to fight OS X and ext4.
+Here’s how to extract it.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># on debian</span>
+<span class="nb">mkdir </span>recovery_wd
+<span class="nb">cd </span>recovery_wd
+<span class="nb">cp</span> ../recovery.img <span class="nb">.</span>
+<span class="c"># creates zImage, initrd.img, and bootimg.cfg.</span>
+<span class="c"># `apt install abootimg` if you need to</span>
+abootimg <span class="nt">-x</span> recovery.img
+<span class="nb">mkdir </span>ramdisk
+<span class="nb">cd </span>ramdisk
+<span class="nb">gzip</span> <span class="nt">-dc</span> ../initrd.img | cpio <span class="nt">-i</span>
+
+<span class="c"># You'll find a copy of `adbd` in /sbin/ but first we'll need to mount the system image so we have a place to put it.</span>
+
+<span class="nb">cd</span> ../..
+<span class="nb">mkdir </span>simg
+mount <span class="nt">-t</span> ext4 system.img simg
+<span class="nb">cd </span>simg
+<span class="c"># Now you're in the system image we dumped from the frame</span>
+<span class="nb">mkdir </span>sbin
+<span class="nb">cd </span>sbin
+<span class="nb">cp</span> ../../recovery_wd/ramdisk/sbin/adbd <span class="nb">.</span>
+<span class="nb">chmod </span>755 adbd
+<span class="nb">cd</span> ../..
+<span class="nb">sync
+</span>umount simg
+</code></pre></div></div>
+
+<p>Now that the system image includes <code class="language-plaintext highlighter-rouge">adbd</code>, it’s time to write it back to the frame.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Write to the system partition</span>
+rkflashtool w system &lt; /path/to/system.img
+<span class="c"># Reboot</span>
+rkflashtool b
+</code></pre></div></div>
+
+<p>At this point <code class="language-plaintext highlighter-rouge">adbd</code> is present but not auto-starting. There are multiple
+conditions in the system’s <code class="language-plaintext highlighter-rouge">init.rc</code> file to start <code class="language-plaintext highlighter-rouge">adbd</code> (e.g. <code class="language-plaintext highlighter-rouge">on
+property:sys.usb.config=adb &amp;&amp; property:sys.usb.configfs=1</code>) and presumably one
+of those doesn’t get set.  I didn’t want to keep chasing this so next we’ll
+patch the boot image to just start adbd directly:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># back on debian</span>
+<span class="nb">mkdir </span>bood_wd
+<span class="nb">cd </span>boot_wd
+<span class="nb">cp</span> ../boot.img <span class="nb">.</span>
+abootimg <span class="nt">-x</span> boot.img
+<span class="nb">mkdir </span>ramdisk
+<span class="nb">cd </span>ramdisk
+<span class="nb">gzip</span> <span class="nt">-dc</span> ../initrd.img | cpio <span class="nt">-i</span>
+</code></pre></div></div>
+
+<p>Add these lines within the existing <code class="language-plaintext highlighter-rouge">on boot</code> section of the <code class="language-plaintext highlighter-rouge">init.rc</code> above
+the <code class="language-plaintext highlighter-rouge">class_start default</code> line.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    setprop sys.usb.config adb
+    setprop sys.usb.configfs 1
+    setprop service.adb.root 1
+    start adbd
+
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idProduct D001
+    write /sys/class/android_usb/android0/functions adb
+    write /sys/class/android_usb/android0/enable 1
+</code></pre></div></div>
+
+<p>And then create a new boot image with this change:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> | cpio <span class="nt">-o</span> <span class="nt">-H</span> newc | <span class="nb">gzip</span> <span class="o">&gt;</span> ../initrd-new.img
+<span class="nb">cd</span> ..
+abootimg <span class="nt">--create</span> ../boot-new.img <span class="nt">-f</span> bootimg.cfg <span class="nt">-k</span> zImage <span class="nt">-r</span> initrd-new.img
+</code></pre></div></div>
+
+<p>Transfer the new image to the frame</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rkflashtool w boot &lt; boot-new.img
+rkflashtool b
+</code></pre></div></div>
+
+<p>After rebooting the frame <code class="language-plaintext highlighter-rouge">adbd</code> should fire up.  <code class="language-plaintext highlighter-rouge">adb</code> commands (and <code class="language-plaintext highlighter-rouge">vysor</code>
+from the original video) should be able to connect and you can follow the
+directions in the video to install the apps you want.</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="walkthrough" /><summary type="html"><![CDATA[I own an older Nixplay W10P frame from 2023 which, despite having gigabytes of free space, will no longer accept new photos due to recent mandatory changes in the Nixplay’s terms of service. I’m not opposed to a company charging for services but their reasoning of “rising storage and bandwidth costs” is unconvincing given both have declined significantly in recent years. It’s reasonable to speculate that the next update will continue to erode the reasons I chose the frame in the first place. Who wants to bet it will be something to do with AI?]]></summary></entry><entry><title type="html">Bowser in his Koopa Clown Car</title><link href="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/" rel="alternate" type="text/html" title="Bowser in his Koopa Clown Car" /><published>2025-01-10T00:00:00-08:00</published><updated>2025-01-10T00:00:00-08:00</updated><id>https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car</id><content type="html" xml:base="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/"><![CDATA[<p><img src="/assets/img/2025-art-bowser-1.jpg" alt="Bowser in his Koopa Clown Car" /></p>
 
 <p>I learned this was called a Koopa Clown Car while searching for “bowser in his
 teacup”.  About 20” tall.</p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://micropipes.com/assets/img/2025-art-bowser-2.jpg" /><media:content medium="image" url="https://micropipes.com/assets/img/2025-art-bowser-2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mozilla Accounts password hashing upgrades</title><link href="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/" rel="alternate" type="text/html" title="Mozilla Accounts password hashing upgrades" /><published>2024-10-28T00:00:00-07:00</published><updated>2024-10-28T00:00:00-07:00</updated><id>https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades</id><content type="html" xml:base="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/"><![CDATA[<p>We’ve recently finished two significant changes to how Mozilla Accounts handles
@@ -219,25 +439,4 @@ next few weeks and aim to have all the code removed this summer.</p>]]></content
 <p>A sticker included in an order from <a href="https://obeygiant.com/">Obey Giant</a> turned
 into a wall hanging.  Approx 6”x19” because that was the biggest piece of plywood I had.</p>
 
-<p><img src="/assets/img/2024-art-obey-propaganda-2.jpg" alt="Sign being assembled" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">I made a new hack poster</title><link href="https://micropipes.com/2024/05/03/I-made-a-new-hack-poster/" rel="alternate" type="text/html" title="I made a new hack poster" /><published>2024-05-03T00:00:00-07:00</published><updated>2024-05-03T00:00:00-07:00</updated><id>https://micropipes.com/2024/05/03/I-made-a-new-hack-poster</id><content type="html" xml:base="https://micropipes.com/2024/05/03/I-made-a-new-hack-poster/"><![CDATA[<p>I was feeling nostalgic a couple months ago and built a hack poster out of
-plywood.  It’s mostly modeled after the original but I added the radio tower
-and changed the words.  “This technology could fall into the right hands” still
-makes me smile when I see it out in the world.</p>
-
-<p><img src="/assets/img/2024-art-hack-poster-1.jpg" alt="Poster hanging on the wall" />
-<img src="/assets/img/2024-art-hack-poster-2.jpg" alt="Close-up of radio tower" />
-<img src="/assets/img/2024-art-hack-poster-3.jpg" alt="Close-up of lettering" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><category term="Mozilla" /><summary type="html"><![CDATA[I was feeling nostalgic a couple months ago and built a hack poster out of plywood. It’s mostly modeled after the original but I added the radio tower and changed the words. “This technology could fall into the right hands” still makes me smile when I see it out in the world.]]></summary></entry><entry><title type="html">A crude case for the W8BH morse tutor</title><link href="https://micropipes.com/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor/" rel="alternate" type="text/html" title="A crude case for the W8BH morse tutor" /><published>2024-02-25T00:00:00-08:00</published><updated>2024-02-25T00:00:00-08:00</updated><id>https://micropipes.com/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor</id><content type="html" xml:base="https://micropipes.com/2024/02/25/a-crude-case-for-the-w8bh-morse-tutor/"><![CDATA[<p>I looked everywhere for a case for <a href="http://w8bh.net">W8BH’s Morse Tutor project</a>[1].
-The only one I found was a <a href="https://www.thingiverse.com/thing:4190589">3d printed one for the previous revision</a> with the smaller screen.</p>
-
-<p>I have the ESP32 version with the 3.2” screen and to protect it and make it
-easier to hold I made a crude case for it on a laser cutter.  If you’d like to
-make one you’re welcome to <a href="/assets/img/2024-w8bh-case.svg">download the SVG</a>.</p>
-
-<p><img src="/assets/img/2024-w8bh-case-3.jpg" alt="Photo of front of case" />
-<img src="/assets/img/2024-w8bh-case-2.jpg" alt="Photo showing back of case" />
-<img src="/assets/img/2024-w8bh-case-1.jpg" alt="Photo showing top of case where connectors are" /></p>
-
-<p>[1] I can’t link to the project itself because it’s a series of PDFs but it’s
-listed under the arduino projects menu.</p>
-
-<p>Update March 2024: <a href="https://www.thingiverse.com/thing:5377530">Here is a 3D printed case which should fit</a></p>]]></content><author><name>Wil Clouser</name></author><category term="laser" /><category term="radio" /><category term="morse" /><summary type="html"><![CDATA[I looked everywhere for a case for W8BH’s Morse Tutor project[1]. The only one I found was a 3d printed one for the previous revision with the smaller screen.]]></summary></entry></feed>
+<p><img src="/assets/img/2024-art-obey-propaganda-2.jpg" alt="Sign being assembled" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry></feed>
