@@ -1,6 +1,9 @@
 _site
+.bundle
+.envrc
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
 _drafts
+vendor/bundle
