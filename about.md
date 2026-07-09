@@ -16,10 +16,10 @@ dynamic, high traffic sites.
 ### Contact
 
 * clouserw@micropipes.com
-* [@clouserw@mozilla.social](https://mozilla.social/@clouserw)
+* [@clouserw@fosstodon.org](https://fosstodon.org/@clouserw)
 * [@clouserw](https://twitter.com/clouserw)
 
-### GPG Info
+### GPG
     pub 4096R/0172457B 2011-04-24
     Key fingerprint = 4ABA 06DE B3ED 6251 03B7  CFF7 F692 B548 0172 457B
-    uid Wil Clouser <clouserw@micropipes.com>
+([asc](https://keys.openpgp.org/vks/v1/by-fingerprint/4ABA06DEB3ED625103B7CFF7F692B5480172457B))
