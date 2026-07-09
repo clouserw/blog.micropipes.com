@@ -7,5 +7,6 @@ const wander = {
   // My favourite websites and pages I recommend to the Wander community.
   pages: [
     'https://micropipes.com/temp/',
+    'https://マリウス.com/',
   ],
 }
