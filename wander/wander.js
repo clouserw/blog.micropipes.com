@@ -4,9 +4,12 @@ const wander = {
     'https://susam.net/wander/',
   ],
 
-  // My favourite websites and pages I recommend to the Wander community.
+  // pages I recommend to the Wander community.
   pages: [
     'https://micropipes.com/temp/',
     'https://マリウス.com/',
+    'https://2of3.ente.com/',
+    'https://solar.lowtechmagazine.com/',
+    'https://how.complexsystems.fail/',
   ],
 }
