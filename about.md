@@ -20,7 +20,7 @@ dynamic, high traffic sites.
 * [@clouserw](https://twitter.com/clouserw)
 
 ### GPG
-([asc](https://keys.openpgp.org/vks/v1/by-fingerprint/4ABA06DEB3ED625103B7CFF7F692B5480172457B))
+([asc](/keys/key-20261105.asc))
 
-    pub 4096R/0172457B 2011-04-24
-    Key fingerprint = 4ABA 06DE B3ED 6251 03B7  CFF7 F692 B548 0172 457B
+    pub ed25519/64B3CE71 2026-11-04
+    Key fingerprint = A919 B246 3BF3 4DAD 7456 821B 2243 C017 64B3 CE71
