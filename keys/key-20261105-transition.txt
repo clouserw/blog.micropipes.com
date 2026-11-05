@@ -1,0 +1,34 @@
+I have created a new OpenPGP key and will be transitioning away from my old key.
+
+As far as I know, my previous key has not been compromised and will remain valid
+for the foreseeable future.  However, I plan to use my new key for all future
+signing and encryption.
+
+## Previous key
+
+* Fingerprint: 4ABA 06DE B3ED 6251 03B7 CFF7 F692 B548 0172 457B
+* Created: 2011-04-24
+
+## New key
+
+* Fingerprint: A919 B246 3BF3 4DAD 7456  821B 2243 C017 64B3 CE71
+* Created: 2026-11-04
+
+The new key has been certified by the old key, and this transition statement
+is signed by both keys.
+
+You can retrieve the new key from https://micropipes.com/keys/key-20261105.asc or
+receive it from a public key server, for example:
+
+    gpg --keyserver keys.openpgp.org \
+      --recv-key A919B2463BF34DAD7456821B2243C01764B3CE71
+
+If you'd like any further verification or have any questions please contact me
+directly.
+
+To verify the integrity of this statement:
+
+  wget -q -O- https://micropipes.com/keys/key-20261105-transition.txt | gpg --verify
+
+Wil
+
