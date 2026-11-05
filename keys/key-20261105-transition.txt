@@ -28,7 +28,7 @@ directly.
 
 To verify the integrity of this statement:
 
-  wget -q -O- https://micropipes.com/keys/key-20261105-transition.txt | gpg --verify
+  wget -q -O- https://micropipes.com/keys/key-20261105-transition.asc | gpg --verify
 
 Wil
 
