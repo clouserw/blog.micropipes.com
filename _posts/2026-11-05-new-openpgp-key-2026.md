@@ -1,0 +1,71 @@
+---
+layout: post
+title: New OpenPGP Key 2026
+tags:
+- software
+- general
+---
+
+I have created a [new OpenPGP key](/keys/key-20261105.asc) and will be transitioning away from my old key.
+
+Below is a signed statement.
+
+```
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+I have created a new OpenPGP key and will be transitioning away from my old key.
+
+As far as I know, my previous key has not been compromised and will remain valid
+for the foreseeable future.  However, I plan to use my new key for all future
+signing and encryption.
+
+## Previous key
+
+* Fingerprint: 4ABA 06DE B3ED 6251 03B7 CFF7 F692 B548 0172 457B
+* Created: 2011-04-24
+
+## New key
+
+* Fingerprint: A919 B246 3BF3 4DAD 7456  821B 2243 C017 64B3 CE71
+* Created: 2026-11-04
+
+The new key has been certified by the old key, and this transition statement
+is signed by both keys.
+
+You can retrieve the new key from https://micropipes.com/keys/key-20261105.asc or
+receive it from a public key server, for example:
+
+    gpg --keyserver keys.openpgp.org \
+      --recv-key A919B2463BF34DAD7456821B2243C01764B3CE71
+
+If you'd like any further verification or have any questions please contact me
+directly.
+
+To verify the integrity of this statement:
+
+  wget -q -O- https://micropipes.com/keys/key-20261105-transition.asc | gpg --verify
+
+Wil
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJPBAEBCgA5FiEESroG3rPtYlEDt8/39pK1SAFyRXsFAmrs9v4bFIAAAAAABAAO
+bWFudTIsMi41KzEuMTIsMCwzAAoJEPaStUgBckV78AoP/jYjmXiU7feYIxTE1k3G
+pa6ciOQl0c22DU0qeQr2gNieRpMJwy5yghfmAayMUDRjDeeCnBPfWGm2Yue1CU68
+oskTOQgAJQQQqvlbWVcR/keU/AueUFWkrvXnh+bIc5uXfJVUdA+ptogFOaC7ilkX
+g4bUFPqfN6SKKW1l5yOOQnSOd7OipKN2XAnlRiFy1kw/IIg0WE95iPnAH1E5NjYu
+W/zeJFPMvtfr0tZBsu8dwM6wcSH+tYmxTZmnRrhYHju0r1H5u47e78TQEWM5uxvT
+MlUGKgN1F8DwxI38kByW3mBEg+YXlKk9B2/RWxUJdVHsiLMeYcRcjJO9BkckyIxD
+kdK3JLuHup2as5/m4HywJnLxu996zYBJWb9dLMrMxV2WZbRXMBI6yjiUlrNJDxqp
+/eUVhMV6yngqPDZoJb7Xjp1mDgtQ0XdVNTJUmYG6x/lOdCDAuyv1vJY6kmqnXoWw
+DKC18430h7w/Hj0aBW7teRB5SLGLbgGMWebRbMjvzxwaBPkrmeQV2mxDWqfyxS5E
+UGKH5LcgENfn6VIsFfnX4Ra+NTFnFF4yEQcEqpHPXuE79xVu95OXi7eqKQQ3/Gdn
+IZcUTp5VG1A//xSB9stKH66OugpIqo7bSpIH4JdHsEFiJZ3awJwFmD0VMTHq7tku
+fy25+CwPbfu/XsvsaVLHjz+ciJEEARYKADkWIQQnN1KXGXEuVS0jJttO7rDn7iG9
+zAUCauz2/hsUgAAAAAAEAA5tYW51MiwyLjUrMS4xMiwwLDMACgkQTu6w5+4hvcyX
+RAEAwo5aL2tiH3UFjlvqwp2U1QDNGpWi+QJ5rMHoomkfSqUBAJA676n15omqN2zM
+S0SSnbhmDN1z0FiiZRIZpTDwRZcO
+=WDpr
+-----END PGP SIGNATURE-----
+```

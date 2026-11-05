@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2026-04-23T11:39:43-07:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">all night diner</title><subtitle>Wil Clouser&apos;s personal blog. Opinions are my own.</subtitle><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">Firefox Sync adds official PostgreSQL support</title><link href="http://0.0.0.0:4000/2026/04/23/firefox-sync-adds-official-postgresql-support/" rel="alternate" type="text/html" title="Firefox Sync adds official PostgreSQL support" /><published>2026-04-23T00:00:00-07:00</published><updated>2026-04-23T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2026/04/23/firefox-sync-adds-official-postgresql-support</id><content type="html" xml:base="http://0.0.0.0:4000/2026/04/23/firefox-sync-adds-official-postgresql-support/"><![CDATA[<p>The Sync Storage team has landed official PostgreSQL support for Firefox Sync.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://micropipes.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://micropipes.com/" rel="alternate" type="text/html" /><updated>2026-11-05T14:13:16-08:00</updated><id>https://micropipes.com/feed.xml</id><title type="html">all night diner</title><subtitle>Wil Clouser&apos;s personal blog. Opinions are my own.</subtitle><author><name>Wil Clouser</name><email>clouserw@micropipes.com</email></author><entry><title type="html">New OpenPGP Key 2026</title><link href="https://micropipes.com/2026/11/05/new-openpgp-key-2026/" rel="alternate" type="text/html" title="New OpenPGP Key 2026" /><published>2026-11-05T00:00:00-08:00</published><updated>2026-11-05T00:00:00-08:00</updated><id>https://micropipes.com/2026/11/05/new-openpgp-key-2026</id><content type="html" xml:base="https://micropipes.com/2026/11/05/new-openpgp-key-2026/"><![CDATA[<p>I have created a <a href="/keys/key-20261105.asc">new OpenPGP key</a> and will be transitioning away from my old key.</p>
+
+<p>Below is a signed statement.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+I have created a new OpenPGP key and will be transitioning away from my old key.
+
+As far as I know, my previous key has not been compromised and will remain valid
+for the foreseeable future.  However, I plan to use my new key for all future
+signing and encryption.
+
+## Previous key
+
+* Fingerprint: 4ABA 06DE B3ED 6251 03B7 CFF7 F692 B548 0172 457B
+* Created: 2011-04-24
+
+## New key
+
+* Fingerprint: A919 B246 3BF3 4DAD 7456  821B 2243 C017 64B3 CE71
+* Created: 2026-11-04
+
+The new key has been certified by the old key, and this transition statement
+is signed by both keys.
+
+You can retrieve the new key from https://micropipes.com/keys/key-20261105.asc or
+receive it from a public key server, for example:
+
+    gpg --keyserver keys.openpgp.org \
+      --recv-key A919B2463BF34DAD7456821B2243C01764B3CE71
+
+If you'd like any further verification or have any questions please contact me
+directly.
+
+To verify the integrity of this statement:
+
+  wget -q -O- https://micropipes.com/keys/key-20261105-transition.asc | gpg --verify
+
+Wil
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJPBAEBCgA5FiEESroG3rPtYlEDt8/39pK1SAFyRXsFAmrs9v4bFIAAAAAABAAO
+bWFudTIsMi41KzEuMTIsMCwzAAoJEPaStUgBckV78AoP/jYjmXiU7feYIxTE1k3G
+pa6ciOQl0c22DU0qeQr2gNieRpMJwy5yghfmAayMUDRjDeeCnBPfWGm2Yue1CU68
+oskTOQgAJQQQqvlbWVcR/keU/AueUFWkrvXnh+bIc5uXfJVUdA+ptogFOaC7ilkX
+g4bUFPqfN6SKKW1l5yOOQnSOd7OipKN2XAnlRiFy1kw/IIg0WE95iPnAH1E5NjYu
+W/zeJFPMvtfr0tZBsu8dwM6wcSH+tYmxTZmnRrhYHju0r1H5u47e78TQEWM5uxvT
+MlUGKgN1F8DwxI38kByW3mBEg+YXlKk9B2/RWxUJdVHsiLMeYcRcjJO9BkckyIxD
+kdK3JLuHup2as5/m4HywJnLxu996zYBJWb9dLMrMxV2WZbRXMBI6yjiUlrNJDxqp
+/eUVhMV6yngqPDZoJb7Xjp1mDgtQ0XdVNTJUmYG6x/lOdCDAuyv1vJY6kmqnXoWw
+DKC18430h7w/Hj0aBW7teRB5SLGLbgGMWebRbMjvzxwaBPkrmeQV2mxDWqfyxS5E
+UGKH5LcgENfn6VIsFfnX4Ra+NTFnFF4yEQcEqpHPXuE79xVu95OXi7eqKQQ3/Gdn
+IZcUTp5VG1A//xSB9stKH66OugpIqo7bSpIH4JdHsEFiJZ3awJwFmD0VMTHq7tku
+fy25+CwPbfu/XsvsaVLHjz+ciJEEARYKADkWIQQnN1KXGXEuVS0jJttO7rDn7iG9
+zAUCauz2/hsUgAAAAAAEAA5tYW51MiwyLjUrMS4xMiwwLDMACgkQTu6w5+4hvcyX
+RAEAwo5aL2tiH3UFjlvqwp2U1QDNGpWi+QJ5rMHoomkfSqUBAJA676n15omqN2zM
+S0SSnbhmDN1z0FiiZRIZpTDwRZcO
+=WDpr
+-----END PGP SIGNATURE-----
+</code></pre></div></div>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="general" /><summary type="html"><![CDATA[I have created a new OpenPGP key and will be transitioning away from my old key.]]></summary></entry><entry><title type="html">Firefox Sync adds official PostgreSQL support</title><link href="https://micropipes.com/2026/04/23/firefox-sync-adds-official-postgresql-support/" rel="alternate" type="text/html" title="Firefox Sync adds official PostgreSQL support" /><published>2026-04-23T00:00:00-07:00</published><updated>2026-04-23T00:00:00-07:00</updated><id>https://micropipes.com/2026/04/23/firefox-sync-adds-official-postgresql-support</id><content type="html" xml:base="https://micropipes.com/2026/04/23/firefox-sync-adds-official-postgresql-support/"><![CDATA[<p>The Sync Storage team has landed official PostgreSQL support for Firefox Sync.</p>
 
 <p>Historically, Sync has only officially supported Google Spanner as a storage backend, with MySQL working unofficially. That has been a pretty high barrier to entry for people self-hosting their own services.</p>
 
@@ -14,7 +75,7 @@
 
 <p>If you’ve been interested in self-hosting Sync but were put off by the storage requirements, take another look.  If you run into bugs or have feedback, please file issues here:</p>
 
-<p><a href="https://github.com/mozilla-services/syncstorage-rs/issues">https://github.com/mozilla-services/syncstorage-rs/issues</a></p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[The Sync Storage team has landed official PostgreSQL support for Firefox Sync.]]></summary></entry><entry><title type="html">Keith Burgan’s Interactive Forms</title><link href="http://0.0.0.0:4000/2025/09/18/keith-burgans-interactive-forms/" rel="alternate" type="text/html" title="Keith Burgan’s Interactive Forms" /><published>2025-09-18T00:00:00-07:00</published><updated>2025-09-18T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2025/09/18/keith-burgans-interactive-forms</id><content type="html" xml:base="http://0.0.0.0:4000/2025/09/18/keith-burgans-interactive-forms/"><![CDATA[<blockquote>
+<p><a href="https://github.com/mozilla-services/syncstorage-rs/issues">https://github.com/mozilla-services/syncstorage-rs/issues</a></p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[The Sync Storage team has landed official PostgreSQL support for Firefox Sync.]]></summary></entry><entry><title type="html">Keith Burgan’s Interactive Forms</title><link href="https://micropipes.com/2025/09/18/keith-burgans-interactive-forms/" rel="alternate" type="text/html" title="Keith Burgan’s Interactive Forms" /><published>2025-09-18T00:00:00-07:00</published><updated>2025-09-18T00:00:00-07:00</updated><id>https://micropipes.com/2025/09/18/keith-burgans-interactive-forms</id><content type="html" xml:base="https://micropipes.com/2025/09/18/keith-burgans-interactive-forms/"><![CDATA[<blockquote>
   <p>Within “interactive entertainment”, we can divide things into four <em>forms –</em> patterns of design that, in theory, work in a certain way.</p>
   <ul>
     <li>Toy: Systems that have no prescribed goals</li>
@@ -36,7 +97,7 @@
   <li><strong>Game:</strong> Building with others from a limited pool of blocks</li>
 </ul>
 
-<p>We found <a href="https://www.erasmatazz.com/library/the-journal-of-computer/jcgd-volume-4/my-definition-of-game.html">other taxonomies</a> but I like the simplicity of Keith’s.</p>]]></content><author><name>Wil Clouser</name></author><category term="quotes" /><summary type="html"><![CDATA[Within “interactive entertainment”, we can divide things into four forms – patterns of design that, in theory, work in a certain way. Toy: Systems that have no prescribed goals Puzzle: Prescribes a goal Contest: Allows measurement, play session is limited Strategy Game: Obfuscates measurement, incomplete information requires ambiguous decision-making]]></summary></entry><entry><title type="html">Jailbreak a Nixplay W10P Photo Frame</title><link href="http://0.0.0.0:4000/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame/" rel="alternate" type="text/html" title="Jailbreak a Nixplay W10P Photo Frame" /><published>2025-09-14T00:00:00-07:00</published><updated>2025-09-14T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame</id><content type="html" xml:base="http://0.0.0.0:4000/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame/"><![CDATA[<p>I own an older Nixplay W10P frame from 2023 which, despite having gigabytes of
+<p>We found <a href="https://www.erasmatazz.com/library/the-journal-of-computer/jcgd-volume-4/my-definition-of-game.html">other taxonomies</a> but I like the simplicity of Keith’s.</p>]]></content><author><name>Wil Clouser</name></author><category term="quotes" /><summary type="html"><![CDATA[Within “interactive entertainment”, we can divide things into four forms – patterns of design that, in theory, work in a certain way. Toy: Systems that have no prescribed goals Puzzle: Prescribes a goal Contest: Allows measurement, play session is limited Strategy Game: Obfuscates measurement, incomplete information requires ambiguous decision-making]]></summary></entry><entry><title type="html">Jailbreak a Nixplay W10P Photo Frame</title><link href="https://micropipes.com/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame/" rel="alternate" type="text/html" title="Jailbreak a Nixplay W10P Photo Frame" /><published>2025-09-14T00:00:00-07:00</published><updated>2025-09-14T00:00:00-07:00</updated><id>https://micropipes.com/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame</id><content type="html" xml:base="https://micropipes.com/2025/09/14/jailbreak-a-nixplay-w10p-photo-frame/"><![CDATA[<p>I own an older Nixplay W10P frame from 2023 which, despite having gigabytes of
 free space, will no longer accept new photos due to recent <a href="https://www.nixplay.ca/blogs/legal-policy-documents/important-update-from-nixplay-ceo-2025-changes-to-your-services-a">mandatory changes
 in the Nixplay’s terms of
 service</a>.
@@ -234,10 +295,10 @@ rkflashtool b
 
 <p>After rebooting the frame <code class="language-plaintext highlighter-rouge">adbd</code> should fire up.  <code class="language-plaintext highlighter-rouge">adb</code> commands (and <code class="language-plaintext highlighter-rouge">vysor</code>
 from the original video) should be able to connect and you can follow the
-directions in the video to install the apps you want.</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="walkthrough" /><summary type="html"><![CDATA[I own an older Nixplay W10P frame from 2023 which, despite having gigabytes of free space, will no longer accept new photos due to recent mandatory changes in the Nixplay’s terms of service. I’m not opposed to a company charging for services but their reasoning of “rising storage and bandwidth costs” is unconvincing given both have declined significantly in recent years. It’s reasonable to speculate that the next update will continue to erode the reasons I chose the frame in the first place. Who wants to bet it will be something to do with AI?]]></summary></entry><entry><title type="html">Bowser in his Koopa Clown Car</title><link href="http://0.0.0.0:4000/2025/01/10/bowser-in-his-koopa-clown-car/" rel="alternate" type="text/html" title="Bowser in his Koopa Clown Car" /><published>2025-01-10T00:00:00-08:00</published><updated>2025-01-10T00:00:00-08:00</updated><id>http://0.0.0.0:4000/2025/01/10/bowser-in-his-koopa-clown-car</id><content type="html" xml:base="http://0.0.0.0:4000/2025/01/10/bowser-in-his-koopa-clown-car/"><![CDATA[<p><img src="/assets/img/2025-art-bowser-1.jpg" alt="Bowser in his Koopa Clown Car" /></p>
+directions in the video to install the apps you want.</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="walkthrough" /><summary type="html"><![CDATA[I own an older Nixplay W10P frame from 2023 which, despite having gigabytes of free space, will no longer accept new photos due to recent mandatory changes in the Nixplay’s terms of service. I’m not opposed to a company charging for services but their reasoning of “rising storage and bandwidth costs” is unconvincing given both have declined significantly in recent years. It’s reasonable to speculate that the next update will continue to erode the reasons I chose the frame in the first place. Who wants to bet it will be something to do with AI?]]></summary></entry><entry><title type="html">Bowser in his Koopa Clown Car</title><link href="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/" rel="alternate" type="text/html" title="Bowser in his Koopa Clown Car" /><published>2025-01-10T00:00:00-08:00</published><updated>2025-01-10T00:00:00-08:00</updated><id>https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car</id><content type="html" xml:base="https://micropipes.com/2025/01/10/bowser-in-his-koopa-clown-car/"><![CDATA[<p><img src="/assets/img/2025-art-bowser-1.jpg" alt="Bowser in his Koopa Clown Car" /></p>
 
 <p>I learned this was called a Koopa Clown Car while searching for “bowser in his
-teacup”.  About 20” tall.</p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/img/2025-art-bowser-2.jpg" /><media:content medium="image" url="http://0.0.0.0:4000/assets/img/2025-art-bowser-2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mozilla Accounts password hashing upgrades</title><link href="http://0.0.0.0:4000/2024/10/28/mozilla-accounts-password-hashing-upgrades/" rel="alternate" type="text/html" title="Mozilla Accounts password hashing upgrades" /><published>2024-10-28T00:00:00-07:00</published><updated>2024-10-28T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2024/10/28/mozilla-accounts-password-hashing-upgrades</id><content type="html" xml:base="http://0.0.0.0:4000/2024/10/28/mozilla-accounts-password-hashing-upgrades/"><![CDATA[<p>We’ve recently finished two significant changes to how Mozilla Accounts handles
+teacup”.  About 20” tall.</p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://micropipes.com/assets/img/2025-art-bowser-2.jpg" /><media:content medium="image" url="https://micropipes.com/assets/img/2025-art-bowser-2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mozilla Accounts password hashing upgrades</title><link href="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/" rel="alternate" type="text/html" title="Mozilla Accounts password hashing upgrades" /><published>2024-10-28T00:00:00-07:00</published><updated>2024-10-28T00:00:00-07:00</updated><id>https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades</id><content type="html" xml:base="https://micropipes.com/2024/10/28/mozilla-accounts-password-hashing-upgrades/"><![CDATA[<p>We’ve recently finished two significant changes to how Mozilla Accounts handles
 password hashes which will improve security and increase flexibility around
 changing emails.  The changes are entirely transparent to end-users and are
 applied automatically when someone logs in.</p>
@@ -344,7 +405,7 @@ of several weeks via small percentages while we watched for unintended
 side-effects and bug reports.</p>
 
 <p>I’m pleased to say everything appers to be working smoothly.  As always, if you
-notice any issues please <a href="https://github.com/mozilla/fxa/issues">let us know</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[We’ve recently finished two significant changes to how Mozilla Accounts handles password hashes which will improve security and increase flexibility around changing emails. The changes are entirely transparent to end-users and are applied automatically when someone logs in.]]></summary></entry><entry><title type="html">PyFxA 0.7.9 Released</title><link href="http://0.0.0.0:4000/2024/09/30/pyfxa-0.7.9-released/" rel="alternate" type="text/html" title="PyFxA 0.7.9 Released" /><published>2024-09-30T00:00:00-07:00</published><updated>2024-09-30T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2024/09/30/pyfxa-0.7.9-released</id><content type="html" xml:base="http://0.0.0.0:4000/2024/09/30/pyfxa-0.7.9-released/"><![CDATA[<p>We released <a href="https://github.com/mozilla/PyFxA/releases/tag/0.7.9">PyFxA 0.7.9</a> last week (<a href="https://pypi.org/project/pyfxa/">pypi</a>).  This added:</p>
+notice any issues please <a href="https://github.com/mozilla/fxa/issues">let us know</a>.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[We’ve recently finished two significant changes to how Mozilla Accounts handles password hashes which will improve security and increase flexibility around changing emails. The changes are entirely transparent to end-users and are applied automatically when someone logs in.]]></summary></entry><entry><title type="html">PyFxA 0.7.9 Released</title><link href="https://micropipes.com/2024/09/30/pyfxa-0.7.9-released/" rel="alternate" type="text/html" title="PyFxA 0.7.9 Released" /><published>2024-09-30T00:00:00-07:00</published><updated>2024-09-30T00:00:00-07:00</updated><id>https://micropipes.com/2024/09/30/pyfxa-0.7.9-released</id><content type="html" xml:base="https://micropipes.com/2024/09/30/pyfxa-0.7.9-released/"><![CDATA[<p>We released <a href="https://github.com/mozilla/PyFxA/releases/tag/0.7.9">PyFxA 0.7.9</a> last week (<a href="https://pypi.org/project/pyfxa/">pypi</a>).  This added:</p>
 
 <ul>
   <li>Support for key stretching v2.  See the end of <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1320222">bug
@@ -354,7 +415,7 @@ point in the future.</li>
   <li>Upgraded to support (and test!) Python 3</li>
 </ul>
 
-<p>Special thanks to <a href="https://rob.cogit8.org/">Rob Hudson</a> and <a href="https://github.com/dschom">Dan Schomburg</a> for thier efforts.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[We released PyFxA 0.7.9 last week (pypi). This added:]]></summary></entry><entry><title type="html">Using Borg on TrueNAS</title><link href="http://0.0.0.0:4000/2024/06/18/using-borg-on-truenas/" rel="alternate" type="text/html" title="Using Borg on TrueNAS" /><published>2024-06-18T00:00:00-07:00</published><updated>2024-06-18T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2024/06/18/using-borg-on-truenas</id><content type="html" xml:base="http://0.0.0.0:4000/2024/06/18/using-borg-on-truenas/"><![CDATA[<p>I installed TrueNAS a couple months ago to try out ZFS.  It has some simple
+<p>Special thanks to <a href="https://rob.cogit8.org/">Rob Hudson</a> and <a href="https://github.com/dschom">Dan Schomburg</a> for thier efforts.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[We released PyFxA 0.7.9 last week (pypi). This added:]]></summary></entry><entry><title type="html">Using Borg on TrueNAS</title><link href="https://micropipes.com/2024/06/18/using-borg-on-truenas/" rel="alternate" type="text/html" title="Using Borg on TrueNAS" /><published>2024-06-18T00:00:00-07:00</published><updated>2024-06-18T00:00:00-07:00</updated><id>https://micropipes.com/2024/06/18/using-borg-on-truenas</id><content type="html" xml:base="https://micropipes.com/2024/06/18/using-borg-on-truenas/"><![CDATA[<p>I installed TrueNAS a couple months ago to try out ZFS.  It has some simple
 backup options built-in but I didn’t see any encrypted options.  Since I use
 <a href="https://www.borgbackup.org/">Borg</a> elsewhere I thought this was a good
 opportunity to figure out how to put it on TrueNAS. TrueNAS is based on Debian,
@@ -379,75 +440,16 @@ write to.  I made <code class="language-plaintext highlighter-rouge">/mnt/tmp</c
 </ol>
 
 <p>Now <code class="language-plaintext highlighter-rouge">/mnt/bin/borg -V</code> should work and you can add it to whatever scripts you
-use to backup your system.  Don’t forget to set the TMPDIR in your scripts too.</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="walkthrough" /><summary type="html"><![CDATA[I installed TrueNAS a couple months ago to try out ZFS. It has some simple backup options built-in but I didn’t see any encrypted options. Since I use Borg elsewhere I thought this was a good opportunity to figure out how to put it on TrueNAS. TrueNAS is based on Debian, but relying on direct package installations isn’t recommended so I needed another option.]]></summary></entry><entry><title type="html">Nyan Cat</title><link href="http://0.0.0.0:4000/2024/06/09/nyan-cat/" rel="alternate" type="text/html" title="Nyan Cat" /><published>2024-06-09T00:00:00-07:00</published><updated>2024-06-09T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2024/06/09/nyan-cat</id><content type="html" xml:base="http://0.0.0.0:4000/2024/06/09/nyan-cat/"><![CDATA[<p><img src="/assets/img/2024-art-nyan-cat-1.jpg" alt="Nyan Cat hanging on the wall" /></p>
+use to backup your system.  Don’t forget to set the TMPDIR in your scripts too.</p>]]></content><author><name>Wil Clouser</name></author><category term="software" /><category term="walkthrough" /><summary type="html"><![CDATA[I installed TrueNAS a couple months ago to try out ZFS. It has some simple backup options built-in but I didn’t see any encrypted options. Since I use Borg elsewhere I thought this was a good opportunity to figure out how to put it on TrueNAS. TrueNAS is based on Debian, but relying on direct package installations isn’t recommended so I needed another option.]]></summary></entry><entry><title type="html">Nyan Cat</title><link href="https://micropipes.com/2024/06/09/nyan-cat/" rel="alternate" type="text/html" title="Nyan Cat" /><published>2024-06-09T00:00:00-07:00</published><updated>2024-06-09T00:00:00-07:00</updated><id>https://micropipes.com/2024/06/09/nyan-cat</id><content type="html" xml:base="https://micropipes.com/2024/06/09/nyan-cat/"><![CDATA[<p><img src="/assets/img/2024-art-nyan-cat-1.jpg" alt="Nyan Cat hanging on the wall" /></p>
 
 <p>Nyan Cat!  A classic internet meme.  I made this to put over a window.  About
 30” long and 6” tall.</p>
 
-<p><img src="/assets/img/2024-art-nyan-cat-2.jpg" alt="Nyan Cat under construction on a table" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Mario and Link</title><link href="http://0.0.0.0:4000/2024/05/31/mario-and-link/" rel="alternate" type="text/html" title="Mario and Link" /><published>2024-05-31T00:00:00-07:00</published><updated>2024-05-31T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2024/05/31/mario-and-link</id><content type="html" xml:base="http://0.0.0.0:4000/2024/05/31/mario-and-link/"><![CDATA[<p>All of these are cut with a laser and painted with acrylics.</p>
+<p><img src="/assets/img/2024-art-nyan-cat-2.jpg" alt="Nyan Cat under construction on a table" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Mario and Link</title><link href="https://micropipes.com/2024/05/31/mario-and-link/" rel="alternate" type="text/html" title="Mario and Link" /><published>2024-05-31T00:00:00-07:00</published><updated>2024-05-31T00:00:00-07:00</updated><id>https://micropipes.com/2024/05/31/mario-and-link</id><content type="html" xml:base="https://micropipes.com/2024/05/31/mario-and-link/"><![CDATA[<p>All of these are cut with a laser and painted with acrylics.</p>
 
 <p><img src="/assets/img/2024-art-small-mario.jpg" alt="Mario hanging on the wall" /></p>
 
 <p>A small Mario for me and a couple of Links to give away to friends.  All about
 6” tall because that’s the size scrap I have.</p>
 
-<p><img src="/assets/img/2024-art-small-link.jpg" alt="Two Links on a table" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[All of these are cut with a laser and painted with acrylics.]]></summary></entry><entry><title type="html">Retiring BrowserID on Mozilla Accounts</title><link href="http://0.0.0.0:4000/2024/05/19/retiring-browserid-on-mozilla-accounts/" rel="alternate" type="text/html" title="Retiring BrowserID on Mozilla Accounts" /><published>2024-05-19T00:00:00-07:00</published><updated>2024-05-19T00:00:00-07:00</updated><id>http://0.0.0.0:4000/2024/05/19/retiring-browserid-on-mozilla-accounts</id><content type="html" xml:base="http://0.0.0.0:4000/2024/05/19/retiring-browserid-on-mozilla-accounts/"><![CDATA[<p>The <abbr title="too long; didn't read">tl;dr</abbr> here is that Mozilla
-Accounts is turning off SyncStorage BrowserID support and it probably doesn’t
-affect you at all.</p>
-
-<h2 id="a-little-history">A little history</h2>
-
-<p>In 2011, when Mozilla Accounts (called “Firefox Accounts” back then) was first
-built it used BrowserID identity certificates in its authentication model.  The
-BrowserID protocol never took off and Mozilla’s work on it ended in 2016.
-However, the sync service in Firefox continued to use BrowserID even as OAuth
-support was added to Mozilla Accounts as an alternative for all other relying
-parties.</p>
-
-<p>Over time, we recognized BrowserID was becoming a maintenance liability.  As a
-non-standard protocol it created significant complexity in our codebase.
-Therefore, we decided to migrate the Firefox clients off of it in favor of
-OAuth.</p>
-
-<p>This was an enormous effort, and while much more could be written about this
-transition, the main takeaway is that Firefox Sync’s BrowserID support ended
-with Firefox 78, which shipped in June 2020 and reached its end of life in
-November 2021.</p>
-
-<h2 id="present-day">Present day</h2>
-
-<p>We’ve been waiting a long time for the usage of Firefox 78 to drop.</p>
-
-<p>Aside from being an <abbr title="Extended Support Release">ESR</abbr> version
-there are a couple of other reasons for its extra longevity:</p>
-
-<ul>
-  <li>It was the last version of the browser to support Flash</li>
-  <li>It was the last version of the browser to support OS X versions &lt; 10.12</li>
-</ul>
-
-<p>With Flash now largely obsolete on the web and traffic from older operating
-systems becoming rarer, we’ve decided that now is the appropriate time to turn
-off support for this legacy protocol.</p>
-
-<p>To avoid surprises and not leave anyone behind, we attempted to email anyone
-still using that endpoint earlier this year. We didn’t receive any feedback and
-we continued with the plan.</p>
-
-<h2 id="our-method">Our method</h2>
-
-<p>Our plan is simple:  BrowserID requests are the only traffic hitting our
-<code class="language-plaintext highlighter-rouge">/v1/certificate/sign</code> endpoint.  We’ll begin returning <code class="language-plaintext highlighter-rouge">HTTP 404</code> replies to a
-small percentage of traffic from that endpoint and monitor for any issues.
-Our testing showed no concerns but it’s challenging to be comprehensive with so
-many combinations of browser versions and operating systems.  Over the next few
-weeks we’ll continue to ramp up the percentage of 404s until we can remove the
-endpoint completely and let the traffic bounce off the front-end like any other
-404.</p>
-
-<h2 id="current-status">Current status</h2>
-
-<p>Surprise!  I’m a few weeks late with this post.  We started returning 404s on
-May 1 and are currently up to ~66% of traffic on that endpoint.  So far there
-haven’t been any unexpected complications.  We’ll continue to increase over the
-next few weeks and aim to have all the code removed this summer.</p>]]></content><author><name>Wil Clouser</name></author><category term="Mozilla" /><category term="software" /><summary type="html"><![CDATA[The tl;dr here is that Mozilla Accounts is turning off SyncStorage BrowserID support and it probably doesn’t affect you at all.]]></summary></entry></feed>
+<p><img src="/assets/img/2024-art-small-link.jpg" alt="Two Links on a table" /></p>]]></content><author><name>Wil Clouser</name></author><category term="art" /><category term="laser" /><summary type="html"><![CDATA[All of these are cut with a laser and painted with acrylics.]]></summary></entry></feed>
